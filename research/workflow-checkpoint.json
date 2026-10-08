@@ -2,25 +2,40 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-08T23:08:20.997Z",
+    "observed_at": "2026-10-08 23:26:56 UTC",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Generate mathematical ideas, code and full experiment design in the background",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
-    "skill_source_revision": null,
+    "delivery_parent_commit": "09f3b214d16fc662bf7aa06b1fbd96357df1b0f9",
+    "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
-      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
-      "references/workflow-harness.md",
-      "references/web-background-work.md",
-      "references/initial-intake.md",
-      "references/artifact-contracts.md",
-      "references/repository-round-trips.md",
-      "references/host-adapters.md"
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-policy.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/canonical-literature.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/collision-audit.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/contribution-value-gates.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/importance-preserving-gate.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-verification.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-analysis.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/repository-round-trips.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/artifact-contracts.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/literature-evidence.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-quality-bar.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/host-adapters.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/full-validation-and-review.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/native-evaluation.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-code-handoff.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/gpu-host-runtime.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/statistics-and-claims.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/rolling-research-batches.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-execution-harness.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-operation-graph.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/idea-generation.md"
     ],
-    "work_phase": "background_authoring_requested",
-    "readiness": "pending",
+    "work_phase": "source_and_mathematical_audit_authored",
+    "readiness": "baseline_evidence_repair",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
     "web_background_mode": "scheduled_authoring",
@@ -35,7 +50,7 @@
       "text": "写到这个里面。用autoresearch pilot插件来生成idea吧 以及生成code和实验设计 后台完成",
       "interpretation": "Continue via available scheduled background authoring; no claim of sustained Work goal"
     },
-    "earliest_unclosed_prerequisite": "Joined primary-paper, actual author-code and native benchmark/scorer investigation",
+    "earliest_unclosed_prerequisite": "Small-model native baseline/scorer qualification and residual-failure census; novel pool/selection/IPCG not established",
     "prerequisite_evidence_refs": [
       "User-provided project chat summary",
       "GitHub repo empty/default main/access receipt",
@@ -43,7 +58,17 @@
       "Actual automation creation receipt"
     ],
     "canonical_ledger_ref": null,
-    "generated_artifact_refs": [],
+    "generated_artifact_refs": [
+      "research/sources.lock.json",
+      "research/SOURCE_AUDIT.md",
+      "research/NATIVE_CONTRACTS.md",
+      "research/CLOSEST_WORK.md",
+      "research/math/OBJECTIVE_ANALYSIS.md",
+      "research/PARENT_PROBLEM_DRAFT.md",
+      "research/METHOD_VERIFICATION_STATUS.md",
+      "research/skill-source.json",
+      "research/PROGRESS.md"
+    ],
     "local_acceptance_pending": [
       "Method/code qualification",
       "Native scorer qualification",
@@ -51,14 +76,14 @@
       "Independent confirmation"
     ],
     "remaining_coverage": [
-      "Source/native-protocol audit",
-      "Parent/value/novelty review",
-      "Mathematical pool verification and selection",
-      "Method/comparator implementation",
-      "Complete G01",
-      "Populated Local runbook and handoff"
+      "Baseline/scorer/census code and handoff",
+      "Small-model failure evidence and simple-alternative qualification",
+      "Verified about-20 candidate pool/top-15",
+      "Candidate collision/IPCG",
+      "Novel method/control implementation and complete G01",
+      "Local E04 and confirmation"
     ],
-    "next_legal_action": "Requested asynchronous authoring task restores project/skill state and begins source investigation; execution not yet observed",
+    "next_legal_action": "Complete independent baseline/scorer/census code and Local handoff; no candidate implementation or empirical execution",
     "delivery_targets": {
       "github": {
         "repo": "yuhanlydia/culture-study",
@@ -79,20 +104,15 @@
       "spend_budget": null,
       "source": "No sourced resource inventory; Web authoring does not execute experiments"
     },
-    "delivered_commit_ref": "dd09f8bc767290c0025467538f890bc2ef0d129f",
-    "main_readback_ref": {
-      "commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
-      "paths": [
-        "LONG_TERM_TASK.md",
-        "AGENTS.md",
-        "research/PROGRESS.md",
-        "research/workflow-checkpoint.json",
-        "research/background-task.json",
-        "rounds/r001/WEB_HANDOFF.md",
-        "README.md"
-      ],
-      "identical": true,
-      "scope": "administrative setup only"
+    "delivered_commit_ref": null,
+    "scientific_gate_status": {
+      "parent": "draft_not_frozen",
+      "natural_gate_0": "not_assessed_missing_observations",
+      "collision": "provisional_source_review",
+      "ipcg": "not_assessed",
+      "math_pool": "0_admitted",
+      "top15": "not_selected",
+      "g01": "not_complete"
     }
   }
 }

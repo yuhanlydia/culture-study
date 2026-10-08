@@ -1,32 +1,21 @@
 # Research progress
+Source milestone prepared 2026-10-08. Execution role: web_supervisor.
 
-Last initialization observation: 2026-10-08T23:05:55.248395+00:00. This is an administrative checkpoint, not scientific validation.
+## Preserved setup
+User's exact public repository/main authorization and original scope remain in LONG_TERM_TASK.md and AGENTS.md. Earlier setup commits 87010522bca7809955e939d91a814109a76cb1b9 and dd09f8bc767290c0025467538f890bc2ef0d129f are administrative history. This authoring started at actual main 09f3b214d16fc662bf7aa06b1fbd96357df1b0f9.
 
-## Completed setup
+## New production
+- Pinned joined source/code/native-contract audit, official BLEnD file blob inventory and source issues.
+- Current closest-work review, retaining covered mechanisms and adverse evidence.
+- Eight mathematical inquiries with actual derivations/counterexamples and semantic review; zero admitted novel candidates, no fake 20→15 selection.
+- Draft six-field Parent Problem. No natural failure census or gate PASS.
+- Recorded exact loaded skill locators and content digests without exporting private plugin source.
 
-- User selected yuhanlydia/culture-study for idea, code and complete experiment-design delivery.
-- Repository access and push capability checked; repository was empty and public.
-- README initial commit delivered and read back: 87010522bca7809955e939d91a814109a76cb1b9.
-- Actual background authoring automation created and enabled. Immediate run has not yet been requested at this checkpoint; see background-task.json for subsequent observations.
-- Adopted source/authoring role and CulturalBench + BLEnD, 1B–7B scope.
+## Current decision
+Proceed with independent baseline/scorer/census authoring. Novel method code requires traceable small-model residual failures, qualified simple alternatives, mathematical candidate verification and collision/IPCG. Published aggregates do not supply that evidence.
 
-## Scientific status
+## Unverified
+All scientific code/design generated_unexecuted. Source issues were not executed. No data/model downloads, project tests, native scoring, inference or training. Models/resources/scorer dependency bindings, faithful parity, canonical validators, E04 and independent confirmation remain pending.
 
-| Stage | Actual status | Next evidence needed |
-| --- | --- | --- |
-| Prior project assets | Chat summary available; full conversation retrieval failed; repo initially empty | Actual source files or new scoped investigation |
-| Primary papers and author code | Pending | Full-text/version and actual implementation reads |
-| Native benchmark/scorer contract | Pending | Released task/data/splits/IDs/scorer sources |
-| Parent Problem, Natural Gate 0, collision/IPCG | Pending | Current consequential question, actual source evidence and review |
-| Mathematical candidate cards | Pending | About 20 justified cards and per-card derivation review |
-| Full ranking/top-15 selection | Pending | Whole-pool ranking and selected-method evidence |
-| Method/baseline/control code | Pending | Code-generation prerequisites and complete implementation |
-| G01 complete design | Pending | Native coverage, controls, precision, commands and conditional resource brief |
-| Local runbook and code handoff | Pending | Actual generated interfaces and complete input acquisition/acceptance commands |
-| Tests and scientific results | Not executed | Local accepted execution and raw native evidence |
-
-## Current next action
-
-The scheduled authoring task should read actual current skill/project versions, then begin primary-paper, author-code and native-benchmark/protocol investigation. Do not stop at listing papers or restating this checklist; deliver source/version-scoped findings and the next lawful research decision.
-
-No method, benchmark score, software-test pass, originality verdict or improvement is claimed.
+## Next lawful action
+Deliver complete native baseline acquisition/validation/inference/scorer/census interfaces and Local runbook. Maintain full selected-release coverage; do not tune on test or claim experimental improvement.

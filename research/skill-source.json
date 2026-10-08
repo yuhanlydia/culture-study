@@ -1,0 +1,122 @@
+{
+  "package": "c7/research-autopilot",
+  "entry_resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+  "observed_date_utc": "2026-10-08",
+  "release_version": null,
+  "upstream_revision": null,
+  "revision_reason": "Cloud skills.read did not expose release or upstream commit.",
+  "contract_schema_version": "1.0.0 (where specified; not skill release)",
+  "modules": [
+    {
+      "name": "workflow-harness",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
+      "snapshot_sha256": "dc32d7825291762788624525297b13e5a42945c3999ffb48a9cfb5e0b0fe50dd"
+    },
+    {
+      "name": "research-policy",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-policy.md",
+      "snapshot_sha256": "75dd3eebce9dcfbd3fbe8d7c97f236fa3031f6c760bafe2d2b55f58b64b4cf4e"
+    },
+    {
+      "name": "canonical-literature",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/canonical-literature.md",
+      "snapshot_sha256": "4c1a8f13dcdd482c040c4725f31974c4d8981a00d3da609740bc68aaaa99b09a"
+    },
+    {
+      "name": "collision-audit",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/collision-audit.md",
+      "snapshot_sha256": "b3c4decbbfec98bd8ef8086ff8940e88f1c4f20b041744f05e6e31d1c5456fc1"
+    },
+    {
+      "name": "contribution-value-gates",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/contribution-value-gates.md",
+      "snapshot_sha256": "aa6bbcaf78088c71c1379c91dccc905e887bc2ff3975d94cbd2af927daa55d3a"
+    },
+    {
+      "name": "importance-preserving-gate",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/importance-preserving-gate.md",
+      "snapshot_sha256": "ebad6558ed819a0aa22b6478bd7573795fe0b4c8678761657588dbadb877ec3f"
+    },
+    {
+      "name": "method-verification",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-verification.md",
+      "snapshot_sha256": "6299c7238a70ef61e57cccaa1cfca7695e041cafa9f7e7f517c014ca54f87203"
+    },
+    {
+      "name": "math-analysis",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-analysis.md",
+      "snapshot_sha256": "e27e60718518b34d4995a4f2109588aa93746665c4466ab7ac31c049334ccbc8"
+    },
+    {
+      "name": "repository-round-trips",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/repository-round-trips.md",
+      "snapshot_sha256": "bbb78c2d8c56c0a43dec286b1673e8c7413b7ae68e9f10149852b4e15cca78eb"
+    },
+    {
+      "name": "artifact-contracts",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/artifact-contracts.md",
+      "snapshot_sha256": "7cdd52fc256333d50328a0c591dd1458f885e30fddf3bc92db31ce923cfb082d"
+    },
+    {
+      "name": "literature-evidence",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/literature-evidence.md",
+      "snapshot_sha256": "a3612904bc54490c6d254fe620a5057aa119a281c74bffc9bb4069cb30e619df"
+    },
+    {
+      "name": "research-quality-bar",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-quality-bar.md",
+      "snapshot_sha256": "cb4e4522337f6815f3c53f5e0c193783ada6a492e652c6531e90b30cb580c409"
+    },
+    {
+      "name": "host-adapters",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/host-adapters.md",
+      "snapshot_sha256": "c1696de410660790bd520ee31a186add2e74065bcafd9f7c73e148aeef95c0c4"
+    },
+    {
+      "name": "full-validation-and-review",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/full-validation-and-review.md",
+      "snapshot_sha256": "adca34ed6279e8c7c101f1cd5e1e194f21ef3aa6c3613f16f81154312b849aa5"
+    },
+    {
+      "name": "native-evaluation",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/native-evaluation.md",
+      "snapshot_sha256": "6262d90670f1ca667669f4b208a44df6aab748956b2360527e94f80b500c9a80"
+    },
+    {
+      "name": "local-code-handoff",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-code-handoff.md",
+      "snapshot_sha256": "0bd28eac9ce3958598c1e97ea2424112d49c003c9b4c383c2092443e0b184caf"
+    },
+    {
+      "name": "gpu-host-runtime",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/gpu-host-runtime.md",
+      "snapshot_sha256": "93e1550b0d600f5730aa7a2e099f763a4e7514a98b34d1073d1f8b656824322e"
+    },
+    {
+      "name": "statistics-and-claims",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/statistics-and-claims.md",
+      "snapshot_sha256": "12322da38b2ae3fd6cc4b10171eba245d7ce26affcc76f17590537087443a3c7"
+    },
+    {
+      "name": "rolling-research-batches",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/rolling-research-batches.md",
+      "snapshot_sha256": "874d598f93a33d9845d35141cc79f96fecabbbdaa18bb8ab0b2db4b2b230b079"
+    },
+    {
+      "name": "local-execution-harness",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-execution-harness.md",
+      "snapshot_sha256": "d1e09d9d5856278ed9a5e19cac7043c136e6d86316a1e33dd5067894ae238a7e"
+    },
+    {
+      "name": "operations",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-operation-graph.md",
+      "snapshot_sha256": "e82711e4c307d6d901486f4da569e4572e5ce7a4fe006976789bc5d174b749a2"
+    },
+    {
+      "name": "idea",
+      "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/idea-generation.md",
+      "snapshot_sha256": "55473c87628fe77e8372f784844b419c2529f0acca4a45b4f6dd7e59391a2b49"
+    }
+  ],
+  "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5"
+}
