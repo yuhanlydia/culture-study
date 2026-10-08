@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-08T23:05:55.248395+00:00",
+    "observed_at": "2026-10-08T23:08:20.997Z",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Generate mathematical ideas, code and full experiment design in the background",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "87010522bca7809955e939d91a814109a76cb1b9",
+    "delivery_parent_commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
     "skill_source_revision": null,
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
@@ -19,13 +19,13 @@
       "references/repository-round-trips.md",
       "references/host-adapters.md"
     ],
-    "work_phase": "background_authoring_setup",
+    "work_phase": "background_authoring_requested",
     "readiness": "pending",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
     "web_background_mode": "scheduled_authoring",
-    "web_background_observed_state": "created_enabled",
-    "web_background_observed_at": "2026-10-08T23:05:55.248395+00:00",
+    "web_background_observed_state": "enabled_immediate_run_requested",
+    "web_background_observed_at": "2026-10-08T23:08:20.997Z",
     "web_background_enabled": true,
     "web_background_task_locator": "6ac821d2c66081918fd21ebd0d168fea",
     "web_background_schedule_ref": "research/background-task.json",
@@ -58,7 +58,7 @@
       "Complete G01",
       "Populated Local runbook and handoff"
     ],
-    "next_legal_action": "Resume same authoring task from actual source investigation; save substantive evidence and checkpoint",
+    "next_legal_action": "Requested asynchronous authoring task restores project/skill state and begins source investigation; execution not yet observed",
     "delivery_targets": {
       "github": {
         "repo": "yuhanlydia/culture-study",
@@ -78,6 +78,21 @@
       "gpu_hours": null,
       "spend_budget": null,
       "source": "No sourced resource inventory; Web authoring does not execute experiments"
+    },
+    "delivered_commit_ref": "dd09f8bc767290c0025467538f890bc2ef0d129f",
+    "main_readback_ref": {
+      "commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
+      "paths": [
+        "LONG_TERM_TASK.md",
+        "AGENTS.md",
+        "research/PROGRESS.md",
+        "research/workflow-checkpoint.json",
+        "research/background-task.json",
+        "rounds/r001/WEB_HANDOFF.md",
+        "README.md"
+      ],
+      "identical": true,
+      "scope": "administrative setup only"
     }
   }
 }

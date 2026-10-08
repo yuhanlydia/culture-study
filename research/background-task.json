@@ -8,16 +8,28 @@
   "default_timezone": "Europe/London",
   "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY\nEND:VEVENT",
   "is_enabled": true,
-  "observed_at": "2026-10-08T23:05:55.248395+00:00",
+  "observed_at": "2026-10-08T23:08:20.997Z",
   "last_run_time": null,
   "next_run_time": null,
   "immediate_run": {
-    "status": "not_yet_requested",
-    "receipt": null
+    "status": "requested",
+    "observed_at": "2026-10-08T23:08:20.997Z",
+    "receipt": {
+      "success": true,
+      "message": "Immediate run requested. The saved schedule is unchanged.",
+      "automation_id": "6ac821d2c66081918fd21ebd0d168fea"
+    },
+    "execution_observed": false,
+    "delivery_observed": false
   },
   "scientific_completion": false,
   "authoring_completion": false,
   "target_repository": "yuhanlydia/culture-study",
   "target_branch": "main",
-  "note": "Creation/enabled is from actual provider receipt. Run request and source delivery are separate observations."
+  "note": "Creation/enabled is from actual provider receipt. Run request and source delivery are separate observations.",
+  "setup_delivery": {
+    "commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
+    "exact_content_readback": true,
+    "scope": "README, goal, AGENTS, progress, background identity, workflow checkpoint and setup handoff; no scientific implementation or results"
+  }
 }
