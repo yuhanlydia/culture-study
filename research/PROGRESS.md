@@ -68,3 +68,8 @@ Real new production:
 These are source repairs and conditional mathematical limitations, not a novel selected method, model experiment, scorer qualification or completed G01. All code remains generated_unexecuted; no project imports, tests, downloads, scorer, inference, training or GPU/SSH actions occurred. Canonical verify_methods was not run; no machine review claimed.
 
 Remaining method implementation depends on qualified native per-ID 1B/7B outcomes and residual attribution, legitimate development/fresh confirmation and the existing mathematical pool/selection/collision/IPCG obligations. Actual host and budget remain unknown. Independent baseline/handoff repair is delivered; the affected downstream authoring remains blocked. Next is Local acceptance of this child revision through LOCAL_AGENT_RUNBOOK.md, with old run revisions retained.
+
+## Exact repair delivery and prerequisite pause
+Source/math repair commit fe2a5722a37dda2c6e78ae691d32b6d73229de85 reached literal main by expected-parent fast-forward. Eight changed paths were read back with identical content; actual main ref matched that commit. The same task was disabled and disabled-state readback confirmed at 2026-10-08 23:52:17 UTC. This invocation actually produced the above changes; historical immediate-request fields remain historical.
+
+Requested novel-method/code/full G01 is unfinished. Missing qualified native per-ID baseline/simple-alternative/scorer evidence and legitimate development/confirmation remain the blocking inputs. Local next action: review and execute the admitted runbook on actual project resources, return immutable raw/scorer/census receipts and failures. No scientific execution or gate PASS was produced.

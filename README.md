@@ -31,3 +31,7 @@ CulturalBench 采用公开发布的 1,227 原题版本，不能套用正式论�
 用户授权目的地是本仓库 literal `main`，保留公开可见性。实际 SSH/GPU/VRAM/预算和 HF 输出目的地仍未知。任务身份与真实交付/关闭记录见 [background-task.json](research/background-task.json) 和 [workflow-checkpoint.json](research/workflow-checkpoint.json)。
 
 按用户最新指令，同一后台作者任务已恢复启用，并请求立即运行；实际执行状态尚未获确认。基线作者交付已完成；新方法与完整候选 G01 仍缺原生实测证据，GPU 实验尚未启动。[确切交付及未完成项](research/DELIVERY_RECEIPT.json)记录源码提交、逐文件回读和下一项 Local 验收；最新恢复回执见 [background-task.json](research/background-task.json)。
+
+
+## 最新续接结果
+源码修复及 J01 适用边界已发布于 [fe2a572](https://github.com/yuhanlydia/culture-study/commit/fe2a5722a37dda2c6e78ae691d32b6d73229de85)，8 个文件逐一回读确认。代码仍为 generated_unexecuted，尚无实测成绩。当前同一作者任务因缺少原生逐题基线/评分证据再次暂停；上面的“已恢复”是历史状态。下一步见 [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md)，新方法和完整候选 G01 未完成。

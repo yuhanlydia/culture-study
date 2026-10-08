@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-08 23:51:30 UTC",
+    "observed_at": "2026-10-08 23:52:17 UTC",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Generate mathematical ideas, code and full experiment design in the background",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "e81d4d8c3abb724e4a1970a736f082e3f282b9eb",
+    "delivery_parent_commit": "fe2a5722a37dda2c6e78ae691d32b6d73229de85",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -40,14 +40,14 @@
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/mathematical-empirical-inquiry.md",
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-development-tree.md"
     ],
-    "work_phase": "resumed_static_repair_delivered_native_prerequisites_pending",
+    "work_phase": "paused_after_resumed_source_math_repair",
     "readiness": "method_blocked_native_failure_evidence_missing",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
     "web_background_mode": "scheduled_authoring",
-    "web_background_observed_state": "enabled_immediate_run_requested_execution_unobserved",
-    "web_background_observed_at": "2026-10-08T23:47:49.447Z",
-    "web_background_enabled": true,
+    "web_background_observed_state": "disabled_native_evidence_prerequisite",
+    "web_background_observed_at": "2026-10-08 23:52:17 UTC",
+    "web_background_enabled": false,
     "web_background_task_locator": "6ac821d2c66081918fd21ebd0d168fea",
     "web_background_schedule_ref": "research/background-task.json",
     "web_background_report_seconds": 3600,
@@ -221,6 +221,21 @@
     "next_authoring_action": "Review qualified Local native results when supplied; no new candidate code before unchanged prerequisite chain",
     "latest_source_review_ref": "research/CODE_REVIEW.md",
     "latest_math_review_ref": "research/math/J01_REVIEW.md",
-    "current_run_execution_observation": "Actual authoring invocation produced static repairs and conditional derivations; no scientific execution"
+    "current_run_execution_observation": "Actual authoring invocation produced static repairs and conditional derivations; no scientific execution",
+    "latest_repair_delivery_ref": {
+      "commit": "fe2a5722a37dda2c6e78ae691d32b6d73229de85",
+      "paths": [
+        "culture_study/census.py",
+        "culture_study/scoring.py",
+        "research/math/J01_REVIEW.md",
+        "research/CODE_REVIEW.md",
+        "LOCAL_AGENT_RUNBOOK.md",
+        "rounds/r001/WEB_HANDOFF.md",
+        "research/PROGRESS.md",
+        "research/workflow-checkpoint.json"
+      ],
+      "exact_content_readback": true
+    },
+    "latest_pause_ref": "research/background-task.json#latest_pause"
   }
 }

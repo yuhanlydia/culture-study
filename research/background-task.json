@@ -7,8 +7,8 @@
   "sustained_work_goal_verified": false,
   "default_timezone": "Europe/London",
   "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY;INTERVAL=6\nEND:VEVENT",
-  "is_enabled": true,
-  "observed_at": "2026-10-08T23:47:49.447Z",
+  "is_enabled": false,
+  "observed_at": "2026-10-08 23:52:17 UTC",
   "last_run_time": null,
   "next_run_time": null,
   "immediate_run": {
@@ -89,5 +89,34 @@
       "delivery_observed": false
     },
     "note": "Previous pause remains historical. This request does not clear native evidence, method selection or Local resource prerequisites. Existing 6-hour schedule and saved production prompt are unchanged."
+  },
+  "latest_invocation": {
+    "observed_at": "2026-10-08 23:52:17 UTC",
+    "authoring_observed": true,
+    "source_commit": "fe2a5722a37dda2c6e78ae691d32b6d73229de85",
+    "exact_content_readback": true,
+    "readback_paths": [
+      "culture_study/census.py",
+      "culture_study/scoring.py",
+      "research/math/J01_REVIEW.md",
+      "research/CODE_REVIEW.md",
+      "LOCAL_AGENT_RUNBOOK.md",
+      "rounds/r001/WEB_HANDOFF.md",
+      "research/PROGRESS.md",
+      "research/workflow-checkpoint.json"
+    ],
+    "scientific_execution": false,
+    "scope": "Static native evidence/path repairs and two additional J01 applicability bounds"
+  },
+  "latest_pause": {
+    "observed_at": "2026-10-08 23:52:17 UTC",
+    "automation_id": "6ac821d2c66081918fd21ebd0d168fea",
+    "provider_success": true,
+    "is_enabled": false,
+    "disabled_readback": true,
+    "provider_updated_at": "2026-10-08T23:51:55.996010+00:00",
+    "reason": "Independent resumed baseline/math review repair delivered. Dependent novel-method authoring requires missing qualified native per-ID model evidence and development/confirmation; scientific execution excluded from this Web scope.",
+    "next_action_ref": "LOCAL_AGENT_RUNBOOK.md",
+    "requested_full_authoring_complete": false
   }
 }
