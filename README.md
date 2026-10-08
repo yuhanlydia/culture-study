@@ -29,3 +29,5 @@ CulturalBench 采用公开发布的 1,227 原题版本，不能套用正式论�
 新方法代码和候选 G01 仍缺已核查的小模型逐题残余失败、强简单替代与原生评分资格，以及合法开发/独立确认资源。诊断代码不能替代这些观测，也不能把数学讨论稿称为已验证主方法。CB 提取器及多语言资源的 faithful qualification 明确待 Local；verify_methods 没有运行。
 
 用户授权目的地是本仓库 literal `main`，保留公开可见性。实际 SSH/GPU/VRAM/预算和 HF 输出目的地仍未知。任务身份与真实交付/关闭记录见 [background-task.json](research/background-task.json) 和 [workflow-checkpoint.json](research/workflow-checkpoint.json)。
+
+当前后台任务已因原生证据前提缺失而暂停。基线作者交付已完成；新方法与完整候选 G01 未完成。[确切交付及未完成项](research/DELIVERY_RECEIPT.json)记录源码提交、逐文件回读和下一项 Local 验收。

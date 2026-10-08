@@ -26,3 +26,8 @@ Missing design prerequisite: legitimate non-test development and fresh native co
 Next action is Local native admission/setup/scorer qualification and complete fixed baseline/census collection from the runbook, then source review/frozen parent, substantive distinct math pool/reviews/ranking and current collision/IPCG. Do not implement J01 just because a numerical optimizer could be written.
 
 The finite Web authoring task can close this independent packet but cannot mark the requested novel-method/G01 authoring complete. Exact delivery and any actual same-task pause receipt are retained in research status records.
+
+## Actual delivery receipt
+Source audit: 724ba8229c5f21eb61ed1766599b5a2e16ee7629. Complete independent baseline/math-review/design/runbook packet: e723c6cb6deb90b8aeee4cf72528ca99973f3dff, normal child of preserved concurrent 3621288c90cac4c6edd217a57967a5e25d9cf3b5. All 32 written paths and four unchanged concurrent paths were read back exactly. See research/DELIVERY_RECEIPT.json.
+
+At 2026-10-08 23:43:19 UTC the same task was actually disabled and its disabled state read back because dependent method authoring requires missing native empirical prerequisites forbidden in this role. Requested novel method/G01 remains unfinished; no experimental result or gate PASS. Local next action is the complete native runbook, not another Web timer or repeated reminder.

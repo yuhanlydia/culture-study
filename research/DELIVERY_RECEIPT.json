@@ -1,0 +1,278 @@
+{
+  "format": "culture-study-authoring-delivery-receipt",
+  "version": 1,
+  "observed_at": "2026-10-08 23:43:19 UTC",
+  "project": "yuhanlydia/culture-study",
+  "branch": "main",
+  "visibility_unchanged": "public",
+  "deliveries": [
+    {
+      "commit": "724ba8229c5f21eb61ed1766599b5a2e16ee7629",
+      "parent": "09f3b214d16fc662bf7aa06b1fbd96357df1b0f9",
+      "scope": "Source/native contracts/current methods/eight math inquiries",
+      "readback": [
+        {
+          "path": "research/sources.lock.json",
+          "identical": true,
+          "characters": 15437
+        },
+        {
+          "path": "research/SOURCE_AUDIT.md",
+          "identical": true,
+          "characters": 4008
+        },
+        {
+          "path": "research/NATIVE_CONTRACTS.md",
+          "identical": true,
+          "characters": 4015
+        },
+        {
+          "path": "research/CLOSEST_WORK.md",
+          "identical": true,
+          "characters": 2993
+        },
+        {
+          "path": "research/math/OBJECTIVE_ANALYSIS.md",
+          "identical": true,
+          "characters": 9456
+        },
+        {
+          "path": "research/PARENT_PROBLEM_DRAFT.md",
+          "identical": true,
+          "characters": 2324
+        },
+        {
+          "path": "research/METHOD_VERIFICATION_STATUS.md",
+          "identical": true,
+          "characters": 1470
+        },
+        {
+          "path": "research/skill-source.json",
+          "identical": true,
+          "characters": 6312
+        },
+        {
+          "path": "research/PROGRESS.md",
+          "identical": true,
+          "characters": 1790
+        },
+        {
+          "path": "research/workflow-checkpoint.json",
+          "identical": true,
+          "characters": 6495
+        }
+      ]
+    },
+    {
+      "commit": "e723c6cb6deb90b8aeee4cf72528ca99973f3dff",
+      "parent": "3621288c90cac4c6edd217a57967a5e25d9cf3b5",
+      "tree": "990aa6db1094a2fc56e07da1214aae6c254aca38",
+      "scope": "Complete independent native baseline/scorer/census prelude, 14-run diagnostic design, J01 optimization review and populated Local runbook",
+      "readback": [
+        {
+          "path": "research/sources.lock.json",
+          "identical": true,
+          "characters": 15676
+        },
+        {
+          "path": "research/SOURCE_AUDIT.md",
+          "identical": true,
+          "characters": 4008
+        },
+        {
+          "path": "research/NATIVE_CONTRACTS.md",
+          "identical": true,
+          "characters": 4015
+        },
+        {
+          "path": "research/CLOSEST_WORK.md",
+          "identical": true,
+          "characters": 3131
+        },
+        {
+          "path": "research/math/OBJECTIVE_ANALYSIS.md",
+          "identical": true,
+          "characters": 9456
+        },
+        {
+          "path": "research/PARENT_PROBLEM_DRAFT.md",
+          "identical": true,
+          "characters": 2324
+        },
+        {
+          "path": "research/METHOD_VERIFICATION_STATUS.md",
+          "identical": true,
+          "characters": 1470
+        },
+        {
+          "path": "research/skill-source.json",
+          "identical": true,
+          "characters": 6312
+        },
+        {
+          "path": "research/PROGRESS.md",
+          "identical": true,
+          "characters": 5619
+        },
+        {
+          "path": "research/workflow-checkpoint.json",
+          "identical": true,
+          "characters": 10155
+        },
+        {
+          "path": "pyproject.toml",
+          "identical": true,
+          "characters": 509
+        },
+        {
+          "path": "environment.yml",
+          "identical": true,
+          "characters": 287
+        },
+        {
+          "path": ".gitignore",
+          "identical": true,
+          "characters": 88
+        },
+        {
+          "path": "culture_study/__init__.py",
+          "identical": true,
+          "characters": 105
+        },
+        {
+          "path": "culture_study/io.py",
+          "identical": true,
+          "characters": 3552
+        },
+        {
+          "path": "culture_study/assets.py",
+          "identical": true,
+          "characters": 6078
+        },
+        {
+          "path": "configs/prelude.json",
+          "identical": true,
+          "characters": 1059
+        },
+        {
+          "path": "culture_study/prepare.py",
+          "identical": true,
+          "characters": 11288
+        },
+        {
+          "path": "culture_study/official.py",
+          "identical": true,
+          "characters": 7975
+        },
+        {
+          "path": "culture_study/inference.py",
+          "identical": true,
+          "characters": 9221
+        },
+        {
+          "path": "culture_study/scoring.py",
+          "identical": true,
+          "characters": 13289
+        },
+        {
+          "path": "culture_study/census.py",
+          "identical": true,
+          "characters": 4107
+        },
+        {
+          "path": "culture_study/__main__.py",
+          "identical": true,
+          "characters": 4443
+        },
+        {
+          "path": "requirements-scorer.txt",
+          "identical": true,
+          "characters": 305
+        },
+        {
+          "path": "configs/scorer-dependencies.template.json",
+          "identical": true,
+          "characters": 588
+        },
+        {
+          "path": "research/CODE_REVIEW.md",
+          "identical": true,
+          "characters": 3400
+        },
+        {
+          "path": "research/EXPERIMENT_DESIGN.md",
+          "identical": true,
+          "characters": 8157
+        },
+        {
+          "path": "LOCAL_AGENT_RUNBOOK.md",
+          "identical": true,
+          "characters": 16182
+        },
+        {
+          "path": "research/math/J01_REVIEW.md",
+          "identical": true,
+          "characters": 5774
+        },
+        {
+          "path": "README.md",
+          "identical": true,
+          "characters": 1929
+        },
+        {
+          "path": "AGENTS.md",
+          "identical": true,
+          "characters": 4108
+        },
+        {
+          "path": "rounds/r001/WEB_HANDOFF.md",
+          "identical": true,
+          "characters": 4009
+        }
+      ]
+    }
+  ],
+  "concurrent_work_preserved": {
+    "commit": "3621288c90cac4c6edd217a57967a5e25d9cf3b5",
+    "exact_paths": [
+      "research/MATHEMATICAL_MODEL_BRIEF.md",
+      "rounds/r001/ANSWER_SET_OPTIMIZATION.md",
+      "rounds/r001/SOURCE_AUDIT.md",
+      "LONG_TERM_TASK.md"
+    ],
+    "readback_identical": true
+  },
+  "generated_status": "generated_unexecuted",
+  "executed_scientific_actions": [],
+  "novel_method_authoring_complete": false,
+  "candidate_G01_complete": false,
+  "prelude_authoring_complete": true,
+  "verified_novel_candidates": 0,
+  "selected_candidates": [],
+  "remaining_blockers": [
+    "Qualified attributable 1B/7B native baseline/strong-simple-alternative per-ID outcomes and reviewed residual-failure census",
+    "CB extraction parity and BLEnD linguistic resource/live native qualification",
+    "Legitimate non-test development and independent native confirmation for adaptive method",
+    "Distinct mathematical pool/per-card review/ranking, actual collision/IPCG before novel method"
+  ],
+  "gate_decisions_fabricated": false,
+  "software_or_scorer_passes_claimed": [],
+  "machine_verify_methods_status": "unavailable via cloud skill interface; no command/log run",
+  "stopped_task": {
+    "id": "6ac821d2c66081918fd21ebd0d168fea",
+    "is_enabled": false,
+    "provider_success": true,
+    "readback_disabled": true,
+    "reason": "Remaining method prerequisites require native empirical evidence absent from inspected assets; Web execution explicitly prohibited. Independent baseline/source/math handoff delivered; project not claimed complete."
+  },
+  "next_action": "Local follow LOCAL_AGENT_RUNBOOK.md under actual trusted native admission, retain raw errors/outcomes, then restore source/math/gates and development/confirmation obligations.",
+  "hf_output": {
+    "status": "unknown",
+    "operations": []
+  },
+  "resources": {
+    "gpu": null,
+    "ssh": null,
+    "budget": null
+  }
+}
