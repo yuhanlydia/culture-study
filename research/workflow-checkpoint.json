@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-08 23:26:56 UTC",
+    "observed_at": "2026-10-08T23:29:48.854557+00:00",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Generate mathematical ideas, code and full experiment design in the background",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "09f3b214d16fc662bf7aa06b1fbd96357df1b0f9",
+    "delivery_parent_commit": "724ba8229c5f21eb61ed1766599b5a2e16ee7629",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -32,15 +32,21 @@
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/rolling-research-batches.md",
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-execution-harness.md",
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-operation-graph.md",
-      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/idea-generation.md"
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/idea-generation.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/web-background-work.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/initial-intake.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-derivation-paths.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/mathematical-empirical-inquiry.md",
+      "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-development-tree.md"
     ],
     "work_phase": "source_and_mathematical_audit_authored",
     "readiness": "baseline_evidence_repair",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
     "web_background_mode": "scheduled_authoring",
-    "web_background_observed_state": "enabled_immediate_run_requested",
-    "web_background_observed_at": "2026-10-08T23:08:20.997Z",
+    "web_background_observed_state": "enabled_prompt_updated_repository_authoring_delivered_provider_run_unexposed",
+    "web_background_observed_at": "2026-10-08T23:29:48.854557+00:00",
     "web_background_enabled": true,
     "web_background_task_locator": "6ac821d2c66081918fd21ebd0d168fea",
     "web_background_schedule_ref": "research/background-task.json",
@@ -55,7 +61,12 @@
       "User-provided project chat summary",
       "GitHub repo empty/default main/access receipt",
       "Initial README exact-commit readback",
-      "Actual automation creation receipt"
+      "Actual automation creation receipt",
+      "research/SOURCE_AUDIT.md",
+      "research/math/OBJECTIVE_ANALYSIS.md",
+      "rounds/r001/SOURCE_AUDIT.md",
+      "rounds/r001/ANSWER_SET_OPTIMIZATION.md",
+      "Actual same-task prompt-update receipt"
     ],
     "canonical_ledger_ref": null,
     "generated_artifact_refs": [
@@ -67,7 +78,10 @@
       "research/PARENT_PROBLEM_DRAFT.md",
       "research/METHOD_VERIFICATION_STATUS.md",
       "research/skill-source.json",
-      "research/PROGRESS.md"
+      "research/PROGRESS.md",
+      "research/MATHEMATICAL_MODEL_BRIEF.md",
+      "rounds/r001/ANSWER_SET_OPTIMIZATION.md",
+      "rounds/r001/SOURCE_AUDIT.md"
     ],
     "local_acceptance_pending": [
       "Method/code qualification",
@@ -83,7 +97,7 @@
       "Novel method/control implementation and complete G01",
       "Local E04 and confirmation"
     ],
-    "next_legal_action": "Complete independent baseline/scorer/census code and Local handoff; no candidate implementation or empirical execution",
+    "next_legal_action": "Complete independent baseline/scorer/census code and Local handoff; no candidate implementation or empirical execution; preserve the user's optimization preference and J01's unselected discussion status.",
     "delivery_targets": {
       "github": {
         "repo": "yuhanlydia/culture-study",
@@ -113,6 +127,23 @@
       "math_pool": "0_admitted",
       "top15": "not_selected",
       "g01": "not_complete"
+    },
+    "latest_owner_requirement_ref": "research/MATHEMATICAL_MODEL_BRIEF.md",
+    "latest_owner_setting_update_at": "2026-10-08T23:29:48.854557+00:00",
+    "mathematical_discussion_refs": [
+      "rounds/r001/ANSWER_SET_OPTIMIZATION.md"
+    ],
+    "supplementary_source_audit_ref": "rounds/r001/SOURCE_AUDIT.md",
+    "discussion_drafts": 1,
+    "pre_existing_mathematical_inquiries": 8,
+    "verified_candidate_count": 0,
+    "selected_candidate_ids": [],
+    "web_background_observed_trigger_seconds": 21600,
+    "repository_authoring_observation": {
+      "commit": "724ba8229c5f21eb61ed1766599b5a2e16ee7629",
+      "committed_at": "2026-10-08T23:26:57Z",
+      "scope": "Source/native-contract/closest-work and eight mathematical inquiries; no candidate code, complete G01 or empirical run",
+      "provider_run_identity_exposed": false
     }
   }
 }

@@ -23,3 +23,7 @@
 ## 交付范围
 
 用户指定交付到 `yuhanlydia/culture-study` 的 `main`；沿用仓库当前公开可见性，不改变设置。Hugging Face 输出目标与实际 GPU/预算尚未知；本轮交付的是研究材料、代码和设计，不创建 HF 仓库或上传权重。
+
+## 数学优化方向讨论
+
+已保存 [研究要求](research/MATHEMATICAL_MODEL_BRIEF.md)、[答案集合优化推导](rounds/r001/ANSWER_SET_OPTIMIZATION.md) 和 [来源核查](rounds/r001/SOURCE_AUDIT.md)。这是一个未入选的数学讨论稿，包含原生损失、目标/约束、KKT、反例和失败边界；尚无方法代码、完整 G01 或科学结果。用户最新要求和后台设置已续接，后台实际执行状态仍未获证。

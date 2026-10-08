@@ -6,9 +6,9 @@
   "mode": "scheduled_authoring",
   "sustained_work_goal_verified": false,
   "default_timezone": "Europe/London",
-  "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY;INTERVAL=6\nEND:VEVENT",
   "is_enabled": true,
-  "observed_at": "2026-10-08T23:08:20.997Z",
+  "observed_at": "2026-10-08T23:29:48.854557+00:00",
   "last_run_time": null,
   "next_run_time": null,
   "immediate_run": {
@@ -31,5 +31,25 @@
     "commit": "dd09f8bc767290c0025467538f890bc2ef0d129f",
     "exact_content_readback": true,
     "scope": "README, goal, AGENTS, progress, background identity, workflow checkpoint and setup handoff; no scientific implementation or results"
+  },
+  "creation_schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+  "latest_requirement": {
+    "source": "User message 2026-10-08T23:18:05Z",
+    "text": "数学 idea、方法代码、完整实验设计按照数学优化问题组织，面向 ACL 生成优雅的数学模型",
+    "ref": "research/MATHEMATICAL_MODEL_BRIEF.md"
+  },
+  "prompt_update": {
+    "success": true,
+    "automation_id": "6ac821d2c66081918fd21ebd0d168fea",
+    "provider_updated_at": "2026-10-08T23:29:48.854557+00:00",
+    "scope": "optimization-model requirements; preserved task, cadence and scientific execution boundary",
+    "execution_observed": false
+  },
+  "schedule_discrepancy_note": "Initial saved/requested cadence was hourly; live provider configuration observed is HOURLY INTERVAL=6. This turn updates only the owner-requested prompt; no schedule change.",
+  "repository_authoring_observation": {
+    "commit": "724ba8229c5f21eb61ed1766599b5a2e16ee7629",
+    "committed_at": "2026-10-08T23:26:57Z",
+    "scope": "Source/native-contract/closest-work and eight mathematical inquiries; no candidate code, complete G01 or empirical run",
+    "provider_run_identity_exposed": false
   }
 }

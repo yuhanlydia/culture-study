@@ -52,3 +52,7 @@ Local 后续通过真实 SSH/native Conda 资源执行验收和实验。本任�
 使用实际可用的 Research Autopilot 插件及适用模块，不将私有 skill 源文件复制到公开仓库。当前读取过插件入口、workflow-harness、web-background-work、initial-intake、artifact-contracts、repository-round-trips 与 host-adapters；后台进入数学/代码/G01 边界时读取相应模块及真实 source revision。
 
 每次首先读取 research/PROGRESS.md、research/workflow-checkpoint.json 与本文件，核对最新 main 和真实 task 身份。缺失前提阻塞受影响后代，继续独立合法工作。完成一个实质可审查里程碑，不只更新待办；本次初始化不算文献、数学、代码或设计完成。
+
+## 数学优化优先要求（最新用户指令）
+
+用户要求按数学优化问题生成面向 ACL 的数学模型，并以此产生方法代码与完整实验设计。具体验收要求见 [MATHEMATICAL_MODEL_BRIEF.md](research/MATHEMATICAL_MODEL_BRIEF.md)。本轮新增 [J01 数学讨论稿](rounds/r001/ANSWER_SET_OPTIMIZATION.md) 及 [SOURCE_AUDIT.md](rounds/r001/SOURCE_AUDIT.md)；尚未入选或完成原创性判定，不等于完整方法池、代码或 G01。继续原任务与证据前置检查。

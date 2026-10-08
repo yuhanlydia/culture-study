@@ -19,3 +19,16 @@ All scientific code/design generated_unexecuted. Source issues were not executed
 
 ## Next lawful action
 Deliver complete native baseline acquisition/validation/inference/scorer/census interfaces and Local runbook. Maintain full selected-release coverage; do not tune on test or claim experimental improvement.
+
+## Current update: mathematical optimization preference
+
+Observed at 2026-10-08T23:29:48.854557+00:00. The user requested mathematical optimization models for the ACL goal. This conversational source review and task update is distinct from actual asynchronous worker execution.
+
+- Delivered requirement specification: research/MATHEMATICAL_MODEL_BRIEF.md.
+- Derived one unselected discussion card: rounds/r001/ANSWER_SET_OPTIMIZATION.md. It contains Bayes-loss separation, a marginal-information counterexample, a feasible strictly convex fixed-marginal projection, KKT, independent-baseline limits and higher-order/single-label failure boundaries.
+- Source audit is partial: actual CulturalBench paper/card protocol reads, BLEnD MC and SEM source, ConCoRD solver and related LoCo source/paper reads. Versions/gaps are recorded in rounds/r001/SOURCE_AUDIT.md.
+- The existing eight mathematical inquiries and baseline-evidence-repair decision are retained. No verified novel pool, ranked top-15 selection, candidate code, complete G01, software test or scientific result exists yet. Parent/value/novelty and native scorer qualification remain pending.
+- CulturalBench has different paper/release counts. The existing NATIVE_CONTRACTS.md has selected the released 1227-original version; preserve that choice and its denominator, while scorer qualification and legitimate development/confirmation remain unresolved.
+- Updated the same automation prompt with the user's optimization requirement. Provider schedule currently remains every six hours; last_run_time and next_run_time are null. No new immediate-run request or duplicate worker was created. Repository production commit 724ba8229c5f21eb61ed1766599b5a2e16ee7629 was read back; it is genuine delivered source/math work even though live scheduler execution fields remain null.
+
+Next: retain the existing baseline/scorer/census authoring and Local handoff priority, restore the optimization requirement and both source audits, then use actual qualified residual-failure evidence for method derivation/review/selection. Candidate implementation remains blocked by the existing scientific prerequisites. Earlier source production and eight inquiries remain unchanged; this added discussion card and requirement update are authoring evidence, not scientific acceptance.
