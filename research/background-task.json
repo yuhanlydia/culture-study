@@ -1,0 +1,23 @@
+{
+  "task_id": "6ac821d2c66081918fd21ebd0d168fea",
+  "title": "ACL 跨文化研究",
+  "conversation_id": "6ac81ea2-9d6c-83ed-8f58-ffb54679b72c",
+  "host": "cloud_scheduled_automation",
+  "mode": "scheduled_authoring",
+  "sustained_work_goal_verified": false,
+  "default_timezone": "Europe/London",
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+  "is_enabled": true,
+  "observed_at": "2026-10-08T23:05:55.248395+00:00",
+  "last_run_time": null,
+  "next_run_time": null,
+  "immediate_run": {
+    "status": "not_yet_requested",
+    "receipt": null
+  },
+  "scientific_completion": false,
+  "authoring_completion": false,
+  "target_repository": "yuhanlydia/culture-study",
+  "target_branch": "main",
+  "note": "Creation/enabled is from actual provider receipt. Run request and source delivery are separate observations."
+}
