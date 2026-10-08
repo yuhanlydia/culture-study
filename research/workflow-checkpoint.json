@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-08 23:43:19 UTC",
+    "observed_at": "2026-10-08T23:47:49.447Z",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Generate mathematical ideas, code and full experiment design in the background",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "e723c6cb6deb90b8aeee4cf72528ca99973f3dff",
+    "delivery_parent_commit": "67064b80166a1648680955d938b73fb25519296e",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -40,14 +40,14 @@
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/mathematical-empirical-inquiry.md",
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-development-tree.md"
     ],
-    "work_phase": "paused_after_independent_prelude_delivery",
+    "work_phase": "authoring_resume_requested_native_prerequisites_pending",
     "readiness": "method_blocked_native_failure_evidence_missing",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
     "web_background_mode": "scheduled_authoring",
-    "web_background_observed_state": "disabled_native_evidence_prerequisite",
-    "web_background_observed_at": "2026-10-08 23:43:19 UTC",
-    "web_background_enabled": false,
+    "web_background_observed_state": "enabled_immediate_run_requested_execution_unobserved",
+    "web_background_observed_at": "2026-10-08T23:47:49.447Z",
+    "web_background_enabled": true,
     "web_background_task_locator": "6ac821d2c66081918fd21ebd0d168fea",
     "web_background_schedule_ref": "research/background-task.json",
     "web_background_report_seconds": 3600,
@@ -211,6 +211,13 @@
     },
     "delivery_receipt_ref": "research/DELIVERY_RECEIPT.json",
     "prelude_authoring_complete": true,
-    "requested_full_authoring_complete": false
+    "requested_full_authoring_complete": false,
+    "latest_owner_instruction": {
+      "source": "Latest owner message in this conversation",
+      "text": "后台发布呀跑",
+      "scope": "Resume the same authorized scheduled-authoring task and request an immediate invocation; existing scientific prerequisites remain unresolved."
+    },
+    "web_background_resume_receipt_ref": "research/background-task.json#resume",
+    "next_authoring_action": "Same task restores the delivered packet and advances any independent lawful authoring; preserve missing native evidence and Local execution prerequisites. No gate PASS or experiment run follows from the resume request."
   }
 }

@@ -30,4 +30,4 @@ CulturalBench 采用公开发布的 1,227 原题版本，不能套用正式论�
 
 用户授权目的地是本仓库 literal `main`，保留公开可见性。实际 SSH/GPU/VRAM/预算和 HF 输出目的地仍未知。任务身份与真实交付/关闭记录见 [background-task.json](research/background-task.json) 和 [workflow-checkpoint.json](research/workflow-checkpoint.json)。
 
-当前后台任务已因原生证据前提缺失而暂停。基线作者交付已完成；新方法与完整候选 G01 未完成。[确切交付及未完成项](research/DELIVERY_RECEIPT.json)记录源码提交、逐文件回读和下一项 Local 验收。
+按用户最新指令，同一后台作者任务已恢复启用，并请求立即运行；实际执行状态尚未获确认。基线作者交付已完成；新方法与完整候选 G01 仍缺原生实测证据，GPU 实验尚未启动。[确切交付及未完成项](research/DELIVERY_RECEIPT.json)记录源码提交、逐文件回读和下一项 Local 验收；最新恢复回执见 [background-task.json](research/background-task.json)。

@@ -7,8 +7,8 @@
   "sustained_work_goal_verified": false,
   "default_timezone": "Europe/London",
   "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY;INTERVAL=6\nEND:VEVENT",
-  "is_enabled": false,
-  "observed_at": "2026-10-08 23:43:19 UTC",
+  "is_enabled": true,
+  "observed_at": "2026-10-08T23:47:49.447Z",
   "last_run_time": null,
   "next_run_time": null,
   "immediate_run": {
@@ -64,5 +64,30 @@
     "is_enabled": false,
     "disabled_readback": true,
     "reason": "Remaining method prerequisites require native empirical evidence absent from inspected assets; Web execution explicitly prohibited. Independent baseline/source/math handoff delivered; project not claimed complete."
+  },
+  "resume": {
+    "observed_at": "2026-10-08T23:47:49.447Z",
+    "provider_updated_at": "2026-10-08T23:47:22.655658+00:00",
+    "provider_success": true,
+    "enabled_readback": true,
+    "automation_id": "6ac821d2c66081918fd21ebd0d168fea",
+    "authority": {
+      "source": "Latest owner message in this conversation",
+      "text": "后台发布呀跑",
+      "scope": "Resume the same authorized scheduled-authoring task and request an immediate invocation; existing scientific prerequisites remain unresolved."
+    },
+    "previous_pause_ref": "pause",
+    "immediate_run": {
+      "observed_at": "2026-10-08T23:47:30.411Z",
+      "status": "requested",
+      "receipt": {
+        "success": true,
+        "automation_id": "6ac821d2c66081918fd21ebd0d168fea",
+        "message": "Immediate run requested. The saved schedule is unchanged."
+      },
+      "execution_observed": false,
+      "delivery_observed": false
+    },
+    "note": "Previous pause remains historical. This request does not clear native evidence, method selection or Local resource prerequisites. Existing 6-hour schedule and saved production prompt are unchanged."
   }
 }

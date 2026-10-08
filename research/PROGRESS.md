@@ -48,3 +48,10 @@ All source/design generated_unexecuted. No syntax/import/test/scorer/model/GPU/d
 Observed at 2026-10-08 23:43:19 UTC. Source packet e723c6cb6deb90b8aeee4cf72528ca99973f3dff has 32 exact file readbacks and preserves all four concurrent requirement/discussion/goal files. Its parent is 3621288c90cac4c6edd217a57967a5e25d9cf3b5; no force push.
 
 Independent baseline/source/math/runbook production is delivered. The requested novel method/full candidate G01 is **not complete**. Qualified per-ID small-model residual evidence is missing and this Web role cannot execute the necessary native work; source aggregates do not satisfy it. Remaining method prerequisites are retained in DELIVERY_RECEIPT.json and the runbook. The same task was disabled by actual provider update and disabled-state readback; no new task created. Next is Local native admission/scorer/baseline/census, then the original method discovery/optimization chain. This is a prerequisite pause, not scientific completion.
+
+## Owner-requested background resume
+Observed at 2026-10-08T23:47:49.447Z. The owner explicitly requested “后台发布呀跑”. Reconciled the latest main 67064b80166a1648680955d938b73fb25519296e and the same real automation, which had paused after the independent baseline/math/design handoff.
+
+The same task was resumed with is_enabled=true and its enabled configuration was read back. A supported immediate-run request returned success for 6ac821d2c66081918fd21ebd0d168fea; the original six-hour schedule and production prompt are unchanged. Provider last_run_time/next_run_time remain null. This establishes a requested invocation, not execution, new delivery or continuous activity.
+
+Existing generated-unexecuted source at e723c6cb6deb90b8aeee4cf72528ca99973f3dff remains delivered. No scientific test, download, scorer, inference or GPU action was run in this resume. Missing native per-ID evidence, legitimate development/confirmation, candidate selection and actual Local resources remain unresolved. Resume the existing authoring scope without fabricating these prerequisites; retain the Local runbook next action.
