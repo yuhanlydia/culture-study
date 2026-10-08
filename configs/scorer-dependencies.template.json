@@ -1,0 +1,18 @@
+{
+  "status": "template_not_resource_binding",
+  "az_stemmer_dir": null,
+  "sustem_dir": null,
+  "indic_library_dir": null,
+  "indic_resources_dir": null,
+  "original_scorer_cwd": null,
+  "resource_files": {},
+  "resolved_packages": {},
+  "resolved_git_revisions": {},
+  "pretrained_assets": {
+    "en_core_web_sm": null,
+    "spark_lemma_es": null,
+    "spark_lemma_am": null,
+    "cltk_grc": null
+  },
+  "note": "Local writes real absolute paths, immutable source revisions and every lexical/model asset SHA256. Nulls are blockers; do not invent paths/hashes or claim qualification."
+}

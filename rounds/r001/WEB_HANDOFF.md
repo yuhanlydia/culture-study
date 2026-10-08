@@ -1,24 +1,28 @@
-# Round r001 — authoring setup handoff
+# Round r001 — source, mathematical and baseline handoff
+Status: generated_unexecuted; source delivery and scientific acceptance are distinct.
 
-## Actual scope
-CulturalBench + BLEnD, 1B–7B language models, ACL-oriented mechanism diagnosis and mathematical optimization; deliver mathematical ideas, selected method/comparator source and full evaluation design to main.
+## Actual lineage and latest preference
+Started from administrative main 09f3b214d16fc662bf7aa06b1fbd96357df1b0f9. Source/math milestone 724ba8229c5f21eb61ed1766599b5a2e16ee7629 was read back exactly. Concurrent optimization discussion/preferences at 3621288c90cac4c6edd217a57967a5e25d9cf3b5 were read and preserved before integration. No force push or second integration writer was introduced by this author.
 
-## Current packet
-Read LONG_TERM_TASK.md, AGENTS.md, research/PROGRESS.md, research/workflow-checkpoint.json and research/background-task.json at the actual delivered revision. This packet initializes a finite background authoring task. It contains no generated method implementation or completed experiment design yet.
+Read LONG_TERM_TASK.md, AGENTS.md, research/MATHEMATICAL_MODEL_BRIEF.md, research/PROGRESS.md, research/workflow-checkpoint.json and research/background-task.json at the actual delivered revision. The exact public GitHub/main destination remains unchanged; HF output and real resources remain unknown.
 
-## Evidence and gaps
-Repository was empty. Initial README commit 87010522bca7809955e939d91a814109a76cb1b9 was read back exactly. Actual automation was created and enabled; immediate run was not requested at this packet's initial checkpoint. Primary/full-text reads, author implementation/native scorer audit, mathematics reviews, ranking, candidate implementation and G01 remain pending. No scientific gate or software/scorer acceptance has passed.
+## Delivered source and derivation
+research/sources.lock.json fixes BLEnD code/data file IDs, official CB release identity and model/source inputs; SOURCE_AUDIT.md/NATIVE_CONTRACTS.md/CLOSEST_WORK.md retain primary reading scope, functional overlap, negative evidence and actual gaps. Eight mathematical inquiries and the concurrent J01 discussion are retained. research/math/J01_REVIEW.md adds interior/KKT reasoning, a first-order fixed-marginal perturbation, MAP-margin boundary and the single-label reference correction.
 
-## Next authoring action
-Investigate actual primary papers, author/baseline implementation and native data/protocol/scorer under current Research Autopilot. Produce source/version-scoped findings. Then follow the pool review/selection and code/design boundaries, preserving failures and avoiding shortcut eval.
+Zero admitted novel candidates. No verified full pool/top-15, frozen parent, Natural Gate 0, IPCG, new-method implementation or candidate G01 PASS. J01 remains unselected and has no native BLEnD SAQ mapping.
 
-## Later code handoff
-Once actual code/design exists, replace this setup handoff with a complete source/version-bound generated_unexecuted packet. Include all agreed native benchmark comparisons, derivation-to-code mapping, acquisition/integrity/environment/run/diagnosis/repair/acceptance commands and LOCAL_AGENT_RUNBOOK.md. Link that guide directly from README and AGENTS.
+## Complete independent code packet
+culture_study/ provides local-only version binding/acquisition/integrity, complete native preparation, fixed direct and categorical whole-label likelihood inference, acquisition/model/input/code manifests, retained raw/error/attempt logs, native BLEnD function bridge, live original SAQ parity and residual outcome collection. No pass/TODO scoring skeleton or made-up data/labels.
 
-There is no Local run command yet because method/evaluation code has not been authored. No SSH target, GPU, budget or HF output destination is assumed. Actual software tests, model execution, E04 and confirmation remain Local obligations.
+[LOCAL_AGENT_RUNBOOK.md](../../LOCAL_AGENT_RUNBOOK.md) supplies actual CLI interfaces, [native acquisition](../../LOCAL_AGENT_RUNBOOK.md#exact-source-binding-and-acquisition), [multilingual dependency acquisition](../../LOCAL_AGENT_RUNBOOK.md#multilingual-official-scorer-acquisition), native Conda/environment separation, commands, caches, diagnostics, bounded repair and acceptance. research/EXPERIMENT_DESIGN.md enumerates all 14 complete baseline runs for 1B/7B classes across both agreed native benchmarks. It is an evidence-repair design, not complete candidate G01.
 
-## Mathematical discussion update
+## Local acceptance and block
+No scientific code, project test, scorer, inference, training, data/model download or SSH/GPU action was run by Web. CB parser parity is unresolved; official language resources/versions and live BLEnD parity need Local. Full native preparation and code/environment checks have not run.
 
-Read research/MATHEMATICAL_MODEL_BRIEF.md, rounds/r001/ANSWER_SET_OPTIMIZATION.md and rounds/r001/SOURCE_AUDIT.md at this revision. The new owner preference is optimization-first mathematical modeling. One discussion card J01 is derived but unselected; the full source/native-contract audit, parent/value/originality checks, verified approximately-20 pool, full ranking/top-15 selection, code and G01 remain pending. Keep all prior negative/unfinished records.
+Missing empirical prerequisite: attributable small-model baseline/strong-simple-alternative outcomes under qualified native scoring. The source repositories/papers inspected provide aggregate context, not this per-ID residual census. Published numbers are never rewritten as failed_episode booleans or alternative-solves evidence.
 
-Retain the current NATIVE_CONTRACTS.md released-1227-question selection and the separate paper/release count history; native scorer qualification remains pending. J01 explicitly has no added dependence freedom for strict single-label MC and no native BLEnD SEM construction yet. Preserve these boundaries, continue independent source/math work and do not claim complete two-benchmark code/design. Existing task identity is unchanged, prompt updated; actual provider run identity is not exposed, but repository authoring commit 724ba8229c5f21eb61ed1766599b5a2e16ee7629 has delivered source review and eight mathematical inquiries. No Local command is introduced.
+Missing design prerequisite: legitimate non-test development and fresh native confirmation for an adaptive method. No tuning or retrieval-label construction on released test. Budget, device and topology assumptions remain conditional.
+
+Next action is Local native admission/setup/scorer qualification and complete fixed baseline/census collection from the runbook, then source review/frozen parent, substantive distinct math pool/reviews/ranking and current collision/IPCG. Do not implement J01 just because a numerical optimizer could be written.
+
+The finite Web authoring task can close this independent packet but cannot mark the requested novel-method/G01 authoring complete. Exact delivery and any actual same-task pause receipt are retained in research status records.

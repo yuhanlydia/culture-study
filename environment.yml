@@ -1,0 +1,12 @@
+name: culture-study
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip=24.3
+  - openjdk=11
+  - git
+  - pip:
+      - -e .
+# Generated environment proposal; dependency solve/install not executed.
+# Use a separate native scorer environment for official BLEnD parity if needed.

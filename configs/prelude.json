@@ -1,0 +1,45 @@
+{
+  "status": "generated_unexecuted",
+  "purpose": "baseline_qualification_and_native_failure_census",
+  "model_keys": [
+    "llama_1b",
+    "qwen_7b"
+  ],
+  "arms": [
+    "direct",
+    "label_likelihood"
+  ],
+  "tasks": [
+    "cb_easy",
+    "cb_hard",
+    "blend_mcq",
+    "blend_saq"
+  ],
+  "label_likelihood_tasks": [
+    "cb_easy",
+    "cb_hard",
+    "blend_mcq"
+  ],
+  "saq_prompts": [
+    "inst-4",
+    "pers-3"
+  ],
+  "saq_languages": "English and original local language, US/UK deduplicated",
+  "precision": "bfloat16",
+  "attention": "eager",
+  "batch_size": 1,
+  "quantization": false,
+  "generation": {
+    "cb_easy": 1,
+    "cb_hard": 2,
+    "blend_mcq": 128,
+    "blend_saq": 64
+  },
+  "temperatures": 0,
+  "stochastic_repetitions": 0,
+  "sampling": "Complete selected native release, no convenience subset.",
+  "test_fitting_allowed": false,
+  "execution_admission": "Not supplied; Local must bind actual resources and trusted native harness plans.",
+  "novel_methods": [],
+  "g01": "prelude design only; novel full-validation design blocked"
+}

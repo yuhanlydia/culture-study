@@ -1,29 +1,31 @@
 # Culture Study
 
-面向 ACL 的跨文化小语言模型研究。当前研究入口为 CulturalBench + BLEnD，模型范围为 1B–7B，重点是已有方法的失败机制、数学建模与优化。
+面向 ACL 的跨文化小语言模型研究：CulturalBench + BLEnD，1B–7B，按数学优化问题研究具体失败机制。
 
-## 当前阶段
+当前交付的是 **来源与数学审查，以及原生基线/评分核查/失败诊断的完整作者代码**。所有科学代码与设计均为 `generated_unexecuted`；没有执行测试、模型、训练、评分或 benchmark，没有性能提升结论。
 
-已收到生成研究 idea、代码和完整实验设计并写入本仓库的指令。仓库初始化只建立任务与续接记录；文献核查、数学审查、代码、实验设计和实际实验结果尚未完成。
+## 研究材料
 
-后台作者任务以实际定时自动化推进。它执行研究与代码编写，并按仓库记录续接；后台请求、源码交付、软件验收和科学结果分别记录，不能相互替代。
+- [目标与完成判据](LONG_TERM_TASK.md)、[协作与执行边界](AGENTS.md)、[当前进度](research/PROGRESS.md)
+- [版本与逐文件来源锁定](research/sources.lock.json)、[来源审查](research/SOURCE_AUDIT.md)、[原生评分契约](research/NATIVE_CONTRACTS.md)
+- [当前相关方法与碰撞](research/CLOSEST_WORK.md)、[八项数学推导](research/math/OBJECTIVE_ANALYSIS.md)
+- [数学优化要求](research/MATHEMATICAL_MODEL_BRIEF.md)、[J01 答案集合优化讨论稿](rounds/r001/ANSWER_SET_OPTIMIZATION.md)、[J01 审查与一阶扰动推导](research/math/J01_REVIEW.md)、[该讨论的补充来源](rounds/r001/SOURCE_AUDIT.md)
+- [Parent Problem 草稿](research/PARENT_PROBLEM_DRAFT.md)、[方法验证状态](research/METHOD_VERIFICATION_STATUS.md)
 
-## 任务入口
+J01 未入选；新审查补充了固定边际投影的一阶作用与 MAP 不变边界，并指出单标签参考分布不能直接沿用独立 Bernoulli 乘积。已知数学与既有机制不计为原创候选。尚无合格约20候选池、完整排名/前15选择或新方法批准。
 
-- [长期目标与完成判据](LONG_TERM_TASK.md)
-- [执行边界与协作说明](AGENTS.md)
-- [当前进度](research/PROGRESS.md)
-- [后台状态记录](research/background-task.json)
-- [首轮研究交接](rounds/r001/WEB_HANDOFF.md)
+## 代码、设计和本地交接
 
-完成后应包含：原始论文/作者源码/原生评测核查，约 20 个有依据的数学候选及逐卡审查、完整排名和前 15 选择，选定方法的完整实现与公平比较代码，覆盖两个 benchmark 的 G01 实验设计，README/AGENTS/LOCAL_AGENT_RUNBOOK.md/WEB_HANDOFF.md 和准确运行命令。
+- [完整基线源码](culture_study)：真实版本获取/校验、完整原生数据准备、直接生成与完整标签概率、官方 BLEnD 函数桥接、SAQ live parity、日志续跑和残余失败输出
+- [固定模型/任务/生成配置](configs/prelude.json)、[环境](environment.yml)、[静态代码审查](research/CODE_REVIEW.md)
+- [两个模型类、全部原生任务的诊断实验设计](research/EXPERIMENT_DESIGN.md)
+- [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md)，含[真实输入获取与固定版本](LOCAL_AGENT_RUNBOOK.md#exact-source-binding-and-acquisition)、[多语言官方评分依赖](LOCAL_AGENT_RUNBOOK.md#multilingual-official-scorer-acquisition)、顺序命令/日志/有限修复/验收
+- [首轮 WEB_HANDOFF](rounds/r001/WEB_HANDOFF.md)
 
-所有新研究代码与实验设计在本 Web 作者阶段标记为 `generated_unexecuted`。科学项目测试、模型运行和实验评分由后续 Local 验收提供。当前没有跑分，也没有性能提升结论。
+CulturalBench 采用公开发布的 1,227 原题版本，不能套用正式论文的 1,696 分母。BLEnD 使用原始16文化与完整 v1.1 MCQ 两分片；2026 SemEval 扩展单独保留。test 不参与拟合、参数选择或标签检索。
 
-## 交付范围
+## 未完成的科学前提
 
-用户指定交付到 `yuhanlydia/culture-study` 的 `main`；沿用仓库当前公开可见性，不改变设置。Hugging Face 输出目标与实际 GPU/预算尚未知；本轮交付的是研究材料、代码和设计，不创建 HF 仓库或上传权重。
+新方法代码和候选 G01 仍缺已核查的小模型逐题残余失败、强简单替代与原生评分资格，以及合法开发/独立确认资源。诊断代码不能替代这些观测，也不能把数学讨论稿称为已验证主方法。CB 提取器及多语言资源的 faithful qualification 明确待 Local；verify_methods 没有运行。
 
-## 数学优化方向讨论
-
-已保存 [研究要求](research/MATHEMATICAL_MODEL_BRIEF.md)、[答案集合优化推导](rounds/r001/ANSWER_SET_OPTIMIZATION.md) 和 [来源核查](rounds/r001/SOURCE_AUDIT.md)。这是一个未入选的数学讨论稿，包含原生损失、目标/约束、KKT、反例和失败边界；尚无方法代码、完整 G01 或科学结果。用户最新要求和后台设置已续接，后台实际执行状态仍未获证。
+用户授权目的地是本仓库 literal `main`，保留公开可见性。实际 SSH/GPU/VRAM/预算和 HF 输出目的地仍未知。任务身份与真实交付/关闭记录见 [background-task.json](research/background-task.json) 和 [workflow-checkpoint.json](research/workflow-checkpoint.json)。

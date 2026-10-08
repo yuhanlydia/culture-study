@@ -1,0 +1,12 @@
+# Original BLEnD linguistic dependency versions; generated installation proposal.
+# This file is NOT a complete reproducibility receipt for pretrained assets.
+cltk==1.3.0
+hausastemmer==1.0
+hazm==0.10.0
+jieba==0.42.1
+konlpy==0.6.0
+nlp_id==0.1.15.0
+qalsadi==0.5
+spacy==3.7.4
+spark_nlp==5.3.3
+pyspark==3.3.1

@@ -384,7 +384,7 @@
         "recursive tree"
       ],
       "work": "https://arxiv.org/abs/2412.12686v3",
-      "role": "covered activation-transplantation lead; latest full-text reading pending; no native small-model failure outputs located in inspected tree"
+      "role": "covered comparator; latest v3 framework/evaluation/layer selection read, per-ID predictions not located"
     }
   ],
   "scorer_extra_sources": {
@@ -395,20 +395,20 @@
         "SUSTEM_S.py",
         "SundaRootWordVer20220216.txt"
       ],
-      "status": "tree located; function/dependency source review pending"
+      "status": "Tree and EcsStemmer implementation inspected; current refactoring/asset identity requires native parity, not assumed historical equivalence."
     },
     "azerbaijani": {
       "source": "https://github.com/aznlp-disc/stemmer",
       "commit": null,
-      "status": "official BLEnD citation redirects; resolved owner and immutable commit still needed"
+      "status": "Official citation redirects; public repository-ID endpoint blocked by connector URL policy and web page inaccessible. Local clone must resolve actual owner and immutable commit; no fabricated pin."
     },
     "indic_library": {
       "source": "https://github.com/anoopkunchukuttan/indic_nlp_library",
-      "commit": null
+      "commit": "4cead0ae6c78fe9a19a51ef679f586206df9c476"
     },
     "indic_resources": {
       "source": "https://github.com/anoopkunchukuttan/indic_nlp_resources",
-      "commit": null
+      "commit": "5b4ff17c080db4bc4cfc068deaa794aa87562eed"
     },
     "english": {
       "source": "https://spacy.io/models/en",
