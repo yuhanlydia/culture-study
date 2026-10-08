@@ -44,3 +44,55 @@ ConCoRD's actual nlic/solver.py was re-read at 4f0c7fee44d3d61020c9c4a5a523beba8
 Falsifiers: residual native failures resolved by the qualified simple baseline; mode unchanged in consequential cases; miscalibrated pairwise evidence causing loss; high-order structure dominating; budget-matched direct set generation/established logic solver explaining any effect; failure to cover the agreed native endpoints. Do not use the mathematical examples as scientific eval cases.
 
 Next admitted-candidate work requires the sourced parent/census, full distinct mathematical pool/reviews/ranking and actual collision/IPCG. No “J01 code” is delivered before those boundaries.
+
+## Finite change bounds and a marginal-only obstruction (2026-10-08)
+
+These are additional author-derived analytical boundaries, not new candidates,
+native examples, executed solver tests or novelty claims. Use the same fixed
+p, interior m, finite λ assumptions and multilabel state domain as J01.
+
+Write R(q)=Σ_r d_Ber(u_r(q)||m_r) and R0=R(q0). Optimality against feasible q0 gives
+
+KL(qλ||q0)+λR(qλ) ≤ λR0, hence KL(qλ||q0) ≤ λR0.
+
+With natural logarithms, Pinsker's inequality yields
+TV(qλ,q0) ≤ sqrt(λR0/2). For the unique independent mode a0, define
+Δ=min_{z≠a0}(q0(a0)−q0(z))>0. A probability coordinate changes by at
+most TV, so qλ(a0)−qλ(z) ≥ Δ−2 sqrt(λR0/2).
+Thus **λR0 < Δ²/2 guarantees no MAP change**. This is a sufficient,
+generally loose condition, not a claim that crossing it guarantees a change.
+When R0=0 the original exact independent reduction applies for every λ.
+For independent Bernoulli coordinates with no p_j=1/2,
+Q=∏_j max(p_j,1−p_j) and
+Δ=Q[1−max_j min(p_j,1−p_j)/max(p_j,1−p_j)].
+The largest nonmodal probability changes just the coordinate with the largest
+minority-to-majority ratio; any further changes multiply by ratios below one.
+
+A stronger λ-independent exclusion is available from marginals alone.
+Let a0_j be the majority bit, e_j=min(p_j,1−p_j), E=Σ_j e_j,
+and e_max=max_j e_j. Under **any** joint q with those fixed marginals,
+the union bound gives q(a0)≥1−E.
+For any z≠a0, choose a differing coordinate j; the event Z=z is contained
+in {Z_j≠a0_j}, so q(z)≤e_j≤e_max.
+Consequently **E+e_max<1 guarantees a0 is the unique MAP for every feasible q**,
+including every J01 optimizer, irrespective of pair evidence or λ.
+This is only sufficient: a loose lower bound 1−E may be negative and says
+nothing outside the stated regime. With K=1 and an interior non-tied p,
+the condition reduces to 2e_1<1 and confirms the absence of dependence freedom.
+At p_j=1/2 ties require an explicit tie rule; no strict no-change claim follows.
+
+Consequential prediction: no fixed-marginal J01 effect can occur on items
+satisfying E+e_max<1 in exact arithmetic. If a future implementation changes
+such an answer, first investigate a marginal-constraint violation, option
+alignment or MAP extraction error; do not interpret it as cultural knowledge
+gain. This check uses only predeclared inference probabilities, no test labels.
+Concentrated but incorrect marginals can therefore lock in a wrong answer:
+joint projection cannot repair that error while keeping those marginals.
+Baseline margin and no-change strata must be retained in future mechanism review.
+
+The constants were checked by the two routes above (objective comparison/TV and
+direct event inclusion), without executing scientific code. Both rely on standard
+probability inequalities, so these are scope diagnostics, not original theorem
+claims. The bounds neither identify true joint probabilities nor map J01 to
+BLEnD SEM-B/SEM-W. No pool admission, ranking, solver or experimental approval
+changes. Empirical relevance, calibration and item frequencies remain unknown.

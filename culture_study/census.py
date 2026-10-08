@@ -17,6 +17,18 @@ def collect(prepared_dir, direct_run, alternative_run, direct_score, alternative
     if d["predictions_sha256"] != file_hash(direct_run / "predictions.jsonl") or a["predictions_sha256"] != file_hash(alternative_run / "predictions.jsonl"):
         raise ValueError("Scored predictions changed")
     prepared = prepared_dir / (task + ".jsonl")
+    # Bind outcome evidence to its actual run, prepared inputs and scored bytes.
+    # Predictions alone do not authenticate a mutable outcomes.jsonl.
+    for receipt, run_path, score_path in ((d, direct_run, direct_score),
+                                           (a, alternative_run, alternative_score)):
+        for field, path in (("manifest_sha256", run_path / "manifest.json"),
+                            ("prepared_sha256", prepared),
+                            ("outcomes_sha256", score_path / "outcomes.jsonl")):
+            if receipt[field] != file_hash(path):
+                raise ValueError("Census score binding changed: " + field)
+        run_manifest = read_json(run_path / "manifest.json")
+        if any(receipt[field] != run_manifest[field] for field in ("task", "model", "arm")):
+            raise ValueError("Census score/run identity differs")
     _, direct, dm, _ = load_complete_run(direct_run, prepared)
     _, alternative, am, _ = load_complete_run(alternative_run, prepared)
     if dm["source_digest"] != am["source_digest"] or dm["config"] != am["config"]:
@@ -60,6 +72,9 @@ def collect(prepared_dir, direct_run, alternative_run, direct_score, alternative
     summary = {"collected_at": utc(), "native_outcome_denominator": len(ds), "direct_failures": failures,
                "failures_unresolved_by_this_alternative": unresolved,
                "direct_score_sha256": file_hash(direct_score / "score.json"),
+               "direct_outcomes_sha256": d["outcomes_sha256"],
+               "alternative_outcomes_sha256": a["outcomes_sha256"],
+               "prepared_sha256": file_hash(prepared),
                "alternative_score_sha256": file_hash(alternative_score / "score.json"),
                "native_scorer_qualification": "must inspect actual parity/CB qualification receipts",
                "gate0": "not_assessed; residual outcome alone is not mechanism/value evidence",

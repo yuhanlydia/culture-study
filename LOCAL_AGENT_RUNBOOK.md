@@ -130,3 +130,25 @@ Local prelude acceptance requires complete immutable acquisition/preparation man
 Then restore the canonical workflow using the actual installed artifact schemas. Freeze a sourced Parent Problem and value thresholds; require Natural Gate 0, substantive math pool and per-card review/ranking, current collision/IPCG before candidate code. No development split was established here. No test fitting/tuning/retrieval labels. Legitimate development and fresh native confirmation, complete candidate G01/controls, E04 and independent confirmation are unresolved prerequisites.
 
 Deliver small source/provenance/status changes to literal main by expected-head or normal fast-forward, read exact commit paths/contents, and exclude credentials, large data/model weights and private skill source. HF output remains unspecified. A checkpoint upload/new destination is a separate unresolved decision only if it becomes necessary.
+
+## Child source acceptance: parity and census provenance
+This repair is generated_unexecuted. Use the delivered child revision for new
+runs; preserve any run already pinned to older code. Source changes alter
+source_digest, so do not point new scoring at an old inference manifest or edit
+old receipts to pass. Existing scientific results, if any, must be reviewed at
+their original revision.
+
+Before dispatch, inspect research/CODE_REVIEW.md and the additional bounds in
+research/math/J01_REVIEW.md. Local qualification must check the actual runbook's
+relative-path parity command, exact native per-cell CSV coverage and hashes,
+score/run task-model-arm identity, and outcomes/manifest/prepared hash checks.
+The original module import and all declared resources must remain pinned.
+parity_saq restores cwd and sys.path on either outcome; retained partial
+destinations require a new attempt directory. A parity failure or missing old
+score_artifacts field is not solved by adding a flag or editing a receipt.
+
+These are planned checks, not completed tests. Use real acquired native assets
+and retained outputs through the admitted harness; no invented scientific cases.
+Keep all old logs and bounded repair rules. Return acquisition/prepared manifests,
+complete raw predictions, scored outcomes, live native parity output, census
+receipts and every failure with exact code/model/data/resource revisions.

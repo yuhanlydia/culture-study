@@ -5,7 +5,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from .io import (atomic_json, append_jsonl, read_json, file_hash, load_complete_run, source_digest, utc)
-from .official import definitions, scorer_namespace
+from .official import definitions, scorer_namespace, checked_source
 from .prepare import COUNTRY_LANG
 
 def score(root, asset_dir, prepared_dir, run_dir, destination, dependencies=None):
@@ -135,6 +135,7 @@ def score(root, asset_dir, prepared_dir, run_dir, destination, dependencies=None
               "manifest_sha256": file_hash(run_dir / "manifest.json"),
               "prepared_sha256": file_hash(prepared_dir / (task + ".jsonl")),
               "outcomes_sha256": file_hash(destination / "outcomes.jsonl"),
+              "score_artifacts": {p.name: file_hash(p) for p in sorted(destination.glob("*.csv"))},
               "dependencies_sha256": file_hash(dependencies) if dependencies else None,
               "function_hashes": function_hashes, "aggregates": aggregates,
               "native_units": len(inputs), "attempts": len(attempts),
@@ -150,8 +151,11 @@ def parity_saq(root, asset_dir, prepared_dir, run_dir, bridge_scores, destinatio
     import os
     import sys
     import pandas as pd
-    root, asset_dir, prepared_dir, run_dir, bridge_scores, destination = map(Path,
-          (root, asset_dir, prepared_dir, run_dir, bridge_scores, destination))
+    # Upstream scoring requires a different cwd. Resolve all caller paths first.
+    root, asset_dir, prepared_dir, run_dir, bridge_scores, destination = (
+        Path(p).resolve() for p in
+        (root, asset_dir, prepared_dir, run_dir, bridge_scores, destination))
+    dependencies = Path(dependencies).resolve()
     if destination.exists():
         raise FileExistsError("Preserve prior parity attempt")
     destination.mkdir(parents=True)
@@ -164,38 +168,78 @@ def parity_saq(root, asset_dir, prepared_dir, run_dir, bridge_scores, destinatio
         raise ValueError("Parity predictions differ")
     if bridge_receipt["dependencies_sha256"] != file_hash(dependencies):
         raise ValueError("Parity scorer resources differ")
+    for field, path in (("manifest_sha256", run_dir / "manifest.json"),
+                        ("prepared_sha256", prepared_dir / "blend_saq.jsonl"),
+                        ("outcomes_sha256", bridge_scores / "outcomes.jsonl")):
+        if bridge_receipt[field] != file_hash(path):
+            raise ValueError("Parity score binding changed: " + field)
+    if any(bridge_receipt[field] != manifest[field] for field in ("task", "model", "arm")):
+        raise ValueError("Parity score/run identity differs")
+    if manifest["source_digest"] != source_digest(root):
+        raise ValueError("Parity requires the scored source revision")
+    if not bridge_receipt.get("score_artifacts"):
+        raise ValueError("Parity requires hashed native per-ID CSV artifacts; retain old scores")
+    expected_csvs = {x["country"] + "-" + x["language"] + "-" + x["prompt_id"] + ".csv"
+                     for x in inputs}
+    if set(bridge_receipt["score_artifacts"]) != expected_csvs:
+        raise ValueError("Parity native CSV artifact coverage differs")
+    for name, expected_hash in bridge_receipt["score_artifacts"].items():
+        if Path(name).name != name or file_hash(bridge_scores / name) != expected_hash:
+            raise ValueError("Parity native score artifact changed: " + name)
+    checked_source(root, asset_dir, "evaluation/exact_match.py")
+    checked_source(root, asset_dir, "evaluation/evaluation_utils.py")
+    checked_source(root, asset_dir, "utils.py")
     dep = read_json(dependencies)
-    # Standard upstream imports require its provider SDKs and complete scorer resources.
-    for path in (str(asset_dir / "BLEnD"), str(asset_dir / "BLEnD/evaluation"),
-                 str(Path(dep["az_stemmer_dir"]).resolve().parent),
-                 str(Path(dep["sustem_dir"]).resolve().parent)):
-        sys.path.insert(0, path)
-    os.chdir(Path(dep["original_scorer_cwd"]).resolve())
-    official = importlib.import_module("exact_match")
-    groups = defaultdict(list)
-    for x in inputs:
-        groups[(x["country"], x["language"], x["prompt_id"])].append(x)
-    checks = []
-    for (country, language, pid), units in groups.items():
-        annotations = read_json(asset_dir / "BLEnD" / units[0]["annotation_file"])
-        frame = pd.DataFrame([{"ID": x["native_id"], "prompt": x["prompt"],
-                               "response": outputs[x["unit_id"]]["raw_response"]} for x in units])
-        with (destination / (country + "-" + language + "-" + pid + ".log")).open("w", encoding="utf-8") as log, contextlib.redirect_stdout(log):
-            b, w, observed = official.soft_exact_match(country, language, annotations, frame, "ID", "response")
-        expected = pd.read_csv(bridge_scores / (country + "-" + language + "-" + pid + ".csv"),
-                               dtype={"ID": str})
-        actual = observed.set_index("ID")[["binary_score", "weight_score"]].sort_index().astype(float)
-        expected = expected.set_index("ID")[["binary_score", "weight_score"]].sort_index().astype(float)
-        pd.testing.assert_frame_equal(actual, expected, check_exact=True)
-        cell = bridge_receipt["aggregates"]["prompt_cells"][country + "/" + language + "/" + pid]
-        if abs(float(b) - cell["SEM_B"]) > 1e-12 or abs(float(w) - cell["SEM_W"]) > 1e-12:
-            raise ValueError("Official SAQ aggregate parity failed")
-        observed.to_csv(destination / (country + "-" + language + "-" + pid + ".csv"), index=False)
-        checks.append({"country": country, "language": language, "prompt_id": pid, "identical": True})
-    receipt = {"checked_at": utc(), "checks": checks, "predictions_sha256": file_hash(run_dir / "predictions.jsonl"),
-               "bridge_receipt_sha256": file_hash(bridge_scores / "score.json"),
-               "dependencies_sha256": file_hash(dependencies),
-               "scope": "SAQ functions/values on these predictions and exact assets only",
-               "does_not_establish": ["CB extraction parity", "baseline fairness", "causal mechanism", "candidate effect"]}
-    atomic_json(destination / "parity.json", receipt)
-    return receipt
+    if dep.get("status") != "locally_bound" or not dep.get("resource_files"):
+        raise ValueError("Parity requires bound scorer resources")
+    for resource_path, expected_hash in dep["resource_files"].items():
+        if file_hash(resource_path) != expected_hash:
+            raise ValueError("Parity scoring resource changed: " + resource_path)
+    previous_cwd = Path.cwd()
+    previous_sys_path = sys.path[:]
+    try:
+        # Standard upstream imports require its provider SDKs and complete scorer resources.
+        for path in (str(asset_dir / "BLEnD"), str(asset_dir / "BLEnD/evaluation"),
+                     str(Path(dep["az_stemmer_dir"]).resolve().parent),
+                     str(Path(dep["sustem_dir"]).resolve().parent)):
+            sys.path.insert(0, path)
+        os.chdir(Path(dep["original_scorer_cwd"]).resolve())
+        official = importlib.import_module("exact_match")
+        if Path(official.__file__).resolve() != asset_dir / "BLEnD/evaluation/exact_match.py":
+            raise ValueError("Parity imported a different exact_match module")
+        for module_name, relative in (("evaluation_utils", "evaluation/evaluation_utils.py"),
+                                      ("utils", "utils.py")):
+            module = sys.modules.get(module_name)
+            if module is None or Path(module.__file__).resolve() != asset_dir / "BLEnD" / relative:
+                raise ValueError("Parity imported a different upstream module: " + module_name)
+        groups = defaultdict(list)
+        for x in inputs:
+            groups[(x["country"], x["language"], x["prompt_id"])].append(x)
+        checks = []
+        for (country, language, pid), units in groups.items():
+            annotations = read_json(asset_dir / "BLEnD" / units[0]["annotation_file"])
+            frame = pd.DataFrame([{"ID": x["native_id"], "prompt": x["prompt"],
+                                   "response": outputs[x["unit_id"]]["raw_response"]} for x in units])
+            with (destination / (country + "-" + language + "-" + pid + ".log")).open("w", encoding="utf-8") as log, contextlib.redirect_stdout(log):
+                b, w, observed = official.soft_exact_match(country, language, annotations, frame, "ID", "response")
+            expected = pd.read_csv(bridge_scores / (country + "-" + language + "-" + pid + ".csv"),
+                                   dtype={"ID": str})
+            actual = observed.set_index("ID")[["binary_score", "weight_score"]].sort_index().astype(float)
+            expected = expected.set_index("ID")[["binary_score", "weight_score"]].sort_index().astype(float)
+            pd.testing.assert_frame_equal(actual, expected, check_exact=True)
+            cell = bridge_receipt["aggregates"]["prompt_cells"][country + "/" + language + "/" + pid]
+            if abs(float(b) - cell["SEM_B"]) > 1e-12 or abs(float(w) - cell["SEM_W"]) > 1e-12:
+                raise ValueError("Official SAQ aggregate parity failed")
+            observed.to_csv(destination / (country + "-" + language + "-" + pid + ".csv"), index=False)
+            checks.append({"country": country, "language": language, "prompt_id": pid, "identical": True})
+        receipt = {"checked_at": utc(), "checks": checks, "predictions_sha256": file_hash(run_dir / "predictions.jsonl"),
+                   "bridge_receipt_sha256": file_hash(bridge_scores / "score.json"),
+                   "dependencies_sha256": file_hash(dependencies),
+                   "scope": "SAQ functions/values on these predictions and exact assets only",
+                   "does_not_establish": ["CB extraction parity", "baseline fairness", "causal mechanism", "candidate effect"]}
+        atomic_json(destination / "parity.json", receipt)
+        return receipt
+    finally:
+        os.chdir(previous_cwd)
+        sys.path[:] = previous_sys_path
+

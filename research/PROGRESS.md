@@ -55,3 +55,16 @@ Observed at 2026-10-08T23:47:49.447Z. The owner explicitly requested “后台�
 The same task was resumed with is_enabled=true and its enabled configuration was read back. A supported immediate-run request returned success for 6ac821d2c66081918fd21ebd0d168fea; the original six-hour schedule and production prompt are unchanged. Provider last_run_time/next_run_time remain null. This establishes a requested invocation, not execution, new delivery or continuous activity.
 
 Existing generated-unexecuted source at e723c6cb6deb90b8aeee4cf72528ca99973f3dff remains delivered. No scientific test, download, scorer, inference or GPU action was run in this resume. Missing native per-ID evidence, legitimate development/confirmation, candidate selection and actual Local resources remain unresolved. Resume the existing authoring scope without fabricating these prerequisites; retain the Local runbook next action.
+
+## Resumed production: static provenance repair and J01 applicability bounds
+Observed 2026-10-08 23:51:30 UTC. Restored actual main e81d4d8c3abb724e4a1970a736f082e3f282b9eb, preserved all prior requirements, sources, math and delivered baseline design.
+
+Real new production:
+- Repaired census.py score/outcome/manifest/prepared bindings, SAQ relative-path parity and cwd cleanup, and generated native per-cell CSV hashes/import origins in scoring.py.
+- Re-read actual original BLEnD exact_match.py and evaluation_utils.py at the pinned 7b9c131719e7fe5f9bed0f8b855532d613cc9f2b; observed blobs match sources.lock.json.
+- Derived finite-λ MAP no-change sufficient bound λR0<Δ²/2, plus a λ-independent fixed-marginal obstruction E+e_max<1. J01_REVIEW contains both proofs, assumptions and consequences.
+- Updated CODE_REVIEW, Local acceptance instructions and exact round handoff.
+
+These are source repairs and conditional mathematical limitations, not a novel selected method, model experiment, scorer qualification or completed G01. All code remains generated_unexecuted; no project imports, tests, downloads, scorer, inference, training or GPU/SSH actions occurred. Canonical verify_methods was not run; no machine review claimed.
+
+Remaining method implementation depends on qualified native per-ID 1B/7B outcomes and residual attribution, legitimate development/fresh confirmation and the existing mathematical pool/selection/collision/IPCG obligations. Actual host and budget remain unknown. Independent baseline/handoff repair is delivered; the affected downstream authoring remains blocked. Next is Local acceptance of this child revision through LOCAL_AGENT_RUNBOOK.md, with old run revisions retained.

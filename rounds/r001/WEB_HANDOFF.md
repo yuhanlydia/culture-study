@@ -34,3 +34,19 @@ At 2026-10-08 23:43:19 UTC the same task was actually disabled and its disabled 
 
 ## Latest owner-requested resume
 At 2026-10-08T23:47:49.447Z, the owner's “后台发布呀跑” instruction resumed the same automation and requested a supported immediate invocation. Enabled state and the successful request were read back; execution and new delivery are not exposed. The original cadence/prompt and sole task identity remain unchanged. This supersedes the earlier disabled configuration only; the scientific prerequisites, generated-unexecuted status and Local runbook next action above remain pending. Exact resume receipt: research/background-task.json#resume.
+
+## Additional child authoring: static repairs and analytical exclusion
+Resumed from actual main e81d4d8c3abb724e4a1970a736f082e3f282b9eb.
+Source review repaired census outcome provenance, relative-path SAQ parity,
+native cell CSV integrity and upstream import binding. The Local runbook and
+CODE_REVIEW explain child-revision acceptance and retention of older runs.
+J01_REVIEW adds finite-λ MAP stability and the λ-independent E+e_max<1
+no-change condition, with proofs. These tighten limitations of the unselected
+discussion; they do not admit a method or produce a native performance result.
+
+No project code/tests, model/data download, scoring, inference or SSH execution.
+The remaining dependent method work still needs qualified actual per-ID
+small-model evidence, legitimate development/fresh confirmation, full reviewed
+candidate pool and originality/IPCG. Local next action remains the populated
+runbook. The latest checkpoint records this delivery and prerequisite pause;
+requested novel method/full G01 is not complete.

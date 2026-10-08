@@ -26,3 +26,14 @@ Static source review corrected an initially expensive per-MCQ-row shard hash: th
 - Full native MCQ generation is potentially expensive. A truncated queue is incomplete, not full-benchmark evidence.
 - The two required model classes belong to different families; within-model arm comparisons are meaningful, cross-size causality is not.
 - No trusted clustered statistical callback, novel selected method, training routine or candidate ablation matrix is approved. These cannot be replaced by stored flags or a skeleton.
+
+## Additional source repair: outcome provenance and parity paths
+Reviewed against main e81d4d8c3abb724e4a1970a736f082e3f282b9eb. Status remains generated_unexecuted.
+
+- census.py previously authenticated prediction bytes but read mutable outcomes.jsonl without comparing its recorded hash. It now compares both score receipts to actual outcomes, prepared inputs, manifests and task/model/arm identity, and retains outcome hashes in the census summary.
+- parity_saq previously changed cwd with relative asset/output/run paths from the runbook. Those paths would then resolve under the scorer cwd. It now resolves all caller paths first and restores cwd/sys.path in finally on success or failure.
+- score.json now binds generated CSV artifacts. SAQ parity requires exactly the expected native cell CSV set and hashes, as well as manifest/prepared/outcome bindings and task/model/arm identity.
+- Live original imports must originate from the pinned acquired exact_match.py, evaluation_utils.py and utils.py. Their original Git blobs are checked before import; module paths are checked after import. The two original scorer files were re-read at BLEnD 7b9c131719e7fe5f9bed0f8b855532d613cc9f2b; hashes matched the saved lock. Explicit relative Indic resource paths in exact_match.py substantiate the cwd requirement.
+- Parity rechecks actual declared resource file hashes. These checks authenticate inputs, not scorer equivalence or research soundness. Package/resource completeness and the live original scorer remain Local obligations.
+
+No import, compile, test or scorer execution was performed. Local must qualify this child source revision before producing evidence. Existing run directories must stay pinned to their old source; do not rewrite old manifests or add CSV hash fields retrospectively. The unchanged scientific boundaries (CB parity, SAQ resources, full native coverage, hardware feasibility, legitimate development/confirmation and no admitted novel methods) still apply.
