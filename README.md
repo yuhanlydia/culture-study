@@ -35,3 +35,10 @@ CulturalBench 采用公开发布的 1,227 原题版本，不能套用正式论�
 
 ## 最新续接结果
 源码修复及 J01 适用边界已发布于 [fe2a572](https://github.com/yuhanlydia/culture-study/commit/fe2a5722a37dda2c6e78ae691d32b6d73229de85)，8 个文件逐一回读确认。代码仍为 generated_unexecuted，尚无实测成绩。当前同一作者任务因缺少原生逐题基线/评分证据再次暂停；上面的“已恢复”是历史状态。下一步见 [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md)，新方法和完整候选 G01 未完成。
+
+
+## 多文化局部最优与整体最接近（2026-10-09）
+
+已补充[五类数学模型的推导与边界](research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md)及[续接要求](research/MULTICULTURAL_REVIEW_BRIEF.md)：立方体答案空间、文化内受约束信息重心、Pareto 文化风险、复用 Group DRO、Wasserstein/原生评分边界。跨文化共同 KL 收缩等价于减少文化—答案互信息；优先在同文化内聚合表达，文化之间分别决策。立方体最近边际点严格退化为逐项阈值。
+
+这是有条件的讨论/来源审查，已有框架不计原创候选；当前 admitted=0/20、selected=0/15，没有新方法代码或实验结果。新近 CuMA、MGDA、Group DRO、DOVE 作者实现和原生任务的读取范围见[来源快照](research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json)；SAQ 支持映射仍待核查。原后台任务已纳入该反馈并恢复启用；启动请求与实际生产/科学执行分开记录，见 research/background-task.json。

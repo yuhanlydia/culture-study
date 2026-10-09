@@ -1,0 +1,291 @@
+{
+  "kind": "multicultural-source-discussion-snapshot",
+  "version": "1.0.0",
+  "observed_at": "2026-10-09T08:18:49.564Z",
+  "source_repo_commit": "f5be11213372b6ba6dbdb846e54bc1c8472b6aae",
+  "role": "web_supervisor",
+  "skill_entry": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+  "skill_revision": "upstream revision not exposed by cloud reader; locator/content capture retained in session; not a release version",
+  "scope": "Bounded mathematical review of existing J01 plus conditional local/global multicultural frameworks; no candidate admission, code, empirical matrix or novelty adjudication",
+  "queries": [
+    {
+      "engine": "system1",
+      "q": "CulturalBench benchmark 2025 acl 1247 multiple answer CulturalBench Hard"
+    },
+    {
+      "engine": "system1",
+      "q": "BLEnD Benchmark Everyday Knowledge Diverse Cultures NeurIPS 2024 repository"
+    },
+    {
+      "engine": "system1",
+      "q": "multicultural pluralistic alignment local global optimum Wasserstein barycenter language models culture"
+    },
+    {
+      "engine": "system2",
+      "q": "Sener Koltun Multi Task Learning Multi Objective Optimization MGDA 2018 paper github"
+    },
+    {
+      "engine": "system2",
+      "q": "Sagawa Koh Liang distributionally robust neural networks group shifts 2019 github group DRO"
+    },
+    {
+      "engine": "system2",
+      "q": "Cuturi Doucet fast computation Wasserstein barycenters 2014 paper github"
+    },
+    {
+      "engine": "system2",
+      "q": "culture pluralistic alignment Pareto optimization language models culture optimal transport barycenter"
+    },
+    {
+      "engine": "system1",
+      "q": "\"CAReDiO\" arxiv github"
+    },
+    {
+      "engine": "system1",
+      "q": "\"Distributional Open-Ended Evaluation\" DOVE arxiv"
+    },
+    {
+      "engine": "system1",
+      "q": "\"cultural\" \"barycenter\" \"language models\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"cultural alignment\" \"Pareto\" optimization"
+    },
+    {
+      "engine": "system2",
+      "q": "multi objective optimization ideal point Chebyshev scalarization achievement scalarizing function Wierzbicki paper pdf"
+    },
+    {
+      "engine": "system1",
+      "q": "site.pure.iiasa.ac.at Wierzbicki Use Reference Objectives Multiobjective Optimization 1979"
+    },
+    {
+      "engine": "system1",
+      "q": "Smooth Tchebycheff Scalarization Multi Objective Optimization ICML 2024 paper PMLR"
+    }
+  ],
+  "capture_status": "Queries and exact code/primary locators retained here; raw connector/search responses retained in this session only. Not a replayable or saturated collision packet.",
+  "papers": [
+    {
+      "id": "CB",
+      "url": "https://aclanthology.org/2025.acl-long.1247.pdf",
+      "scope": "sections 2–4, native Hard construction/scoring",
+      "status": "targeted primary sections re-read; final paper 1696 distinct from chosen 1227 release"
+    },
+    {
+      "id": "BLEnD",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/8eb88844dafefa92a26aaec9f3acad93-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "scope": "original same-question cultural/language structure and native scoring joined to actual source",
+      "status": "targeted primary sections re-read"
+    },
+    {
+      "id": "MGDA",
+      "url": "https://papers.nips.cc/paper_files/paper/2018/file/432aca3a1e345e339f35a30c8f65edce-Paper.pdf",
+      "scope": "section 3.1–3.3, convex-hull gradient QP, assumptions",
+      "status": "primary methods read; existing comparator"
+    },
+    {
+      "id": "group_DRO",
+      "url": "https://arxiv.org/pdf/1911.08731",
+      "scope": "section 2–3, group worst-case risk and generalization failure",
+      "status": "primary methods read; reuse M08 comparator"
+    },
+    {
+      "id": "Wasserstein_barycenter",
+      "url": "https://proceedings.mlr.press/v32/cuturi14.pdf",
+      "scope": "section 2–3 definitions and ground-cost dependency",
+      "status": "primary definition read; no full author implementation reproduction"
+    },
+    {
+      "id": "CuMA",
+      "url": "https://aclanthology.org/2026.acl-long.1265.pdf",
+      "scope": "section 2–3, Theorem 2.1 and single-component exponential-family/Gaussian assumption; appendix/context locators",
+      "status": "targeted primary methods read; generic mean collapse/routing already covered"
+    },
+    {
+      "id": "DOVE_arxiv",
+      "url": "https://arxiv.org/html/2604.06210v4",
+      "scope": "section 3.2–3.3 and Appendix F.4, codebook and debiased UOT",
+      "status": "targeted primary methods read"
+    },
+    {
+      "id": "DOVE_ICML",
+      "url": "https://proceedings.mlr.press/v306/lee26bj.html",
+      "scope": "official metadata and author-code link",
+      "status": "metadata read; final PDF retrieval failed; do not assume arXiv v4 equals final bytes"
+    },
+    {
+      "id": "CAReDiO_ICML",
+      "url": "https://proceedings.mlr.press/v306/yao26p.html",
+      "scope": "official metadata",
+      "status": "metadata only; formal PDF and attempted arXiv HTML inaccessible"
+    },
+    {
+      "id": "STCH_ICML2024",
+      "url": "https://proceedings.mlr.press/v235/lin24y.html",
+      "scope": "official metadata; final PDF link",
+      "status": "metadata read; linked raw GitHub PDF unsupported content-type and alternative PMLR PDF failed"
+    },
+    {
+      "id": "STCH_arxiv",
+      "url": "https://arxiv.org/pdf/2402.19078",
+      "version": "v3, 2024-07-23 per actual PDF header",
+      "scope": "section 2 reference point/Tchebycheff and section 3.3 global/Pareto stationary distinction; source-code join",
+      "status": "targeted primary sections read; not assumed final PDF bytes"
+    },
+    {
+      "id": "Wierzbicki1979",
+      "url": "https://pure.iiasa.ac.at/id/eprint/1117/7/WP-79-066.pdf",
+      "scope": "attempted original reference-objective working paper",
+      "status": "access denied by anti-bot wall; not read, no source-specific theorem attributed"
+    }
+  ],
+  "implementations": [
+    {
+      "repo": "nlee0212/BLEnD",
+      "commit": "7b9c131719e7fe5f9bed0f8b855532d613cc9f2b",
+      "files": [
+        {
+          "path": "evaluation/multiple_choice_evaluation.py",
+          "blob": "25cb6775039ba8fe279023ec59d412cd2d66c40b",
+          "scope": "full text"
+        },
+        {
+          "path": "evaluation/evaluation_utils.py",
+          "blob": "68d32aee4a5d1b8886ded1cf9e7647f60bbb9c96",
+          "scope": "full text"
+        },
+        {
+          "path": "evaluation/exact_match.py",
+          "blob": "bb077f8cb7ede207ae1e5a986ac18625f73a9520",
+          "scope": "full text"
+        },
+        {
+          "path": "data/questions/China_questions.csv",
+          "blob": "722a89c7c2cb5621ceb594de155b2d12dcfbd5e2",
+          "scope": "lines 1–7 only"
+        }
+      ],
+      "qualification": "not executed; preserves existing source lock/native scope"
+    },
+    {
+      "repo": "isl-org/MultiObjectiveOptimization",
+      "commit": "bf5bbb30371489a47f6440691d8934b70f7dfc3b",
+      "files": [
+        {
+          "path": "multi_task/train_multi_task.py",
+          "blob": "ec816905b9e762f8d7e4f62bc0f7d0be9db4c7d5",
+          "scope": "full text"
+        },
+        {
+          "path": "multi_task/min_norm_solvers.py",
+          "blob": "4c59544288b2f83907194bf2757a79ac1c0e425d",
+          "scope": "full text"
+        },
+        {
+          "path": "multi_task/min_norm_solvers_numpy.py",
+          "blob": "85e6e3ae440f57892d3f349a1c0719e7ae17fbab",
+          "scope": "full text"
+        }
+      ],
+      "qualification": "static review only; not a cultural reproduction"
+    },
+    {
+      "repo": "kohpangwei/group_DRO",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "files": [
+        {
+          "path": "loss.py",
+          "blob": "8587039953e92991f64c0b834fb527d4425ba256",
+          "scope": "full text"
+        },
+        {
+          "path": "README.md",
+          "blob": "12b0ff992fba0720cfacbaca324ac5ad657a94fe",
+          "scope": "connector obtained; relevant documented group-DRO objective reviewed"
+        }
+      ],
+      "qualification": "static review only; no losses or scores computed"
+    },
+    {
+      "repo": "Throll/CuMA",
+      "commit": "0ba7659e9ec166818c4b8a49a16819d1474c797e",
+      "files": [
+        {
+          "path": "models/cuma_model.py",
+          "blob": "58337584bfaa02a96155284f2eba805bbc7242a1",
+          "scope": "router forward/load balance, LoRA declaration and targeted routing/adapter lines"
+        },
+        {
+          "path": "models/demographic_encoder.py",
+          "blob": "b99bc4a77533183226456e2a3db7da2d40ceb73e",
+          "scope": "retrieved, not a completed full semantic audit"
+        }
+      ],
+      "qualification": "static targeted read; no run. Router softmax/top-k/softmax discrepancy retained, untested"
+    },
+    {
+      "repo": "JaehyeokLee-119/DOVE",
+      "commit": "fe9aa23d5b61857c50dbc05aa3bfa07c1c1928d9",
+      "files": [
+        {
+          "path": "src/evaluation/UOT_measure_alignment.py",
+          "blob": "f2eca31b170d0ccda143f7c2b1590f4abc0f4c2c",
+          "scope": "uot_cost, prepare_sem_matrix, precompute_reference_data, calculate_debiased_uot; targeted code lines"
+        }
+      ],
+      "qualification": "static methods read; no evaluator execution, not an agreed benchmark addition"
+    },
+    {
+      "repo": "Xi-L/STCH",
+      "commit": "869217dc8d73f2d002c353ba1d65be84dbf1ea4c",
+      "files": [
+        {
+          "path": "STCH_MTL/LibMTL/weighting/STCH.py",
+          "blob": "d0cea9a4f6155759a201ccccecdad6ad7aa49989",
+          "scope": "full text; warmup/reference/log-ratio and softmax objective"
+        },
+        {
+          "path": "STCH_PSL/run_stch_psl.py",
+          "blob": "e8f9cb0f85fea738556c777c3011158438cae389",
+          "scope": "full text; ideal/nadir normalization, LS/TCH/STCH branches and optimization entry"
+        }
+      ],
+      "qualification": "static reading only; actual implementation risk/reference transforms differ from native/oracle formula, not cultural reproduction"
+    }
+  ],
+  "framework_ids": [
+    "CUBE01",
+    "LOCAL02",
+    "PARETO03",
+    "DRO04",
+    "OT05"
+  ],
+  "novelty_status": "provisional same-context screen; existing operators/frameworks attributed, no independent/saturated adjudication",
+  "counts": {
+    "discussion_frameworks": 5,
+    "admitted_novel_candidates": 0,
+    "default_pool_target": 20,
+    "selected_methods": 0,
+    "default_selection_target": 15
+  },
+  "no_execution": [
+    "scientific source/tests",
+    "solver",
+    "scorer",
+    "inference",
+    "training",
+    "model/dataset download",
+    "GPU/SSH"
+  ],
+  "preserved_contract_ref": "research/NATIVE_CONTRACTS.md",
+  "pending": [
+    "qualified native small-model residual evidence",
+    "reliable label-blind evidence/semantic support",
+    "legitimate development/fresh confirmation",
+    "distinct mathematical pool and ranking",
+    "source-backed originality/IPCG",
+    "Local resources and native qualification"
+  ]
+}
