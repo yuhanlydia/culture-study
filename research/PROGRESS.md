@@ -92,3 +92,8 @@ Updated and read back the same automation 6ac821d2c66081918fd21ebd0d168fea; enab
 Observed 2026-10-09T08:21:38.193Z. Source commit fa44c3621a743316d90c34470e1c3d185c2f57cf is a normal child of f5be11213372b6ba6dbdb846e54bc1c8472b6aae on literal main. All ten changed paths were read at that exact commit and content equality confirmed; actual main ref matched it. This receipt closes the root source integration, not native or novelty gates. See math/MULTICULTURAL_DELIVERY_RECEIPT.json.
 
 The same automation remains enabled; latest mathematical prompt readback matched at provider updated_at 2026-10-09T08:21:04.069713+00:00 with the existing six-hour schedule. Immediate continuation has not been requested as of this checkpoint; its supported request may follow this closed integration and cannot by itself establish execution. Bounded independent LOCAL02/CUBE01/PARETO03 inquiry is the next authoring scope; existing native/code/G01 prerequisites remain pending.
+
+
+## 2026-10-09 数学续接：决策/信息/参考边界
+从 actual main 6483d2e7eedc22763c5f107e74e1979724720419 恢复并保留全部历史。新增 [DECISION_INFORMATION_BOUNDARIES.md](math/DECISION_INFORMATION_BOUNDARIES.md)：LOCAL02 改变 MAP 的精确最小 KL 预算与实际池化路径触边；四位立方体全部三阶边际相同但唯一 MAP 不同的严格正反例；PARETO03 可分可行类退化及参考/风险估计误差的 2η+τ 界。
+本轮为作者代数与静态审查，未执行求解器/tests/scorer/模型；未新增入选候选或原生结果，原代码/design 保留 generated_unexecuted。来源/版本与审查范围在新文档末尾记录。下一项独立数学工作是等价视角共同偏差、遗漏支持与真实风险界；经验前提仍按 Local runbook。Exact delivery/readback follows this prepared checkpoint; no self-certified commit.

@@ -54,3 +54,8 @@ requested novel method/full G01 is not complete.
 
 ## Latest multicultural mathematical feedback (2026-10-09)
 Read [review](../../research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md), [source snapshot](../../research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json) and [brief](../../research/MULTICULTURAL_REVIEW_BRIEF.md). Five conditional frameworks and their reductions/boundaries are delivered as discussion; no admitted candidate, code, full candidate G01 or native run. Existing native/task/count/scorer and Local runbook remain unchanged. Pure mathematics may advance, while empirical/new-method boundaries remain pending. Same automation resumed with the mathematical followup prompt; provider configuration readback does not prove execution. Preserve the earlier pauses and all adverse/negative/source records.
+
+
+## 2026-10-09 数学续接：决策/信息/参考边界
+从 actual main 6483d2e7eedc22763c5f107e74e1979724720419 恢复并保留全部历史。新增 [DECISION_INFORMATION_BOUNDARIES.md](../../research/math/DECISION_INFORMATION_BOUNDARIES.md)：LOCAL02 改变 MAP 的精确最小 KL 预算与实际池化路径触边；四位立方体全部三阶边际相同但唯一 MAP 不同的严格正反例；PARETO03 可分可行类退化及参考/风险估计误差的 2η+τ 界。
+本轮为作者代数与静态审查，未执行求解器/tests/scorer/模型；未新增入选候选或原生结果，原代码/design 保留 generated_unexecuted。来源/版本与审查范围在新文档末尾记录。下一项独立数学工作是等价视角共同偏差、遗漏支持与真实风险界；经验前提仍按 Local runbook。Exact delivery/readback follows this prepared checkpoint; no self-certified commit.
