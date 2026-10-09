@@ -1,38 +1,228 @@
 {
   "kind": "github-authoring-organization-receipt",
   "version": "1.0.0",
-  "status": "prepared_not_delivered",
+  "status": "source_delivered_exact_content_readback",
   "project": "yuhanlydia/culture-study",
   "branch": "main",
   "source_parent_commit": "31814655e85d484144696bf2a24acfbf50abbfc2",
-  "source_commit": null,
-  "exact_content_readback": false,
-  "prepared_at": "2026-10-09T09:02:00.765Z",
-  "paths": [
-    "README.md",
-    "AGENTS.md",
-    "LONG_TERM_TASK.md",
-    "LOCAL_AGENT_RUNBOOK.md",
-    "rounds/r001/WEB_HANDOFF.md",
-    "research/README.md",
-    "research/model/MODEL.md",
-    "research/model/RELIABILITY_AND_SUPPORT.md",
-    "research/implementation/README.md",
-    "research/experiments/ACL_PROTOCOL.md",
-    "research/CODE_REVIEW.md",
-    "research/EXPERIMENT_DESIGN.md",
-    "research/PROGRESS.md",
-    "research/workflow-checkpoint.json",
-    "research/skill-source.json",
-    "research/organization-delivery-receipt.json",
-    "culture_study/inference.py",
-    "culture_study/io.py",
-    "culture_study/__main__.py",
-    "culture_study/likelihood_audit.py"
+  "source_commit": "7d24f0f3da582e46f9a085d6ab986bd5c574c2d7",
+  "source_tree_sha": "b9fef91d554ddaca96497aec052204e00e8d5407",
+  "observed_at": "2026-10-09T09:02:33.947Z",
+  "exact_content_readback": true,
+  "expected_parent_update": true,
+  "force_push": false,
+  "readback": [
+    {
+      "path": "README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "5a8b928d516a3873320bafbe1689469b10794829",
+      "sha256": "019dc931ebf34974214319efb98e219c4e58140c2dfbb6a98e316410f527b2cc",
+      "bytes": 4434
+    },
+    {
+      "path": "AGENTS.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "c1b61fa6ce76c300d783abf5dfe11263c2354c7e",
+      "sha256": "6e9dee892e35fc60301023453b826f1acc2199bd3d90d83a0db055d94cc99926",
+      "bytes": 5666
+    },
+    {
+      "path": "LONG_TERM_TASK.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "a32fe03551a81462810baab538b0c4c50913fd9d",
+      "sha256": "023b6989820d194bb60244fb9847f3b732207bbda3ce4d89e76cfbdda8d6b372",
+      "bytes": 7611
+    },
+    {
+      "path": "LOCAL_AGENT_RUNBOOK.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "1dcdb52df3331a8745debe31a16e2c7cc357a8bb",
+      "sha256": "63bae7879b3e49f183272c5f50060d3016462dfbf35273056bdf2ea94dbfb157",
+      "bytes": 20293
+    },
+    {
+      "path": "rounds/r001/WEB_HANDOFF.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "dbbd95a8db1b6e9a6c204a3cd48da1199a274179",
+      "sha256": "e4f4374e3e6c64ca768a994bdd11d942678e82e25165bf7cfbc3320166844ba8",
+      "bytes": 9430
+    },
+    {
+      "path": "research/README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "4ae71fc4d2bb213ba4b37a5c2adb7544c16a3104",
+      "sha256": "cccecb1e331d34ebf5536e533d0337786306f10690b98329d85ede35f568e10e",
+      "bytes": 2289
+    },
+    {
+      "path": "research/model/MODEL.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "23efb805fe98e678408cb7ad9908eaaeb1d7fa29",
+      "sha256": "8a5d8b6e8ecc259a73163d22f58949fe2aab49aa96ac83835b2f87f0bccf2195",
+      "bytes": 14526
+    },
+    {
+      "path": "research/model/RELIABILITY_AND_SUPPORT.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "ec3e9035caf6793365de186c55705c9598f628a5",
+      "sha256": "cf7e4c07c68809ed628a1f5bebfe35088d2042b77c9b2a0a279aa7a4720d2325",
+      "bytes": 4903
+    },
+    {
+      "path": "research/implementation/README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "db2bbedd8b6832c72175ce2eb34709eb3118f466",
+      "sha256": "b291358d9945e049fb785fbdc0522dae5910e2fbafb55b0dfdb2d153f0b38647",
+      "bytes": 6219
+    },
+    {
+      "path": "research/experiments/ACL_PROTOCOL.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "9c6b6cc368fe0ba7b8a9aa118356a1ed15b59e80",
+      "sha256": "770319c8fbc38d9e055b14c362ab468561608379c5c2394b381537ca373d321f",
+      "bytes": 11155
+    },
+    {
+      "path": "research/CODE_REVIEW.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "47cd05da94d38cda9b93e9e21a0ed0a5e2f6db9e",
+      "sha256": "7d9509cad19fe5b46586510f2a3b6e20dfdae2c010d3db945d268154b62097ff",
+      "bytes": 7587
+    },
+    {
+      "path": "research/EXPERIMENT_DESIGN.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "a9ba95ea9f8aadea00c34f119fec32cb50ced2cf",
+      "sha256": "b1e16f1ce269421218d2bd071c77d26f34adc58bf1174fc91cf691d58e6aad1f",
+      "bytes": 8906
+    },
+    {
+      "path": "research/PROGRESS.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "65ecc0eff042561e03aa0876afd55ac31f6bc74a",
+      "sha256": "e82467615c982933c80bcf01cd78130087c2b0f764df0f7098b8a17f6006fe17",
+      "bytes": 18181
+    },
+    {
+      "path": "research/workflow-checkpoint.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "51db56db193ca0f07b171618c8a27dff6d1ddb2b",
+      "sha256": "728389ea3e37df0721965bede1f9c684a84cc1933275e97c611d64caab72b516",
+      "bytes": 17244
+    },
+    {
+      "path": "research/skill-source.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "0bb5f25685cd7d49a08e027341415dc0436fa473",
+      "sha256": "cd434dceee6b069c5e8fe726930428c1caf3e95daf507351bdc2ac80e5ff193a",
+      "bytes": 10154
+    },
+    {
+      "path": "research/organization-delivery-receipt.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "16f34dce393276edd984159f9c3b0219cd84ba58",
+      "sha256": "5b0b4d2ec66cdc5a6805ac18b4a8b40b4bbe17ea7f66d88329e4ea4f2ca2437b",
+      "bytes": 1332
+    },
+    {
+      "path": "culture_study/inference.py",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "f2ad2e1ac35afba85c61453395c502fb3d1993dd",
+      "sha256": "a23a9b382096a52458dc4707e5bf52a533a2f89319f2303a543a6b869f184727",
+      "bytes": 10590
+    },
+    {
+      "path": "culture_study/io.py",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "73d434183ecd52b1b30f47caec3179b5764dedd6",
+      "sha256": "097c5516071e82b7055beb1d6b82b48778cc8fa5ee928edd52a65f45644a8bf1",
+      "bytes": 3587
+    },
+    {
+      "path": "culture_study/__main__.py",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "e3765c769e8ab47a06d12e6b8fbc7aa055ac9ad6",
+      "sha256": "6295e2bf62f2d6e394f1418a079cf686ba398f573dc70c1364cb208729404821",
+      "bytes": 4936
+    },
+    {
+      "path": "culture_study/likelihood_audit.py",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "8dfb995b528f0fa8f6420832f7937f15d6884637",
+      "sha256": "fb00af8227bfd0a3f8876a9341a171c4cee52ead6280b6483091c854a0766fde",
+      "bytes": 5534
+    }
   ],
-  "scope": "Existing math consolidation; complete baseline/conditional protocol organization; baseline instrument repair",
+  "scope": "Existing J01/local-global model consolidation; complete native baseline/conditional candidate protocol organization; baseline memory/numerical/audit instrument repair",
+  "source_navigation_review": {
+    "scope": "Actual local Markdown targets and source/CLI reading; no scientific execution",
+    "broken_local_file_targets": 0,
+    "project_import_or_compile": false,
+    "tests": false
+  },
+  "skill": {
+    "entry_ref": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+    "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
+    "source_revision": "Cloud snapshot matched saved entry/modules; upstream revision unexposed",
+    "private_bytes_uploaded": false
+  },
+  "native_source_rereads": [
+    {
+      "repo": "nlee0212/BLEnD",
+      "commit": "7b9c131719e7fe5f9bed0f8b855532d613cc9f2b",
+      "file": "evaluation/evaluation_utils.py",
+      "blob": "68d32aee4a5d1b8886ded1cf9e7647f60bbb9c96"
+    },
+    {
+      "repo": "nlee0212/BLEnD",
+      "commit": "7b9c131719e7fe5f9bed0f8b855532d613cc9f2b",
+      "file": "evaluation/exact_match.py",
+      "blob": "bb077f8cb7ede207ae1e5a986ac18625f73a9520"
+    }
+  ],
+  "background": {
+    "task_id": "6ac821d2c66081918fd21ebd0d168fea",
+    "is_enabled": true,
+    "provider_updated_at": "2026-10-09T09:04:19.989225+00:00",
+    "prompt_readback": true,
+    "schedule_unchanged": true,
+    "host": "cloud_scheduled_authoring",
+    "actual_continuous_work_verified": false,
+    "execution_state": "not_exposed",
+    "no_duplicate_immediate_request": true
+  },
   "scientific_execution": false,
-  "scientific_result": "not_available",
   "code_design_status": "generated_unexecuted",
-  "novel_method_implementation": "not_completed"
+  "native_results": "none",
+  "full_requested_authoring_complete": false,
+  "novel_method_implementation": "not_completed",
+  "candidate_g01": "pending",
+  "pending": [
+    "Native complete baseline/simple-alternative/scorer/census qualification",
+    "Legitimate non-test development and fresh native confirmation",
+    "Parent/value, verified math pool/ranking/selection and collision/IPCG",
+    "Actual Local host/resource/budget and numeric/source acceptance"
+  ],
+  "next_entry": "LOCAL_AGENT_RUNBOOK.md#likelihood-memory-repair-and-native-source-audit",
+  "metadata_note": "This receipt binds the exact first source commit and its file bytes. A later normal child stores this receipt/status/task configuration; it does not change the mathematical/code files or claim its own future commit hash."
 }

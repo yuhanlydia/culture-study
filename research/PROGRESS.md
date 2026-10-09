@@ -119,3 +119,16 @@ The same automation remains enabled; latest mathematical prompt readback matched
 
 同一后台任务延续本范围；后续只做有界的原生提示／视角资格与数学来源审查，或者在真实前提满足后推进候选代码设计。原生接受仍由 Local 控制，按 LOCAL_AGENT_RUNBOOK.md 返回实际回执。提交与逐文件 readback 见 organization-delivery-receipt.json；它只关闭本组织里程碑。
 
+### 本轮确切源码交付与任务配置回读
+
+源码提交 7d24f0f3da582e46f9a085d6ab986bd5c574c2d7 为 preserved parent
+31814655e85d484144696bf2a24acfbf50abbfc2 的正常子提交，literal main 条件更新成功；
+20 个变更文件在确切 commit 逐一回读，UTF-8 内容与 Git blob SHA 全部一致。
+未强推、未写其他仓库、未上传私有技能字节。组织回执保留逐文件 SHA-256 与来源身份。
+
+同一任务 6ac821d2c66081918fd21ebd0d168fea 的新范围已更新，provider updated_at
+2026-10-09T09:04:19.989225+00:00；peek 确认 enabled=true、prompt 完全一致、
+原六小时 schedule 未改变。last_run_time 为 2026-10-09T08:29:35.335678+00:00，
+不代表本轮新配置已经执行；没有请求重复立即运行或启动科学 workload。
+这次实际作者交付已经完成，完整新方法／G01 仍待上述真实前提。
+

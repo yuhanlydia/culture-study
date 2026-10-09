@@ -8,8 +8,8 @@
   "default_timezone": "Europe/London",
   "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY;INTERVAL=6\nEND:VEVENT",
   "is_enabled": true,
-  "observed_at": "2026-10-09T08:21:38.193Z",
-  "last_run_time": "2026-10-08T23:52:41.891649+00:00",
+  "observed_at": "2026-10-09T09:06:30.107Z",
+  "last_run_time": "2026-10-09T08:29:35.335678+00:00",
   "next_run_time": null,
   "immediate_run": {
     "status": "requested",
@@ -156,5 +156,47 @@
       "integration_closed": true,
       "receipt_ref": "research/math/MULTICULTURAL_DELIVERY_RECEIPT.json"
     }
+  },
+  "latest_organization": {
+    "observed_at": "2026-10-09T09:06:30.107Z",
+    "authority": "Current owner message in this conversation, 2026-10-09",
+    "scope": "Organize J01/local-global math, 1B/7B native code and CulturalBench/BLEnD design; retain scientific prerequisites",
+    "source_commit": "7d24f0f3da582e46f9a085d6ab986bd5c574c2d7",
+    "exact_content_readback": true,
+    "readback_paths": [
+      "README.md",
+      "AGENTS.md",
+      "LONG_TERM_TASK.md",
+      "LOCAL_AGENT_RUNBOOK.md",
+      "rounds/r001/WEB_HANDOFF.md",
+      "research/README.md",
+      "research/model/MODEL.md",
+      "research/model/RELIABILITY_AND_SUPPORT.md",
+      "research/implementation/README.md",
+      "research/experiments/ACL_PROTOCOL.md",
+      "research/CODE_REVIEW.md",
+      "research/EXPERIMENT_DESIGN.md",
+      "research/PROGRESS.md",
+      "research/workflow-checkpoint.json",
+      "research/skill-source.json",
+      "research/organization-delivery-receipt.json",
+      "culture_study/inference.py",
+      "culture_study/io.py",
+      "culture_study/__main__.py",
+      "culture_study/likelihood_audit.py"
+    ],
+    "receipt_ref": "research/organization-delivery-receipt.json",
+    "task_id": "6ac821d2c66081918fd21ebd0d168fea",
+    "provider_success": true,
+    "provider_updated_at": "2026-10-09T09:04:19.989225+00:00",
+    "enabled_readback": true,
+    "prompt_readback": true,
+    "schedule_unchanged": true,
+    "scientific_execution": false,
+    "full_authoring_complete": false,
+    "immediate_run": "No new request; same scheduled authoring identity retained",
+    "future_execution_observation": "not exposed; enabled configuration does not prove active execution",
+    "next": "Bounded native prompt/view/evidence source audit; pending native acceptance via Local runbook"
   }
 }
+

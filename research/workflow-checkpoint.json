@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-09T08:57:55.393Z",
+    "observed_at": "2026-10-09T09:06:30.107Z",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Organize existing J01/local-global mathematics, 1B/7B code and CulturalBench/BLEnD experiment materials; repair baseline instruments and preserve candidate prerequisites.",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "31814655e85d484144696bf2a24acfbf50abbfc2",
+    "delivery_parent_commit": "7d24f0f3da582e46f9a085d6ab986bd5c574c2d7",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -320,13 +320,38 @@
         "culture_study/__main__.py",
         "culture_study/likelihood_audit.py"
       ],
-      "status": "authored_pending_exact_main_readback",
+      "status": "delivered_exact_content_readback",
       "receipt_ref": "research/organization-delivery-receipt.json",
       "mathematical_review": "same-context author algebra and special-case source review; not independent or machine verification",
       "candidate_code_admission": "pending; no selected method",
       "candidate_g01": "pending",
       "project_code_execution": false,
-      "scope_changed": false
+      "scope_changed": false,
+      "source_commit": "7d24f0f3da582e46f9a085d6ab986bd5c574c2d7",
+      "source_tree_sha": "b9fef91d554ddaca96497aec052204e00e8d5407",
+      "exact_content_readback": true,
+      "readback_paths": [
+        "README.md",
+        "AGENTS.md",
+        "LONG_TERM_TASK.md",
+        "LOCAL_AGENT_RUNBOOK.md",
+        "rounds/r001/WEB_HANDOFF.md",
+        "research/README.md",
+        "research/model/MODEL.md",
+        "research/model/RELIABILITY_AND_SUPPORT.md",
+        "research/implementation/README.md",
+        "research/experiments/ACL_PROTOCOL.md",
+        "research/CODE_REVIEW.md",
+        "research/EXPERIMENT_DESIGN.md",
+        "research/PROGRESS.md",
+        "research/workflow-checkpoint.json",
+        "research/skill-source.json",
+        "research/organization-delivery-receipt.json",
+        "culture_study/inference.py",
+        "culture_study/io.py",
+        "culture_study/__main__.py",
+        "culture_study/likelihood_audit.py"
+      ]
     },
     "skill_snapshot_review": {
       "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
@@ -334,7 +359,18 @@
       "upstream_revision": null,
       "policy_change": false,
       "private_skill_bytes_published": false
+    },
+    "latest_organization_background": {
+      "task_id": "6ac821d2c66081918fd21ebd0d168fea",
+      "is_enabled": true,
+      "observed_at": "2026-10-09T09:06:30.107Z",
+      "provider_updated_at": "2026-10-09T09:04:19.989225+00:00",
+      "prompt_readback": true,
+      "schedule_unchanged": true,
+      "last_run_time": "2026-10-09T08:29:35.335678+00:00",
+      "execution_state": "not_exposed",
+      "host": "cloud_scheduled_authoring",
+      "no_duplicate_immediate_request": true
     }
   }
 }
-
