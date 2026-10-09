@@ -8,7 +8,7 @@
     "current_goal_ref": "LONG_TERM_TASK.md",
     "requested_action": "Review cube-space/local cultural optima/global nearest constructions, derive conditional mathematical ideas and preserve existing code/design goal",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "6483d2e7eedc22763c5f107e74e1979724720419",
+    "delivery_parent_commit": "2f58b29f4c29977ade7af5c27e04d1b42ccf6dcc",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -40,7 +40,7 @@
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/mathematical-empirical-inquiry.md",
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-development-tree.md"
     ],
-    "work_phase": "decision_information_boundaries_prepared",
+    "work_phase": "decision_information_boundaries_delivered_exact_readback",
     "readiness": "conditional_math_review_native_method_prerequisites_pending",
     "web_background_preferred": true,
     "web_background_host": "cloud_scheduled_automation",
@@ -145,7 +145,7 @@
       "spend_budget": null,
       "source": "No sourced resource inventory; Web authoring does not execute experiments"
     },
-    "delivered_commit_ref": "fa44c3621a743316d90c34470e1c3d185c2f57cf",
+    "delivered_commit_ref": "2f58b29f4c29977ade7af5c27e04d1b42ccf6dcc",
     "scientific_gate_status": {
       "parent": "draft_not_frozen",
       "natural_gate_0": "not_assessed_missing_observations",
@@ -177,21 +177,15 @@
     "code_status": "generated_unexecuted_baseline_prelude_complete_novel_method_not_implemented",
     "design_status": "generated_unexecuted_full_native_prelude_candidate_G01_blocked",
     "main_readback_ref": {
-      "commit": "fa44c3621a743316d90c34470e1c3d185c2f57cf",
+      "commit": "2f58b29f4c29977ade7af5c27e04d1b42ccf6dcc",
       "paths": [
-        "research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md",
-        "research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json",
-        "research/MULTICULTURAL_REVIEW_BRIEF.md",
-        "README.md",
-        "AGENTS.md",
+        "research/math/DECISION_INFORMATION_BOUNDARIES.md",
         "research/PROGRESS.md",
-        "research/workflow-checkpoint.json",
-        "research/background-task.json",
         "rounds/r001/WEB_HANDOFF.md",
-        "research/CLOSEST_WORK.md"
+        "research/workflow-checkpoint.json"
       ],
       "identical": true,
-      "scope": "conditional multicultural mathematics/source/handoff packet"
+      "scope": "author-derived conditional mathematical boundaries"
     },
     "delivery_receipt_ref": "research/DELIVERY_RECEIPT.json",
     "prelude_authoring_complete": true,
@@ -306,6 +300,7 @@
       "math-analysis-moves",
       "math-handoff",
       "repository-round-trips"
-    ]
+    ],
+    "latest_boundary_delivery_receipt_ref": "research/math/DECISION_BOUNDARIES_RECEIPT.json"
   }
 }
