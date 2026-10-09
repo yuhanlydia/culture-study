@@ -2,6 +2,7 @@
 import os
 import re
 import time
+import math
 from pathlib import Path
 from .io import (atomic_json, append_jsonl, read_json, jsonl, file_hash, digest,
                  source_digest, utc)
@@ -103,10 +104,11 @@ def run(root, asset_dir, bindings, prepared_dir, run_dir, model_key, task, arm, 
             rendered = tokenizer.apply_chat_template([{"role": "user", "content": unit["prompt"]}],
                         tokenize=False, add_generation_prompt=True)
             prefix = tokenizer(rendered, add_special_tokens=False, return_tensors="pt").input_ids.to(device)
-            if prefix.shape[1] + config["generation"][task] > model.config.max_position_embeddings:
+            if arm == "direct" and prefix.shape[1] + config["generation"][task] > model.config.max_position_embeddings:
                 raise ValueError("Native prompt exceeds model context; never silently truncate")
             label_scores = {}
             label_token_ids = {}
+            label_probabilities = {}
             output_tokens = 0
             with torch.inference_mode():
                 if arm == "direct":
@@ -120,13 +122,27 @@ def run(root, asset_dir, bindings, prepared_dir, run_dir, model_key, task, arm, 
                         whole = tokenizer(rendered + label, add_special_tokens=False, return_tensors="pt").input_ids.to(device)
                         if whole.shape[1] <= prefix.shape[1] or not torch.equal(whole[:, :prefix.shape[1]], prefix):
                             raise ValueError("Tokenizer boundary changes; cannot substitute first-token score")
+                        if whole.shape[1] > model.config.max_position_embeddings:
+                            raise ValueError("Native prompt plus whole label exceeds model context")
                         continuation = whole[0, prefix.shape[1]:]
-                        log_probs = model(whole).logits.float().log_softmax(dim=-1)
-                        positions = torch.arange(prefix.shape[1] - 1, whole.shape[1] - 1, device=device)
-                        value = log_probs[0, positions, continuation].sum().item()
+                        # Only continuation positions enter this prefix-event
+                        # likelihood. Do not materialize float32 log probabilities
+                        # for every prompt token or retain an unused KV cache.
+                        output = model(whole, use_cache=False)
+                        continuation_logits = output.logits[0, prefix.shape[1] - 1:whole.shape[1] - 1].float()
+                        del output
+                        log_probs = continuation_logits.log_softmax(dim=-1)
+                        value = log_probs.gather(1, continuation[:, None]).sum().item()
+                        del continuation_logits, log_probs
+                        if not math.isfinite(value):
+                            raise ValueError("Non-finite whole-label log probability")
                         label_scores[label] = value
                         label_token_ids[label] = continuation.tolist()
                     raw = max(unit["labels"], key=lambda label: label_scores[label])
+                    offset = max(label_scores.values())
+                    mass = sum(math.exp(value - offset) for value in label_scores.values())
+                    label_probabilities = {label: math.exp(value - offset) / mass
+                                           for label, value in label_scores.items()}
             torch.cuda.synchronize(device)
             strict = strict_label(raw, unit["labels"]) if unit["labels"] else None
             if task == "blend_mcq":
@@ -135,6 +151,9 @@ def run(root, asset_dir, bindings, prepared_dir, run_dir, model_key, task, arm, 
                 official = strict
             record.update(status="ok", raw_response=raw, strict_label=strict, final_answer=official,
                           label_logprob=label_scores, label_token_ids=label_token_ids,
+                          label_probabilities=label_probabilities,
+                          probability_semantics=("model_prefix_probability_conditional_on_legal_labels"
+                                                 if arm == "label_likelihood" else None),
                           parser_digest=mc_parser_digest, prompt_tokens=int(prefix.shape[1]),
                           forward_calls=call_stats["forward_calls"], processed_tokens=call_stats["processed_tokens"],
                           generated_tokens=output_tokens, elapsed_seconds=time.perf_counter() - start,
@@ -153,3 +172,4 @@ def run(root, asset_dir, bindings, prepared_dir, run_dir, model_key, task, arm, 
                  "attempts": attempts, "scientific_validity": "not_established",
                  "software_and_scorer_qualification": "pending"})
     return str(run_dir)
+

@@ -37,3 +37,38 @@ Reviewed against main e81d4d8c3abb724e4a1970a736f082e3f282b9eb. Status remains g
 - Parity rechecks actual declared resource file hashes. These checks authenticate inputs, not scorer equivalence or research soundness. Package/resource completeness and the live original scorer remain Local obligations.
 
 No import, compile, test or scorer execution was performed. Local must qualify this child source revision before producing evidence. Existing run directories must stay pinned to their old source; do not rewrite old manifests or add CSV hash fields retrospectively. The unchanged scientific boundaries (CB parity, SAQ resources, full native coverage, hardware feasibility, legitimate development/confirmation and no admitted novel methods) still apply.
+
+## 2026-10-09: whole-label memory, probability trace and native source audit
+
+Reviewed original inference/io/CLI/scoring/census and source contracts at main
+31814655e85d484144696bf2a24acfbf50abbfc2. This is a baseline evidence-tool repair,
+not selected candidate implementation.
+
+- inference.py: whole-label log-softmax now uses exactly P−1...P+K−2 logits,
+  predicts all K canonical label tokens and retains prefix-token identity. Full
+  prompt logits still exist, but float32 probability intermediates are O(KV).
+  Teacher forcing sets use_cache=False and releases the temporary tensors.
+- Each actual continuation gets its own context check. No truncation, first-token
+  shortcut, length normalization, new precision or test-dependent setting.
+- Finite label scores also produce stable normalized label_probabilities.
+  The legal-prefix-event semantics is explicit; argmax and tie order retain the
+  whole-label rule. These probabilities are not calibrated cultural truth.
+- io.py rejects NaN/Infinity when writing canonical/atomic JSON. Error records
+  retain string diagnostics rather than exporting non-finite scores as valid.
+- likelihood_audit.py and CLI audit-likelihood read two complete native runs,
+  require matched model/data/config/hardware/tokenization, and retain every
+  per-label/output/cost difference. They supply no benchmark scorer, tolerance
+  selection, significance test or gate flag.
+
+Static index review links actual code to the math, native tasks, new audit CLI
+and Local acceptance entry. Fresh rereads of BLEnD evaluation_utils.py and
+exact_match.py match the locked blobs 68d32aee4a5d1b8886ded1cf9e7647f60bbb9c96 and
+bb077f8cb7ede207ae1e5a986ac18625f73a9520. Their original SEM exclusions, first
+matched annotation, English fallback and language resources remain unchanged.
+
+Planned Local checks: native full-label score and answer agreement at a
+predeclared numerical criterion; complete-run integrity; intended context
+failure; non-finite rejection; cost/peak evidence; original scorer qualification.
+Hardware/model/bfloat16 feasibility and actual old/new parity are unmeasured.
+No project import, compile, test, download, inference, scorer or GPU action ran.
+

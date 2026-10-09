@@ -152,3 +152,52 @@ and retained outputs through the admitted harness; no invented scientific cases.
 Keep all old logs and bounded repair rules. Return acquisition/prepared manifests,
 complete raw predictions, scored outcomes, live native parity output, census
 receipts and every failure with exact code/model/data/resource revisions.
+
+## Likelihood memory repair and native source audit
+
+Read [research/implementation/README.md](research/implementation/README.md) and
+[research/experiments/ACL_PROTOCOL.md](research/experiments/ACL_PROTOCOL.md) at the
+receipt's exact commit. Source remains generated_unexecuted.
+
+The repaired whole-label arm converts only continuation prediction positions to
+float32, releases temporary logits each label, disables an unused teacher-forcing
+KV cache, checks the actual full continuation context, rejects non-finite log
+probabilities, and retains normalized legal-label probabilities. Direct decoding,
+complete native coverage, model precision and the whole-label argmax are unchanged
+by the intended construction. Actual numeric equivalence and memory are pending.
+
+Source digest includes all project Python files, including the new audit module.
+Use new immutable child run/score directories for this revision. An older
+manifest cannot be resumed or scored with the current checkout; keep its pinned
+checkout and all receipts. Do not retrofit label_probabilities into old records.
+
+Before comparison, bind ACL_PREPARED_DIR, ACL_OLD_LIKELIHOOD_RUN,
+ACL_NEW_LIKELIHOOD_RUN and ACL_LIKELIHOOD_AUDIT_DIR to actual absolute paths.
+Both input runs must be complete on the same native task, prepared data, model
+files, config and hardware. Numerical acceptance criteria must be justified and
+declared before observing their differences. The implemented inner argv is:
+
+~~~bash
+conda run -n culture-study python -m culture_study audit-likelihood \
+  --prepared "$ACL_PREPARED_DIR" \
+  --left-run "$ACL_OLD_LIKELIHOOD_RUN" \
+  --right-run "$ACL_NEW_LIKELIHOOD_RUN" \
+  --out "$ACL_LIKELIHOOD_AUDIT_DIR"
+~~~
+
+The command runs only as an admitted CPU inspection task under the existing
+native harness, with actual time/RAM/disk limits. It does not load a model,
+generate outputs, score a benchmark or certify a tolerance. Inspect audit.json
+and the full comparisons.jsonl for every canonical label and native unit.
+Return both manifests/completion/prediction hashes and source digests, per-label
+delta, raw/strict/final answer changes, actual calls/tokens/memory/timing.
+
+An incomplete old run, tokenization or hardware mismatch, non-finite value,
+unexplained output change or numerical mismatch leaves acceptance pending.
+Retain the error and bounded repair history. Requalify affected native behavior
+through the actual original scorer; the audit is software evidence, not a
+scientific performance endpoint. Continue independent qualified cells only.
+
+The 14-run baseline census still uses the original two datasets and complete
+coverage. J01/LOCAL02/PARETO03 have no callable solver and must not be dispatched.
+

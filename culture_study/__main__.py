@@ -49,6 +49,11 @@ def main():
     c.add_argument("--direct-score", required=True)
     c.add_argument("--alternative-score", required=True)
     c.add_argument("--out", required=True)
+    l = sub.add_parser("audit-likelihood")
+    l.add_argument("--prepared", required=True)
+    l.add_argument("--left-run", required=True)
+    l.add_argument("--right-run", required=True)
+    l.add_argument("--out", required=True)
     args = parser.parse_args()
     root = Path(args.root).resolve()
     if args.command == "bind":
@@ -79,9 +84,14 @@ def main():
         from .census import collect
         result = collect(Path(args.prepared).resolve(), Path(args.direct_run).resolve(), Path(args.alternative_run).resolve(),
                          Path(args.direct_score).resolve(), Path(args.alternative_score).resolve(), Path(args.out).resolve())
+    elif args.command == "audit-likelihood":
+        from .likelihood_audit import compare
+        result = compare(Path(args.prepared).resolve(), Path(args.left_run).resolve(),
+                         Path(args.right_run).resolve(), Path(args.out).resolve())
     else:
         raise ValueError("Unknown command")
     print(canonical(result))
 
 if __name__ == "__main__":
     main()
+

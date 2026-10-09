@@ -9,7 +9,7 @@ def utc():
     return datetime.now(timezone.utc).isoformat()
 
 def canonical(value):
-    return json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
 
 def digest(value):
     return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()
@@ -39,7 +39,7 @@ def atomic_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_name(path.name + ".tmp-" + str(os.getpid()))
     with temp.open("w", encoding="utf-8") as handle:
-        json.dump(value, handle, ensure_ascii=False, indent=2)
+        json.dump(value, handle, ensure_ascii=False, indent=2, allow_nan=False)
         handle.write("\n")
         handle.flush()
         os.fsync(handle.fileno())
@@ -92,3 +92,4 @@ def load_complete_run(run_dir, prepared):
     if receipt["manifest_digest"] != digest(manifest):
         raise ValueError("Completion manifest differs")
     return inputs, last, manifest, attempts
+

@@ -118,5 +118,76 @@
       "snapshot_sha256": "55473c87628fe77e8372f784844b419c2529f0acca4a45b4f6dd7e59391a2b49"
     }
   ],
-  "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5"
+  "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
+  "latest_organization_read": {
+    "observed_at": "2026-10-09T08:57:55.393Z",
+    "package": "c18/research-autopilot",
+    "entry_resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+    "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
+    "entry_matches_saved_snapshot": true,
+    "modules": [
+      {
+        "name": "workflow-harness",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
+        "snapshot_sha256": "dc32d7825291762788624525297b13e5a42945c3999ffb48a9cfb5e0b0fe50dd"
+      },
+      {
+        "name": "research-policy",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-policy.md",
+        "snapshot_sha256": "75dd3eebce9dcfbd3fbe8d7c97f236fa3031f6c760bafe2d2b55f58b64b4cf4e"
+      },
+      {
+        "name": "web-background-work",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/web-background-work.md",
+        "snapshot_sha256": "ca1c55a50a67f68adbbf8ae4a117e1bdcabedcde83ea3e88ec8bbe60ff9c613f"
+      },
+      {
+        "name": "method-verification",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-verification.md",
+        "snapshot_sha256": "6299c7238a70ef61e57cccaa1cfca7695e041cafa9f7e7f517c014ca54f87203"
+      },
+      {
+        "name": "artifact-contracts",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/artifact-contracts.md",
+        "snapshot_sha256": "7cdd52fc256333d50328a0c591dd1458f885e30fddf3bc92db31ce923cfb082d"
+      },
+      {
+        "name": "math-analysis",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-analysis.md",
+        "snapshot_sha256": "e27e60718518b34d4995a4f2109588aa93746665c4466ab7ac31c049334ccbc8"
+      },
+      {
+        "name": "math-derivation-paths",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-derivation-paths.md",
+        "snapshot_sha256": "787bc32d0a7620cb22a8193b3acd2828c304a4a658d0b3f3cc995e5acd0533d3"
+      },
+      {
+        "name": "repository-round-trips",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/repository-round-trips.md",
+        "snapshot_sha256": "bbb78c2d8c56c0a43dec286b1673e8c7413b7ae68e9f10149852b4e15cca78eb"
+      },
+      {
+        "name": "full-validation-and-review",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/full-validation-and-review.md",
+        "snapshot_sha256": "adca34ed6279e8c7c101f1cd5e1e194f21ef3aa6c3613f16f81154312b849aa5"
+      },
+      {
+        "name": "native-evaluation",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/native-evaluation.md",
+        "snapshot_sha256": "6262d90670f1ca667669f4b208a44df6aab748956b2360527e94f80b500c9a80"
+      },
+      {
+        "name": "statistics-and-claims",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/statistics-and-claims.md",
+        "snapshot_sha256": "12322da38b2ae3fd6cc4b10171eba245d7ce26affcc76f17590537087443a3c7"
+      },
+      {
+        "name": "local-code-handoff",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-code-handoff.md",
+        "snapshot_sha256": "0bd28eac9ce3958598c1e97ea2424112d49c003c9b4c383c2092443e0b184caf"
+      }
+    ],
+    "source_status": "Same installed cloud snapshot by entry/current selected module hashes; upstream release/revision remains unexposed. No private source exported."
+  }
 }
+

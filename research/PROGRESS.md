@@ -97,3 +97,25 @@ The same automation remains enabled; latest mathematical prompt readback matched
 ## 2026-10-09 数学续接：决策/信息/参考边界
 从 actual main 6483d2e7eedc22763c5f107e74e1979724720419 恢复并保留全部历史。新增 [DECISION_INFORMATION_BOUNDARIES.md](math/DECISION_INFORMATION_BOUNDARIES.md)：LOCAL02 改变 MAP 的精确最小 KL 预算与实际池化路径触边；四位立方体全部三阶边际相同但唯一 MAP 不同的严格正反例；PARETO03 可分可行类退化及参考/风险估计误差的 2η+τ 界。
 本轮为作者代数与静态审查，未执行求解器/tests/scorer/模型；未新增入选候选或原生结果，原代码/design 保留 generated_unexecuted。来源/版本与审查范围在新文档末尾记录。下一项独立数学工作是等价视角共同偏差、遗漏支持与真实风险界；经验前提仍按 Local runbook。Exact delivery/readback follows this prepared checkpoint; no self-certified commit.
+
+## 2026-10-09：统一数学、文件组织与基线源码修复
+
+恢复 main 31814655e85d484144696bf2a24acfbf50abbfc2，读取全部既有源文件并保留原 J01、五类框架、八项分析、历史失败与交付。实际 installed cloud skill entry SHA-256 及适用模块与保存快照一致；未变更科研政策，未发布私有技能字节。
+
+完成的实际作者产物：
+- research/README.md 与根 README 提供按数学／实现／实验／Local 接受的明确阅读路径。
+- model/MODEL.md 统一答案支持、原生损失、J01 凸优化／KKT、LOCAL02 信赖域闭式路径、精确 MAP 边界和 PARETO03 共享可行类／有限策略 LP／参考误差。补充统计不伤害约束的 paired 上界及基线可行性条件；不是已入选方法。
+- model/RELIABILITY_AND_SUPPORT.md 推导几何池化保留共同系统偏差、相关视角方差下限、错误锚点保护和遗漏支持的恢复上限。深化原有讨论，不产生新颖性／频率结论。
+- implementation/README.md 映射真实模型、数据、代码、公式和缺口；experiments/ACL_PROTOCOL.md 整理完整14-run基线、两个原生 benchmark、条件性必要比较、公平计算／统计／开发确认／E04。
+- inference.py 只在完整标签预测位置构造 float32 log probabilities、释放中间张量并关闭不需的 teacher-forcing cache；保留全部标签 token／上下文／prefix检查。新增条件标签概率 trace 和非有限值拒绝；io.py JSON输出拒绝非有限数。
+- 新 likelihood_audit.py／audit-likelihood CLI 对照两次完整 native categorical runs 的 tokenization／标签分数／输出／成本，绑定模型／输入／配置／硬件和输出身份。仅报告软件性质，不提供 native scorer、阈值选择或 gate PASS。
+- 运行手册、代码审查、既有设计、AGENTS、round handoff 和目标／checkpoint 同步更新。新数学 Markdown 使用 GitHub 公式语法。
+
+本轮重读 BLEnD exact_match.py 与 evaluation_utils.py，blob 与既有锁定一致；原生 SEM 函数未修改。ARR 官方 Review Form／Responsible NLP Checklist 在 2026-10-09 核查；它们支持主张证据、复现、计算／设置、局限要求，不是录用保证。
+
+导航检查针对实际新增／变更文件的本地链接，没有项目 import、compile、software tests、solver、scorer、推理、训练、下载或 GPU／SSH 执行。没有实测峰值或速度收益。源码／设计均 generated_unexecuted；admitted=0/20、selected=0/15，完整候选方法／G01 仍未完成。
+
+具体依赖：native per-ID baseline／简单替代／scorer资格、合法开发／fresh确认、Parent／value／完整数学池审查排序与碰撞／IPCG。本轮完成现有资产的作者整理与允许的基线证据修复，不能将它们追认为候选实现资格。
+
+同一后台任务延续本范围；后续只做有界的原生提示／视角资格与数学来源审查，或者在真实前提满足后推进候选代码设计。原生接受仍由 Local 控制，按 LOCAL_AGENT_RUNBOOK.md 返回实际回执。提交与逐文件 readback 见 organization-delivery-receipt.json；它只关闭本组织里程碑。
+

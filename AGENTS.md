@@ -2,6 +2,9 @@
 
 Read README.md, LONG_TERM_TASK.md, research/PROGRESS.md, research/background-task.json, research/workflow-checkpoint.json, and rounds/r001/WEB_HANDOFF.md before continuing.
 
+For the 2026-10-09 organization milestone, also read research/README.md, research/model/MODEL.md, research/model/RELIABILITY_AND_SUPPORT.md, research/implementation/README.md and research/experiments/ACL_PROTOCOL.md. Preserve original J01 and historical framework paths. This is existing-asset consolidation and baseline instrument repair, not candidate admission.
+Before any Local setup/acceptance/repair/execution, read [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md) and [WEB_HANDOFF.md](rounds/r001/WEB_HANDOFF.md) at the exact delivered revision, including [source acquisition](LOCAL_AGENT_RUNBOOK.md#exact-source-binding-and-acquisition) and [likelihood repair acceptance](LOCAL_AGENT_RUNBOOK.md#likelihood-memory-repair-and-native-source-audit).
+
 ## Scope and writer
 - User authorized Research Autopilot idea/code/experiment-design authoring in this repository, targeting main.
 - Existing background task identity is stored in research/background-task.json. Reuse it; do not create another writer or restart completed work.
@@ -31,3 +34,4 @@ Read [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md), its [source acquisition s
 
 ## 多文化数学反馈（2026-10-09）
 Read [MULTICULTURAL_REVIEW_BRIEF.md](research/MULTICULTURAL_REVIEW_BRIEF.md), [数学讨论](research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md) and [来源快照](research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json) before further idea work. Preserve existing J01, M08 and all baseline/negative evidence. The five frameworks are discussion/comparators, not an admitted novel pool or top-15 selection. Pure mathematics and conditional source analysis can continue without fabricated empirical failures; code/empirical investment keeps the existing prerequisites. No across-culture answer averaging without semantic alignment; model beliefs are not human cultural distributions. Reuse the same background task and actual current main, with one integration writer.
+

@@ -1,5 +1,7 @@
 # Culture Study：后台研究作者目标
 
+最新整理范围（2026-10-09）：保留原有 GitHub main 与同一任务身份，将既有答案集合优化、立方体／文化内聚合／Pareto 理想点、已写代码和实验方案集中到 [research/README.md](research/README.md)。数学稿给出明确对象、目标／约束、推导、solver 条件、成本、退化和证伪；实现仍面向冻结 1B／7B 与原生 CulturalBench／BLEnD。新增基线内存／数值／对照工具属于证据修复，不改变候选准入与实际 Local 执行边界。当前完整新方法作者目标尚未完成。
+
 ## 本轮目标与范围
 
 用户在同一 ACL 项目中选择 CulturalBench + BLEnD，要求 1B–7B 小模型可以运行，通过数学建模与优化改进已有方法，生成 idea、代码及完整实验设计，写入 https://github.com/yuhanlydia/culture-study 并后台完成。
@@ -56,3 +58,4 @@ Local 后续通过真实 SSH/native Conda 资源执行验收和实验。本任�
 ## 数学优化优先要求（最新用户指令）
 
 用户要求按数学优化问题生成面向 ACL 的数学模型，并以此产生方法代码与完整实验设计。具体验收要求见 [MATHEMATICAL_MODEL_BRIEF.md](research/MATHEMATICAL_MODEL_BRIEF.md)。本轮新增 [J01 数学讨论稿](rounds/r001/ANSWER_SET_OPTIMIZATION.md) 及 [SOURCE_AUDIT.md](rounds/r001/SOURCE_AUDIT.md)；尚未入选或完成原创性判定，不等于完整方法池、代码或 G01。继续原任务与证据前置检查。
+

@@ -57,3 +57,17 @@ No universal “three seeds” rule. Greedy decoding is deterministic conditiona
 Actual selected mathematical method; qualified strongest current comparator set; substantive mechanism ablations and matched-resource controls tied to that construction; permitted development/fresh native confirmation; effect/precision/multiplicity callback and resource admission. Naming hypothetical modules/ablations would not satisfy these obligations. No candidate training/inference matrix or gate threshold is fabricated.
 
 Exact inner commands and acquisition/pin/repair/acceptance details are in [LOCAL_AGENT_RUNBOOK.md](../LOCAL_AGENT_RUNBOOK.md). This design is not a dispatch grant.
+
+## Organized protocol and child source (2026-10-09)
+
+Read [experiments/ACL_PROTOCOL.md](experiments/ACL_PROTOCOL.md) for the complete
+native coverage/14-run index, conditional J01/LOCAL02/PARETO03 comparisons,
+ACL claim-evidence requirements and unresolved development/statistical/native
+qualification. No new method matrix was admitted or frozen.
+
+[implementation/README.md](implementation/README.md) maps actual source to its
+mathematics and describes whole-label memory/probability repair. The new
+audit-likelihood CLI compares two complete old/new native runs without supplying
+a substitute benchmark score. See the Local runbook's child acceptance section.
+Preserve older source digests/runs and the original baseline comparisons.
+

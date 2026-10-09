@@ -1,6 +1,28 @@
 # Round r001 — source, mathematical and baseline handoff
 Status: generated_unexecuted; source delivery and scientific acceptance are distinct.
 
+## Current organized entry (2026-10-09)
+
+At the exact commit recorded by research/organization-delivery-receipt.json, read
+[research/README.md](../../research/README.md), [unified math](../../research/model/MODEL.md),
+[reliability/support](../../research/model/RELIABILITY_AND_SUPPORT.md),
+[actual implementation map](../../research/implementation/README.md) and
+[ACL native experiment protocol](../../research/experiments/ACL_PROTOCOL.md).
+Original J01 and all historical negative/boundary evidence keep their paths.
+
+This child source repairs whole-label probability memory/numeric output and adds
+the complete-native-run audit-likelihood CLI. Read the
+[Local acceptance entry](../../LOCAL_AGENT_RUNBOOK.md#likelihood-memory-repair-and-native-source-audit)
+and [source acquisition](../../LOCAL_AGENT_RUNBOOK.md#exact-source-binding-and-acquisition)
+before any setup/acceptance/repair. Four source files changed: inference.py, io.py,
+__main__.py and the new likelihood_audit.py. Keep old source-bound runs intact.
+
+There is no selected J01/LOCAL02/PARETO03 solver, native method result or full
+candidate G01. The existing 14-run two-benchmark baseline/evidence design remains
+complete as an authoring draft; actual tests and scorer/hardware qualification
+remain Local obligations. This organization milestone does not close the full
+requested authoring goal.
+
 ## Actual lineage and latest preference
 Started from administrative main 09f3b214d16fc662bf7aa06b1fbd96357df1b0f9. Source/math milestone 724ba8229c5f21eb61ed1766599b5a2e16ee7629 was read back exactly. Concurrent optimization discussion/preferences at 3621288c90cac4c6edd217a57967a5e25d9cf3b5 were read and preserved before integration. No force push or second integration writer was introduced by this author.
 
@@ -59,3 +81,4 @@ Read [review](../../research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md), [source
 ## 2026-10-09 数学续接：决策/信息/参考边界
 从 actual main 6483d2e7eedc22763c5f107e74e1979724720419 恢复并保留全部历史。新增 [DECISION_INFORMATION_BOUNDARIES.md](../../research/math/DECISION_INFORMATION_BOUNDARIES.md)：LOCAL02 改变 MAP 的精确最小 KL 预算与实际池化路径触边；四位立方体全部三阶边际相同但唯一 MAP 不同的严格正反例；PARETO03 可分可行类退化及参考/风险估计误差的 2η+τ 界。
 本轮为作者代数与静态审查，未执行求解器/tests/scorer/模型；未新增入选候选或原生结果，原代码/design 保留 generated_unexecuted。来源/版本与审查范围在新文档末尾记录。下一项独立数学工作是等价视角共同偏差、遗漏支持与真实风险界；经验前提仍按 Local runbook。Exact delivery/readback follows this prepared checkpoint; no self-certified commit.
+
