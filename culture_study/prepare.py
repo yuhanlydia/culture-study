@@ -42,6 +42,17 @@ def prepare(root, asset_dir, bindings, destination):
     acquired = validate_assets(root, asset_dir, bindings)
     lock = read_json(root / "research/sources.lock.json")
     cfg = read_json(root / "configs/prelude.json")
+    saq_contract = lock["benchmarks"]["blend"]["saq_input_contract"]
+    if saq_contract["upstream_commit"] != lock["benchmarks"]["blend"]["commit"]:
+        raise ValueError("SAQ column contract belongs to another BLEnD revision")
+    question_columns = saq_contract["question_columns"]
+    if set(question_columns) != set(COUNTRY_LANG):
+        raise ValueError("Incomplete native SAQ language-column mapping")
+    for country, local in COUNTRY_LANG.items():
+        wanted_languages = {"English", local}
+        mapping = question_columns[country]
+        if set(mapping) != wanted_languages or not set(mapping.values()) <= {"Question", "Translation"}:
+            raise ValueError("Invalid SAQ language-column mapping: " + country)
     destination.mkdir(parents=True)
     inventories = {}
     unit_ids = set()
@@ -131,12 +142,18 @@ def prepare(root, asset_dir, bindings, destination):
         for language in languages:
             cell = country + "/" + language
             saq_cells[cell] = len(questions) * len(cfg["saq_prompts"])
+            question_column = question_columns[country][language]
+            prompt_column = "English" if language == "English" else "Translation"
             for prompt_id in cfg["saq_prompts"]:
-                template = prompts[prompt_id]["English" if language == "English" else "Translation"]
+                template = prompts[prompt_id][prompt_column]
                 if "{q}" not in template:
                     raise ValueError("Native prompt placeholder missing")
                 for row in questions:
-                    question = row["Question" if language == "English" else "Translation"]
+                    # Bind the actual pinned release, whose question CSVs use
+                    # Question for local text and Translation for English in
+                    # the 14 non-English cultures. Prompt CSV columns have
+                    # different semantics. Do not infer language from headers.
+                    question = row[question_column]
                     # Exact operation in pinned upstream replace_country_name().
                     if language == "English" and local != "English":
                         question = question.replace("your country", country.replace("_", " "))
@@ -148,10 +165,15 @@ def prepare(root, asset_dir, bindings, destination):
                          "prompt_id": prompt_id, "prompt": prompt, "labels": [], "gold": None,
                          "annotation_file": "data/annotations/" + country + "_data.json",
                          "source": {"file": str(question_path.relative_to(blend)),
+                                    "input_contract_id": saq_contract["contract_id"],
+                                    "question_column": question_column,
+                                    "prompt_column": prompt_column,
                                     "question_sha256": acquired["files"]["BLEnD/" + str(question_path.relative_to(blend))],
                                     "prompt_sha256": acquired["files"]["BLEnD/data/prompts/" + country + "_prompts.csv"]}})
                     saq_count += 1
     inventories["blend_saq"] = {"rows": saq_count, "cells": saq_cells,
+                               "input_contract_id": saq_contract["contract_id"],
+                               "question_columns": question_columns,
                                "eligible_questions_per_country": eligibility, "templates": len(shared_ids)}
 
     mc_ids = set()

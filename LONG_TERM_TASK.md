@@ -59,3 +59,12 @@ Local 后续通过真实 SSH/native Conda 资源执行验收和实验。本任�
 
 用户要求按数学优化问题生成面向 ACL 的数学模型，并以此产生方法代码与完整实验设计。具体验收要求见 [MATHEMATICAL_MODEL_BRIEF.md](research/MATHEMATICAL_MODEL_BRIEF.md)。本轮新增 [J01 数学讨论稿](rounds/r001/ANSWER_SET_OPTIMIZATION.md) 及 [SOURCE_AUDIT.md](rounds/r001/SOURCE_AUDIT.md)；尚未入选或完成原创性判定，不等于完整方法池、代码或 G01。继续原任务与证据前置检查。
 
+
+## 2026-10-09 有界原生来源修订
+本轮推进了实际 inst-4／pers-3、语言条件及 J01／LOCAL02 证据资格：
+见 [NATIVE_EVIDENCE_CONTRACT.md](research/model/NATIVE_EVIDENCE_CONTRACT.md)。
+发现固定发布 question CSV 与旧说明的语言列反向，修复既有基线映射并保留独立 child 输入／运行。
+联合矩全局相容与条件漂移推导是源／数学边界，不能填充新方法池或原生观测。
+此有界独立问题完成并回读后，剩余候选投资依赖实际 Local 证据；
+保存下一动作并暂停同一任务，完整研究目标仍未完成。
+

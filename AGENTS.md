@@ -35,3 +35,13 @@ Read [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md), its [source acquisition s
 ## 多文化数学反馈（2026-10-09）
 Read [MULTICULTURAL_REVIEW_BRIEF.md](research/MULTICULTURAL_REVIEW_BRIEF.md), [数学讨论](research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md) and [来源快照](research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json) before further idea work. Preserve existing J01, M08 and all baseline/negative evidence. The five frameworks are discussion/comparators, not an admitted novel pool or top-15 selection. Pure mathematics and conditional source analysis can continue without fabricated empirical failures; code/empirical investment keeps the existing prerequisites. No across-culture answer averaging without semantic alignment; model beliefs are not human cultural distributions. Reuse the same background task and actual current main, with one integration writer.
 
+
+## Latest native input repair, 2026-10-09
+Before Local acceptance, read [NATIVE_EVIDENCE_CONTRACT.md](research/model/NATIVE_EVIDENCE_CONTRACT.md),
+[NATIVE_VIEW_AUDIT.json](research/sources/NATIVE_VIEW_AUDIT.json) and the
+[native language-column runbook](LOCAL_AGENT_RUNBOOK.md#native-language-column-repair).
+The actual pinned question-file content reverses the older prose convention for the 14 non-English cultures.
+The child adapter binds question/prompt columns separately; preserve older source/lock/prepared/run receipts.
+Do not average native prompt scores as an inference method, assume prompt equivalence from shared IDs,
+or run audit-likelihood on differing prepared inputs. Full language/scorer/native acceptance stays pending.
+

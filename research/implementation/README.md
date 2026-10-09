@@ -89,3 +89,18 @@ conda run -n culture-study python -m culture_study audit-likelihood \
 | PARETO03 | 固定策略类风险／成本、共享预算 LP、统计风险保护 | 真实共享约束与合法开发估计；原生风险／成本、选择资格 |
 
 这些是数学到实现的待办映射，不是未完成函数或可调度命令。缺口不能由手工 case、测试标签调参或假源码验证回执补齐。
+
+
+## 7. 原生语言列输入修复
+
+新 prepare.py 从 sources.lock.json 的 saq_input_contract 读取每个文化／语言的实际 question 列；
+prompt 模板列保持分别绑定。14个非英语文化采用 English→Translation、本地语言→Question；
+US／UK 保留国家特定 Question 与单一 English cell。
+每题 source 和 input_digest 记录 question_column、prompt_column、contract_id；
+coverage 记录完整映射，源 commit 不同或文化／语言映射缺失时停止。
+
+这是依据固定发布字节修复既有基线，不是候选 solver。原始 ID／标签／SEM 函数和14-run矩阵保留。
+[证据与推导](../model/NATIVE_EVIDENCE_CONTRACT.md)、
+[Local 新输入接受](../../LOCAL_AGENT_RUNBOOK.md#native-language-column-repair)、
+[逐文件来源](../sources/NATIVE_VIEW_AUDIT.json)提供完整影响与下一动作。
+新旧输入不相同，不能用 audit-likelihood 将该修复认证为“数值等价”；需独立原生重资格。

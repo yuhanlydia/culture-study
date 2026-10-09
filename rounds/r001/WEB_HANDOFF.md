@@ -1,7 +1,7 @@
 # Round r001 — source, mathematical and baseline handoff
 Status: generated_unexecuted; source delivery and scientific acceptance are distinct.
 
-## Current organized entry (2026-10-09)
+## Earlier organization entry (2026-10-09)
 
 At the exact commit recorded by research/organization-delivery-receipt.json, read
 [research/README.md](../../research/README.md), [unified math](../../research/model/MODEL.md),
@@ -81,4 +81,30 @@ Read [review](../../research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md), [source
 ## 2026-10-09 数学续接：决策/信息/参考边界
 从 actual main 6483d2e7eedc22763c5f107e74e1979724720419 恢复并保留全部历史。新增 [DECISION_INFORMATION_BOUNDARIES.md](../../research/math/DECISION_INFORMATION_BOUNDARIES.md)：LOCAL02 改变 MAP 的精确最小 KL 预算与实际池化路径触边；四位立方体全部三阶边际相同但唯一 MAP 不同的严格正反例；PARETO03 可分可行类退化及参考/风险估计误差的 2η+τ 界。
 本轮为作者代数与静态审查，未执行求解器/tests/scorer/模型；未新增入选候选或原生结果，原代码/design 保留 generated_unexecuted。来源/版本与审查范围在新文档末尾记录。下一项独立数学工作是等价视角共同偏差、遗漏支持与真实风险界；经验前提仍按 Local runbook。Exact delivery/readback follows this prepared checkpoint; no self-certified commit.
+
+
+
+## Latest native evidence/input child, 2026-10-09
+
+The current exact source commit/readback is recorded in
+[native-evidence-delivery-receipt.json](../../research/native-evidence-delivery-receipt.json).
+The earlier organization receipt above remains historical.
+
+Read [NATIVE_EVIDENCE_CONTRACT.md](../../research/model/NATIVE_EVIDENCE_CONTRACT.md),
+[bounded source audit](../../research/sources/NATIVE_VIEW_AUDIT.json) and
+[Local child acceptance](../../LOCAL_AGENT_RUNBOOK.md#native-language-column-repair) at the latest source-delivery receipt.
+The actual read release content contradicts older question-column prose. prepare.py and sources.lock.json
+now bind question/prompt columns independently and preserve traceable source/input identities.
+Complete native preparation/language/scorer/model acceptance remains pending.
+
+New conditional results: role/language drift enters geometric pooling log-odds additively;
+pairwise-valid J01 moments can be globally incompatible, imposing a positive soft-penalty residual.
+These are algebra/source consequences, not new selected methods, native failures or execution.
+
+Use the child binding/acquisition/prepared/run commands; preserve every older receipt.
+The fixed 1B/7B 14-run matrix and native endpoints remain. No method solver or candidate G01 delivered.
+This bounded independent source/math inquiry resolves the saved next-authoring question.
+Further candidate investment requires Local native per-ID/scorer/simple-alternative evidence,
+legitimate development/fresh confirmation and the existing Parent/value/pool/selection/collision/IPCG chain.
+Pause the same finite authoring task after exact main readback; retain this Local next action.
 

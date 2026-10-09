@@ -15,6 +15,9 @@
 | 5 | [运行手册](../LOCAL_AGENT_RUNBOOK.md) | 真实输入获取、固定版本、已存在 CLI、原生评分与日志返回 |
 | 6 | [当前交接](../rounds/r001/WEB_HANDOFF.md) | 按实际交付 commit 开始 Local 验收 |
 
+当前来源修订：[原生语言、提示与证据资格](model/NATIVE_EVIDENCE_CONTRACT.md)；
+[逐文件读取记录](sources/NATIVE_VIEW_AUDIT.json)。它修复实际发布列绑定，并推导条件漂移进入几何池化、联合矩逐对可行但整体不可行的边界。不是新候选或效果结论。
+
 ## 历史与来源
 
 - [原始答案集合优化 J01](../rounds/r001/ANSWER_SET_OPTIMIZATION.md)、[J01 审查](math/J01_REVIEW.md)。

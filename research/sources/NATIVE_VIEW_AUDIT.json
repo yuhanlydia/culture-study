@@ -1,0 +1,886 @@
+{
+  "kind": "native-input-view-source-review",
+  "version": "1.0.0",
+  "observed_date_utc": "2026-10-09",
+  "project": "yuhanlydia/culture-study",
+  "source_parent_commit": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
+  "upstream": {
+    "repository": "nlee0212/BLEnD",
+    "commit": "7b9c131719e7fe5f9bed0f8b855532d613cc9f2b",
+    "scope": "Original 16 cultures only; no SemEval extension"
+  },
+  "native_question_rows_read": 63,
+  "native_question_full_download": false,
+  "prompt_files_read": 16,
+  "selected_prompt_rows_reviewed": 32,
+  "records": [
+    {
+      "country": "UK",
+      "local_language": "English",
+      "path": "data/questions/UK_questions.csv",
+      "git_blob_sha": "1d43274c60bb17a8e75f646c2ac34f172a6fa28f",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/UK_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 9,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "8ca772c7749b5b7760496a9e4b7e0099f1bed70b89bf14e2cf5606b578e4de0f"
+      },
+      "observed_columns": {
+        "Question": "country-specific English",
+        "Translation": "English variant"
+      },
+      "binding": {
+        "English": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "UK",
+      "path": "data/prompts/UK_prompts.csv",
+      "git_blob_sha": "390730525794c31dd29b1be3ea6120aad703df14",
+      "full_text_sha256": "c43dbbb3946ded4ebc46f51e9fa8dc3bdf16ca0c05cedc1617495a107317623c",
+      "bytes": 3592,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/UK_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "UK",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "US",
+      "local_language": "English",
+      "path": "data/questions/US_questions.csv",
+      "git_blob_sha": "c315a0d60971a740d594cc8eaf68864fb484f61f",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/US_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 9,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "06b3c3ef949dfe5e8a90e41529b2fd45e86c1468f83029b7a6351a5ae2f0f8ad"
+      },
+      "observed_columns": {
+        "Question": "country-specific English",
+        "Translation": "English variant"
+      },
+      "binding": {
+        "English": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "US",
+      "path": "data/prompts/US_prompts.csv",
+      "git_blob_sha": "5886aa6d1893b55502d27a45d89f670ed3c7bac1",
+      "full_text_sha256": "8ef180e55a1e2eae507788b25e31ca9bc678a3d3cdc9c0c9eed95edcad7f23fb",
+      "bytes": 3614,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/US_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "US",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "South_Korea",
+      "local_language": "Korean",
+      "path": "data/questions/South_Korea_questions.csv",
+      "git_blob_sha": "4b159e01f483544980b7a15035cb0f92d3dce0ad",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/South_Korea_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "7683899e6b79115ef116a8747193e7cbc47b7b75096376d025061e210a3d1c66"
+      },
+      "observed_columns": {
+        "Question": "Korean",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Korean": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "South_Korea",
+      "path": "data/prompts/South_Korea_prompts.csv",
+      "git_blob_sha": "35bafd19275020aacfc4396fa2337419f11fba7d",
+      "full_text_sha256": "a3f7e7981e15c41ebd2a75f705c0aeff3e556452f6c7523fae4f46847adc33a0",
+      "bytes": 4004,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/South_Korea_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "South Korea",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Algeria",
+      "local_language": "Arabic",
+      "path": "data/questions/Algeria_questions.csv",
+      "git_blob_sha": "b45d1b74391d7abdef769b07ae2d2ad243000e09",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Algeria_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "a7e60f55e29b0b6f09e16e362494d12b5818864b20adb1d6711573a13a87d0f5"
+      },
+      "observed_columns": {
+        "Question": "Arabic",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Arabic": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Algeria",
+      "path": "data/prompts/Algeria_prompts.csv",
+      "git_blob_sha": "452b7385e1c9d94df6b486f2590130c72cac9f9d",
+      "full_text_sha256": "66277bd197eaee2a795c140d095b0896a473741fc15ca05e911add244b394b68",
+      "bytes": 4302,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Algeria_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Algeria",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "China",
+      "local_language": "Chinese",
+      "path": "data/questions/China_questions.csv",
+      "git_blob_sha": "722a89c7c2cb5621ceb594de155b2d12dcfbd5e2",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/China_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 9,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "eaacdbd22ac36ffa43855e0ef37239567c3cb513df3c6df44774282e0344d5bb"
+      },
+      "observed_columns": {
+        "Question": "Chinese",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Chinese": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "China",
+      "path": "data/prompts/China_prompts.csv",
+      "git_blob_sha": "7bcb3dd188cf0ebdcb04e63b1e099e85c3253931",
+      "full_text_sha256": "a1a277578ebbff1db2322fbc98bb85ccb7eb3c73651a6214b4da3e9330a8a4f7",
+      "bytes": 3359,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/China_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "China",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Indonesia",
+      "local_language": "Indonesian",
+      "path": "data/questions/Indonesia_questions.csv",
+      "git_blob_sha": "28bfa1c4fc7450920bb5981e889fa9e5d71ea5a1",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Indonesia_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "c460eb864b7edc428264f72ad8234b2812247b1c2272b91d8884e2ede596033e"
+      },
+      "observed_columns": {
+        "Question": "Indonesian",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Indonesian": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Indonesia",
+      "path": "data/prompts/Indonesia_prompts.csv",
+      "git_blob_sha": "2bfa4fb6e7830505a69e0d51836dc9793e732264",
+      "full_text_sha256": "ffca0c4379fc0f92cd41d70b035aefce646f4f2e3489e4cf95cc40b8881a6afe",
+      "bytes": 3774,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Indonesia_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Indonesia",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Spain",
+      "local_language": "Spanish",
+      "path": "data/questions/Spain_questions.csv",
+      "git_blob_sha": "a5b54ee71206439e266142da1cce5d4be0b920b0",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Spain_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "f9d8534e0d46db2d9932a8ef9298df4f7af059962e36f4c3ea58a5dd1be9baba"
+      },
+      "observed_columns": {
+        "Question": "Spanish",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Spanish": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Spain",
+      "path": "data/prompts/Spain_prompts.csv",
+      "git_blob_sha": "9e598370bc181cd73573a55a126865cbd9fdbd7e",
+      "full_text_sha256": "a445ab118fe5042b77ee3fd990a46e1d641b7ffdc23251a370366a911b2c5f3d",
+      "bytes": 3854,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Spain_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Spain",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Iran",
+      "local_language": "Persian",
+      "path": "data/questions/Iran_questions.csv",
+      "git_blob_sha": "c7611bca61a0f7250997a1c54101e80b41c5fd98",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Iran_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "adc088c69a47ab81ae3e0da477391e533aed69a9cb642b7c08b7e12d10a94543"
+      },
+      "observed_columns": {
+        "Question": "Persian",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Persian": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Iran",
+      "path": "data/prompts/Iran_prompts.csv",
+      "git_blob_sha": "a57ce3ec4d037bb15fd8ee0adce8f0afb4443276",
+      "full_text_sha256": "73d335b22b54ec41c1a147a9e3da563d6cd6c5d7cf59814719b7e2a5083d46d1",
+      "bytes": 4542,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Iran_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Iran",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Mexico",
+      "local_language": "Spanish",
+      "path": "data/questions/Mexico_questions.csv",
+      "git_blob_sha": "4386224c91aaa2e07ba2211c18d8f83c4f1642ac",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Mexico_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "ee2e1f2526aa5ece7dbf29326175ff0a2bb5e2987b3007a41e1ae6b3f223527e"
+      },
+      "observed_columns": {
+        "Question": "Spanish",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Spanish": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Mexico",
+      "path": "data/prompts/Mexico_prompts.csv",
+      "git_blob_sha": "3701f3433cbe64779c1419c0395a7f8db93bd22d",
+      "full_text_sha256": "48e549f29eef5dea5400f3517fcbdcccb73cb830b1c7f27110b4ba80ffddd529",
+      "bytes": 3853,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Mexico_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Mexico",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Assam",
+      "local_language": "Assamese",
+      "path": "data/questions/Assam_questions.csv",
+      "git_blob_sha": "016e0c074b23549e5edd58096cf9e6843eaae2d8",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Assam_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "f488ff14081b36702635d7896e2c1619efe45a2f334a85b3442bdf5c4942a8fa"
+      },
+      "observed_columns": {
+        "Question": "Assamese",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Assamese": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Assam",
+      "path": "data/prompts/Assam_prompts.csv",
+      "git_blob_sha": "e56220157ec7d65f4a4a39faf918f04a2ff33ce0",
+      "full_text_sha256": "7ddd6801de36ebb40ab561de4ebce07f76c5c90321e44930f5ab27f8b766c256",
+      "bytes": 2329,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Assam_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Assam",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Greece",
+      "local_language": "Greek",
+      "path": "data/questions/Greece_questions.csv",
+      "git_blob_sha": "870accce8123076bd87d9a99e0b32c2d7799900b",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Greece_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "a076fcbb000c92a30c647dcbf8feb31fe0dc3a65bc15c8d78a8d9684b9ec8a00"
+      },
+      "observed_columns": {
+        "Question": "Greek",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Greek": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Greece",
+      "path": "data/prompts/Greece_prompts.csv",
+      "git_blob_sha": "8bec15c140dc0f03c80a28ac2de681aaea425761",
+      "full_text_sha256": "32681c4d5927d70361bf71b0010c6917d19cbd849221237a9c57aeb6835543a7",
+      "bytes": 3093,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Greece_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Greece",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Ethiopia",
+      "local_language": "Amharic",
+      "path": "data/questions/Ethiopia_questions.csv",
+      "git_blob_sha": "7dc60f568e80543a4e78beb812ac9d0b2fdfb351",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Ethiopia_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "bdc1cc40426f491e0e9564bee57891c3ab9e71ebc3f677ab21b7e86e4560393d"
+      },
+      "observed_columns": {
+        "Question": "Amharic",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Amharic": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Ethiopia",
+      "path": "data/prompts/Ethiopia_prompts.csv",
+      "git_blob_sha": "629ecb0c8b7c6e84d52888dbeb1329da52891c52",
+      "full_text_sha256": "c57f16ff29131670ba1c7d2d5b3b23c302782858ecf8d297eb54b85d4a421540",
+      "bytes": 2143,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Ethiopia_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Ethiopia",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Northern_Nigeria",
+      "local_language": "Hausa",
+      "path": "data/questions/Northern_Nigeria_questions.csv",
+      "git_blob_sha": "ce917ae4f3206560bbc4a966f65ddc4362fc7f54",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Northern_Nigeria_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "2abf158b72f4234d85ce4887db530289de7cc9450c25fd0108f4b5b11f47d345"
+      },
+      "observed_columns": {
+        "Question": "Hausa",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Hausa": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Northern_Nigeria",
+      "path": "data/prompts/Northern_Nigeria_prompts.csv",
+      "git_blob_sha": "dde46aa4d4ae53a2ab478c62f7d7ca3973dca6b3",
+      "full_text_sha256": "5250facd842e4518638cf60494028960b88f560a0443a682e56df51e4c1abef9",
+      "bytes": 1714,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Northern_Nigeria_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Northern Nigeria",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "Azerbaijan",
+      "local_language": "Azerbaijani",
+      "path": "data/questions/Azerbaijan_questions.csv",
+      "git_blob_sha": "56257b962db48b7b0e8c0f51d7024adc66363ad5",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/Azerbaijan_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "d3f6d9d4e63376c6cafeb3efce12622febcdf30113036f98dfb4c724e93503b2"
+      },
+      "observed_columns": {
+        "Question": "Azerbaijani",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Azerbaijani": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "Azerbaijan",
+      "path": "data/prompts/Azerbaijan_prompts.csv",
+      "git_blob_sha": "676f4843c9c4f8d3f5e440c4d519ed4aa14d3828",
+      "full_text_sha256": "3cac25e9d402abbd75f08dd10ed65a8c9b22299da7840371b17939b453e1171d",
+      "bytes": 1234,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/Azerbaijan_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "Azerbaijan",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "North_Korea",
+      "local_language": "Korean",
+      "path": "data/questions/North_Korea_questions.csv",
+      "git_blob_sha": "348cc853a80e6e5537451c66ca05aaf2bb05f019",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/North_Korea_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "041ddd1b04abab45eebd9db35e9115bd0c235e0c7f6288f657333c757c2a9194"
+      },
+      "observed_columns": {
+        "Question": "Korean",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Korean": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "North_Korea",
+      "path": "data/prompts/North_Korea_prompts.csv",
+      "git_blob_sha": "552169f8fcf37339b430cdcd472b9c5c682d1358",
+      "full_text_sha256": "1e92571c8bc87959abeec96279baa2d5ff2c06256ea85a63184314f70f422b80",
+      "bytes": 1426,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/North_Korea_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "North Korea",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "country": "West_Java",
+      "local_language": "Sundanese",
+      "path": "data/questions/West_Java_questions.csv",
+      "git_blob_sha": "f45551ecc399d71f0fa6a4f4ae462335c3bb9d3d",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/questions/West_Java_questions.csv",
+      "read_scope": {
+        "type": "bounded_utf8_lines",
+        "first_line": 1,
+        "last_line": 4,
+        "full_file_read": false,
+        "native_data_download": false,
+        "excerpt_sha256": "3147a27f7baf20976a2c40c4971080b6681e7ad50466f6e7e96e939531aa4174"
+      },
+      "observed_columns": {
+        "Question": "Sundanese",
+        "Translation": "English"
+      },
+      "binding": {
+        "English": "Translation",
+        "Sundanese": "Question"
+      },
+      "conclusion": "Observed in retrieved rows; complete 500-row language/prepared acceptance remains Local."
+    },
+    {
+      "country": "West_Java",
+      "path": "data/prompts/West_Java_prompts.csv",
+      "git_blob_sha": "8510f58a687eb099719fbfce9962db7334727f04",
+      "full_text_sha256": "f81be5f2734e354e12ba58c4c4810ba884edcac3c2f3fbd82c61384360b503a6",
+      "bytes": 1379,
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/data/prompts/West_Java_prompts.csv",
+      "read_scope": {
+        "full_file_read": true,
+        "semantic_focus": [
+          "inst-4",
+          "pers-3"
+        ]
+      },
+      "selected_prompt_ids": [
+        "inst-4",
+        "pers-3"
+      ],
+      "selected_placeholders_present": true,
+      "English_inst4_same_across_cultures": true,
+      "English_pers3_country": "West Java",
+      "inferential_equivalence": "not_established",
+      "local_translation_equivalence": "not_fully_audited"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "f6fe0d57bc21275a6ca461bdd90df2565a6f411f",
+      "full_text_sha256": "26b383bf6495d59c414b7dc64c26c7655aacda41e3c8e85016f8eecb4831aefa",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/README.md",
+      "read_scope": "Dataset input schema, final prompt IDs and original/SemEval scope; schema description conflicts with pinned question content."
+    },
+    {
+      "path": "model_inference.py",
+      "git_blob_sha": "f5100704d40c83f4c4d5f7b0841650574ea6f443",
+      "full_text_sha256": "4b19a06300b85b4d3aa5d14fa26538057027d4c89d598a6a08cdeed7784c4c5a",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/model_inference.py",
+      "read_scope": "Entire source; make_prompt, language/q_col branches and country substitution; not executed, live sheet not read."
+    },
+    {
+      "path": "utils.py",
+      "git_blob_sha": "e6950d04240d03f35462dc85bdf24ffbf282af71",
+      "full_text_sha256": "98e31153ea2fb19a75377417599b09b27e63aae2ef23e8605b63b633f1b46243",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/utils.py",
+      "read_scope": "Country-language mapping and replace_country_name; no complete semantic code audit."
+    },
+    {
+      "path": "evaluation/evaluate.py",
+      "git_blob_sha": "a89b7fa44155f5d9368e2dfb24a5ec4336909229",
+      "full_text_sha256": "e34da209d305a6d8900ecb4dd2b2344393a751b2a2c557b7c31dc2f70dea5a25",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/evaluation/evaluate.py",
+      "read_scope": "Full source and per-language/per-prompt score dispatch/recording; not executed."
+    },
+    {
+      "path": "evaluation/evaluation_utils.py",
+      "git_blob_sha": "68d32aee4a5d1b8886ded1cf9e7647f60bbb9c96",
+      "full_text_sha256": "0ca0c98ab14856c15c520915f6798fec278d75cff4074db34ef2be6c1df825c8",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/evaluation/evaluation_utils.py",
+      "read_scope": "Source and response-file/prompt-removal logic; not executed."
+    },
+    {
+      "path": "evaluation/multiple_choice_generation.py",
+      "git_blob_sha": "b48479c4228fbf583766afc946bdc4365e1a1a0d",
+      "full_text_sha256": "6c1603ebcea381c75777201a64d48ca98b1bfb829bb1c64d0a7603d6a8079d5e",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/evaluation/multiple_choice_generation.py",
+      "read_scope": "generate_prompt_mc and generation ID/choice/result-schema excerpts; not full pipeline audit."
+    },
+    {
+      "path": "evaluation/multiple_choice_evaluation.py",
+      "git_blob_sha": "25cb6775039ba8fe279023ec59d412cd2d66c40b",
+      "full_text_sha256": "2a5aabea20e02fff33e4393438472a2715ec44d8a06f869c5c3cb29091526de4",
+      "url": "https://github.com/nlee0212/BLEnD/blob/7b9c131719e7fe5f9bed0f8b855532d613cc9f2b/evaluation/multiple_choice_evaluation.py",
+      "read_scope": "Full source and native result extraction; not executed."
+    }
+  ],
+  "primary_paper_reading": [
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/8eb88844dafefa92a26aaec9f3acad93-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "locators": [
+        "3 Construction",
+        "4.1–4.2 native formats/languages",
+        "Appendix A.1"
+      ],
+      "reading": "Relevant source sections, not a newly claimed whole-paper reread",
+      "source_definition_gap": "A.1 schema prose conflicts with actual pinned question-column content."
+    },
+    {
+      "url": "https://aclanthology.org/2025.acl-long.1247.pdf",
+      "locators": [
+        "2.3",
+        "4",
+        "Appendix D"
+      ],
+      "reading": "Task/scoring/prompt sections reused and checked; final-paper denominator not applied to pinned release."
+    }
+  ],
+  "consequence": "Existing prepare.py had question columns reversed for non-English cultures; source repair and immutable child-input acceptance required.",
+  "mathematical_review": {
+    "artifact": "research/model/NATIVE_EVIDENCE_CONTRACT.md",
+    "scope": [
+      "LOCAL02 conditioning-drift log-odds decomposition",
+      "J01 joint-moment compatibility and forced-residual bound"
+    ],
+    "status": "same-context author derivation; no new candidate or empirical result"
+  },
+  "candidate_admitted": 0,
+  "candidate_selected": 0,
+  "code_design_status": "generated_unexecuted",
+  "execution": {
+    "project_import": false,
+    "compile": false,
+    "tests": false,
+    "solver": false,
+    "model_or_dataset_download": false,
+    "scorer": false,
+    "inference": false,
+    "training": false,
+    "gpu_ssh": false,
+    "verify_methods": false
+  },
+  "remaining": [
+    "Complete native language/prepared/scorer qualification",
+    "Actual 1B/7B per-ID baseline/simple-alternative residual/cost evidence",
+    "Legitimate non-test development and fresh confirmation",
+    "Parent/value, verified substantive math pool/selection, collision/IPCG"
+  ],
+  "next_entry": "LOCAL_AGENT_RUNBOOK.md#native-language-column-repair",
+  "private_skill_bytes_published": false
+}

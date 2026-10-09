@@ -132,3 +132,37 @@ The same automation remains enabled; latest mathematical prompt readback matched
 不代表本轮新配置已经执行；没有请求重复立即运行或启动科学 workload。
 这次实际作者交付已经完成，完整新方法／G01 仍待上述真实前提。
 
+
+
+## 2026-10-09 原生提示／语言列／联合证据：本轮实际生产
+
+恢复 actual main 4eb29eef4f5469daeeb5f827cb02930a362a8316 及完整51文件源 tree，
+未见 native run/result/evidence 输出路径。既有组织、数学、失败边界与任务身份均保留。
+
+- 读取固定 BLEnD 16个 prompt 文件，并检查 inst-4／pers-3 的实际角色／输出条件；
+  对16个 question 文件作表头＋前3或8行的 bounded read，共63个原生行，无全数据下载。
+  完整 prompt/code 内容 Git blob matches 已核对，bounded excerpt 与 full blob 身份分别记录。
+- 真实发现：14个非英语文化所读行的 Question 是本地文本、Translation 是英文，
+  与旧论文／README／默认脚本列说明相反。旧 prepare.py 继承了错误假设。
+  修改既有适配器与 source lock 的逐文化绑定，分别记录 question/prompt 列和 input contract。
+  US／UK 明确保留国家特定 Question，不声称作者默认列分支的精确复现。
+- NATIVE_EVIDENCE_CONTRACT.md 推导条件漂移／模型误差进入几何池化与锚点路径的对数几率，
+  以及正边际／逐对有效目标仍全局不可相容的反例和严格正 J01 惩罚残差下界。
+  这是条件代数／证据边界，不是第20张候选、求解器、性能观测或原创性结论。
+- Native contracts、模型／实现／实验索引、源审查、README／AGENTS 与 round/runbook同步；
+  本轮 active Local命令采用独立 bindings-r001-lang-v2、assets/r001-lang-v2、
+  prepared/r001-lang-v2 与 runs/r001-lang-v2，保留旧缓存文件／绑定／运行及回执。
+  全14个固定原生基线、1B／7B、两个benchmark任务／分母／scorer不删减。
+- 实际 skill entry SHA-256 ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5
+  与保存快照一致；适用模块实际读取／哈希留在 skill-source.json。未公开私有字节。
+
+没有 project import、compile、tests、模型／数据下载、solver、scorer、inference／training或GPU／SSH，
+没有 verify_methods机器检查或 gate PASS。代码／设计仍 generated_unexecuted，
+admitted=0/20、selected=0/15；新的source输入资格和全量native language审查仍待Local。
+
+本轮已解决保存的有界独立 prompt/view/evidence 调查问题。请求的完整新方法／G01目标未完成；
+下游依赖真实native per-ID／强简单替代／scorer与成本证据、合法非test开发／fresh确认，
+以及 Parent／value／实际数学池审查排序／碰撞IPCG。Web角色不能自行生成这些经验输入。
+完成此包的 exact main readback 后，暂停同一有限任务并保留 Local 最早下一动作；
+不能无限重复概念整理或把下一次后台调用当成科研前提。
+

@@ -188,6 +188,90 @@
       }
     ],
     "source_status": "Same installed cloud snapshot by entry/current selected module hashes; upstream release/revision remains unexposed. No private source exported."
+  },
+  "latest_native_evidence_review": {
+    "observed_at": "2026-10-09 11:20:35 UTC",
+    "package": "c18/research-autopilot",
+    "canonical_entry_resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/SKILL.md",
+    "entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
+    "entry_matches_saved": true,
+    "release_revision_exposed": false,
+    "modules": [
+      {
+        "name": "workflow-harness",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
+        "snapshot_sha256": "dc32d7825291762788624525297b13e5a42945c3999ffb48a9cfb5e0b0fe50dd"
+      },
+      {
+        "name": "research-policy",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/research-policy.md",
+        "snapshot_sha256": "75dd3eebce9dcfbd3fbe8d7c97f236fa3031f6c760bafe2d2b55f58b64b4cf4e"
+      },
+      {
+        "name": "canonical-literature",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/canonical-literature.md",
+        "snapshot_sha256": "4c1a8f13dcdd482c040c4725f31974c4d8981a00d3da609740bc68aaaa99b09a"
+      },
+      {
+        "name": "repository-round-trips",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/repository-round-trips.md",
+        "snapshot_sha256": "bbb78c2d8c56c0a43dec286b1673e8c7413b7ae68e9f10149852b4e15cca78eb"
+      },
+      {
+        "name": "mathematical-empirical-inquiry",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/mathematical-empirical-inquiry.md",
+        "snapshot_sha256": "fd4e024bd09934a9cc9d7adc6b419893c7cb40f507be406d0fcbb209167ec3d8"
+      },
+      {
+        "name": "math-analysis",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-analysis.md",
+        "snapshot_sha256": "e27e60718518b34d4995a4f2109588aa93746665c4466ab7ac31c049334ccbc8"
+      },
+      {
+        "name": "method-verification",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/method-verification.md",
+        "snapshot_sha256": "6299c7238a70ef61e57cccaa1cfca7695e041cafa9f7e7f517c014ca54f87203"
+      },
+      {
+        "name": "math-operation-graph",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-operation-graph.md",
+        "snapshot_sha256": "e82711e4c307d6d901486f4da569e4572e5ce7a4fe006976789bc5d174b749a2"
+      },
+      {
+        "name": "math-derivation-paths",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/math-derivation-paths.md",
+        "snapshot_sha256": "787bc32d0a7620cb22a8193b3acd2828c304a4a658d0b3f3cc995e5acd0533d3"
+      },
+      {
+        "name": "native-evaluation",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/native-evaluation.md",
+        "snapshot_sha256": "6262d90670f1ca667669f4b208a44df6aab748956b2360527e94f80b500c9a80"
+      },
+      {
+        "name": "web-background-work",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/web-background-work.md",
+        "snapshot_sha256": "ca1c55a50a67f68adbbf8ae4a117e1bdcabedcde83ea3e88ec8bbe60ff9c613f"
+      },
+      {
+        "name": "local-code-handoff",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/local-code-handoff.md",
+        "snapshot_sha256": "0bd28eac9ce3958598c1e97ea2424112d49c003c9b4c383c2092443e0b184caf"
+      },
+      {
+        "name": "host-adapters",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/host-adapters.md",
+        "snapshot_sha256": "c1696de410660790bd520ee31a186add2e74065bcafd9f7c73e148aeef95c0c4"
+      },
+      {
+        "name": "artifact-contracts",
+        "resource": "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/artifact-contracts.md",
+        "snapshot_sha256": "7cdd52fc256333d50328a0c591dd1458f885e30fddf3bc92db31ce923cfb082d"
+      }
+    ],
+    "scope": "Applicable source/math/native/handoff sections; no claim of a new qualified math pool or bundled validator run",
+    "private_source_published": false,
+    "policy_changed": false,
+    "project_execution": false
   }
 }
 

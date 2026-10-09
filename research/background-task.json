@@ -197,6 +197,18 @@
     "immediate_run": "No new request; same scheduled authoring identity retained",
     "future_execution_observation": "not exposed; enabled configuration does not prove active execution",
     "next": "Bounded native prompt/view/evidence source audit; pending native acceptance via Local runbook"
+  },
+  "latest_native_evidence_review": {
+    "observed_at": "2026-10-09 11:20:35 UTC",
+    "source_parent_commit": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
+    "artifact_ref": "research/model/NATIVE_EVIDENCE_CONTRACT.md",
+    "status": "authored_pending_exact_main_readback",
+    "input_contract": "blend_original_7b9c131_columns_v2",
+    "full_authoring_complete": false,
+    "scientific_execution": false,
+    "pause": "planned_after_exact_source_readback",
+    "reason": "The bounded saved prompt/view/evidence inquiry is complete; remaining candidate investment needs unavailable qualified Local native residual/scorer/development/confirmation evidence.",
+    "next_local_entry": "LOCAL_AGENT_RUNBOOK.md#native-language-column-repair"
   }
 }
 

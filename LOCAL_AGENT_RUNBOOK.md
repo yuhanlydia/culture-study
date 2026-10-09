@@ -36,7 +36,7 @@ The proposed Python 3.10 / Torch 2.5.1 / Transformers 4.46.3 pins support the mo
 The original BLEnD requirements pin Transformers 4.40.1, older than the chosen Llama/Qwen interface requirements. Keep a separate original-scorer environment when needed. Provider SDK dependencies are imports for parity, not authorization to call provider APIs:
 ```bash
 conda create -n blend-official python=3.10 pip openjdk=11 -c conda-forge
-conda run -n blend-official python -m pip install -r assets/BLEnD/requirements.txt
+conda run -n blend-official python -m pip install -r assets/r001-lang-v2/BLEnD/requirements.txt
 conda run -n blend-official python -m pip install pyspark==3.3.1
 conda run -n blend-official python -m pip install -e . --no-deps
 ```
@@ -52,19 +52,19 @@ Sources/versions are in research/sources.lock.json. Core inputs:
 
 Admitted CPU/data-acquisition steps:
 ```bash
-conda run -n culture-study python -m culture_study bind --out bindings.json
-conda run -n culture-study python -m culture_study acquire --assets assets --bindings bindings.json
-conda run -n culture-study python -m culture_study validate-assets --assets assets --bindings bindings.json
-conda run -n culture-study python -m culture_study prepare --assets assets --bindings bindings.json --out prepared/r001
+conda run -n culture-study python -m culture_study bind --out bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study acquire --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study validate-assets --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study prepare --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json --out prepared/r001-lang-v2
 ```
 The binder performs metadata resolution only. Acquisition is real local download, never performed by Web. Both MCQ shards total about 156 MB before prepared/log expansion; prepared JSONL and prediction storage can be much larger. Observe disk space and permit full coverage only if actual capacity/budget supports it.
 
 Admitted model-acquisition step:
 ```bash
-conda run -n culture-study python -m culture_study acquire --assets assets --bindings bindings.json --models
-conda run -n culture-study python -m culture_study validate-assets --assets assets --bindings bindings.json
+conda run -n culture-study python -m culture_study acquire --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json --models
+conda run -n culture-study python -m culture_study validate-assets --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json
 ```
-The acquisition receipt hashes weights/config/tokenizers and exact model revisions. Cached loaders use assets/models/llama_1b and assets/models/qwen_7b with local_files_only=True and trust_remote_code=False. No automatic network access at model loading.
+The acquisition receipt hashes weights/config/tokenizers and exact model revisions. Cached loaders use assets/r001-lang-v2/models/llama_1b and assets/r001-lang-v2/models/qwen_7b with local_files_only=True and trust_remote_code=False. No automatic network access at model loading.
 
 ## Multilingual official scorer acquisition
 ```bash
@@ -88,23 +88,23 @@ Spanish and Amharic use Spark NLP 5.3.3 / PySpark 3.3.1 pretrained lemma/es and 
 Create scorer-dependencies.json from configs/scorer-dependencies.template.json with status=locally_bound, **actual absolute local paths**, installed package/source versions and exhaustive resource file hashes. Set resolved_git_revisions using the four directory-key names. Each pretrained_assets value must contain its observed version and a nonempty files list, all listed in resource_files with SHA256. Null template entries are blockers. This is an input inventory, not a scientific PASS or dispatch grant. Original code expects indic_nlp_library and indic_nlp_resources in its cwd; use the observed native layout or verified symlinks and record them. Both environments must read the identical lexicons/pretrained assets for parity.
 
 ## Native preparation acceptance
-prepared/r001/coverage.json must show both original CB sets with matching group IDs, exactly four Hard rows per group, original 500 shared BLEnD templates, all 16 cultures, all available English/local cells, both official SAQ prompts, both complete v1.1 MCQ shards and every native MCQID without duplicates. Inspect actual MCQ rows/counts; never substitute the original paper's historical MCQ count.
+prepared/r001-lang-v2/coverage.json must show both original CB sets with matching group IDs, exactly four Hard rows per group, original 500 shared BLEnD templates, all 16 cultures, all available English/local cells, both official SAQ prompts, both complete v1.1 MCQ shards and every native MCQID without duplicates. Inspect actual MCQ rows/counts; never substitute the original paper's historical MCQ count.
 
 Any schema/ID/order mismatch stops preparation. Preserve the failing log/partial directory, inspect the pinned native file, make an evidence-supported child adapter and use a new prepared directory. Do not edit data/labels or waive cardinality assertions to make the run pass.
 
 ## Complete inference, scoring and logs
 All 14 inference runs from research/EXPERIMENT_DESIGN.md must be dispatched sequentially in the actual admitted GPU queue. Exact argv for each categorical cell, replacing MODEL with llama_1b or qwen_7b, TASK with cb_easy/cb_hard/blend_mcq, ARM with direct/label_likelihood and DEVICE with the actual allocated single device:
 ```bash
-conda run -n culture-study python -m culture_study run --assets assets --bindings bindings.json --prepared prepared/r001 --model "$MODEL" --task "$TASK" --arm "$ARM" --device "$DEVICE" --out "runs/r001/$MODEL/$TASK/$ARM"
-conda run -n culture-study python -m culture_study score --assets assets --prepared prepared/r001 --run "runs/r001/$MODEL/$TASK/$ARM" --out "runs/r001/$MODEL/$TASK/$ARM-score"
+conda run -n culture-study python -m culture_study run --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json --prepared prepared/r001-lang-v2 --model "$MODEL" --task "$TASK" --arm "$ARM" --device "$DEVICE" --out "runs/r001-lang-v2/$MODEL/$TASK/$ARM"
+conda run -n culture-study python -m culture_study score --assets assets/r001-lang-v2 --prepared prepared/r001-lang-v2 --run "runs/r001-lang-v2/$MODEL/$TASK/$ARM" --out "runs/r001-lang-v2/$MODEL/$TASK/$ARM-score"
 ```
 These named substitutions enumerate exactly 12 categorical runs, not optional cherry-picked choices. No assumed cuda:0/GPU host is recorded as an observed resource.
 
 For each of the two model keys:
 ```bash
-conda run -n culture-study python -m culture_study run --assets assets --bindings bindings.json --prepared prepared/r001 --model "$MODEL" --task blend_saq --arm direct --device "$DEVICE" --out "runs/r001/$MODEL/blend_saq/direct"
-conda run -n culture-study python -m culture_study score --assets assets --prepared prepared/r001 --run "runs/r001/$MODEL/blend_saq/direct" --dependencies scorer-dependencies.json --out "runs/r001/$MODEL/blend_saq/direct-score"
-conda run -n blend-official python -m culture_study parity-saq --assets assets --prepared prepared/r001 --run "runs/r001/$MODEL/blend_saq/direct" --bridge-scores "runs/r001/$MODEL/blend_saq/direct-score" --dependencies scorer-dependencies.json --out "runs/r001/$MODEL/blend_saq/parity"
+conda run -n culture-study python -m culture_study run --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json --prepared prepared/r001-lang-v2 --model "$MODEL" --task blend_saq --arm direct --device "$DEVICE" --out "runs/r001-lang-v2/$MODEL/blend_saq/direct"
+conda run -n culture-study python -m culture_study score --assets assets/r001-lang-v2 --prepared prepared/r001-lang-v2 --run "runs/r001-lang-v2/$MODEL/blend_saq/direct" --dependencies scorer-dependencies.json --out "runs/r001-lang-v2/$MODEL/blend_saq/direct-score"
+conda run -n blend-official python -m culture_study parity-saq --assets assets/r001-lang-v2 --prepared prepared/r001-lang-v2 --run "runs/r001-lang-v2/$MODEL/blend_saq/direct" --bridge-scores "runs/r001-lang-v2/$MODEL/blend_saq/direct-score" --dependencies scorer-dependencies.json --out "runs/r001-lang-v2/$MODEL/blend_saq/parity"
 ```
 Original scorer imports must succeed in the separate environment before this live comparison; the exact functions, exclusions, normalization, first-match order, aliases and same native predictions are checked. A parity exception means no qualification. CB requires a real official/verified faithful extraction comparison, still unresolved; do not treat the source-defined group grader as fully qualified.
 
@@ -112,11 +112,11 @@ Run logs: manifest.json (model/input/code/hardware), predictions.jsonl (raw outp
 
 Census for each categorical model/task:
 ```bash
-conda run -n culture-study python -m culture_study census --prepared prepared/r001 --direct-run "runs/r001/$MODEL/$TASK/direct" --alternative-run "runs/r001/$MODEL/$TASK/label_likelihood" --direct-score "runs/r001/$MODEL/$TASK/direct-score" --alternative-score "runs/r001/$MODEL/$TASK/label_likelihood-score" --out "runs/r001/$MODEL/$TASK/census"
+conda run -n culture-study python -m culture_study census --prepared prepared/r001-lang-v2 --direct-run "runs/r001-lang-v2/$MODEL/$TASK/direct" --alternative-run "runs/r001-lang-v2/$MODEL/$TASK/label_likelihood" --direct-score "runs/r001-lang-v2/$MODEL/$TASK/direct-score" --alternative-score "runs/r001-lang-v2/$MODEL/$TASK/label_likelihood-score" --out "runs/r001-lang-v2/$MODEL/$TASK/census"
 ```
 SAQ fixed native prompt diagnosis:
 ```bash
-conda run -n culture-study python -m culture_study census --prepared prepared/r001 --direct-run "runs/r001/$MODEL/blend_saq/direct" --alternative-run "runs/r001/$MODEL/blend_saq/direct" --direct-score "runs/r001/$MODEL/blend_saq/direct-score" --alternative-score "runs/r001/$MODEL/blend_saq/direct-score" --out "runs/r001/$MODEL/blend_saq/census"
+conda run -n culture-study python -m culture_study census --prepared prepared/r001-lang-v2 --direct-run "runs/r001-lang-v2/$MODEL/blend_saq/direct" --alternative-run "runs/r001-lang-v2/$MODEL/blend_saq/direct" --direct-score "runs/r001-lang-v2/$MODEL/blend_saq/direct-score" --alternative-score "runs/r001-lang-v2/$MODEL/blend_saq/direct-score" --out "runs/r001-lang-v2/$MODEL/blend_saq/census"
 ```
 SAQ internally compares inst-4 against pers-3; it never compares a record to itself. It is a diagnosis, not an oracle selector or substitute endpoint. residuals.jsonl keeps evidence records and null mechanism fields. Source review must classify the actual failure and strongest alternatives before producing Natural Gate 0 observations; do not fill nulls automatically.
 
@@ -200,4 +200,68 @@ scientific performance endpoint. Continue independent qualified cells only.
 
 The 14-run baseline census still uses the original two datasets and complete
 coverage. J01/LOCAL02/PARETO03 have no callable solver and must not be dispatched.
+
+
+
+## Native language-column repair
+
+Read [research/model/NATIVE_EVIDENCE_CONTRACT.md](research/model/NATIVE_EVIDENCE_CONTRACT.md),
+[research/sources/NATIVE_VIEW_AUDIT.json](research/sources/NATIVE_VIEW_AUDIT.json), and the current
+research/sources.lock.json before setup. This is a generated_unexecuted input child.
+The old Question-English / Translation-local assumption reverses the actual read release content for 14 cultures.
+Question/prompt columns now have separate source-locked meanings. Full 500-row/culture qualification is pending.
+
+The active command blocks above now use child identities:
+bindings-r001-lang-v2.json, assets/r001-lang-v2, prepared/r001-lang-v2 and runs/r001-lang-v2.
+They are proposed project-relative paths, not observed remote directories.
+If any already exists, reconcile its exact source/lock/config identity. Do not overwrite it;
+bind another explicit child identity consistently through the existing CLI.
+Preserve bindings.json, assets/acquisition.json, prepared/r001 and all older runs/receipts.
+The new source_lock digest requires a new bind and acquisition receipt.
+This is not a license to rerun/erase completed attempts.
+
+Ordered inner argv after actual host/harness admission:
+~~~bash
+conda run -n culture-study python -m culture_study bind --out bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study acquire --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study validate-assets --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json
+conda run -n culture-study python -m culture_study prepare --assets assets/r001-lang-v2 --bindings bindings-r001-lang-v2.json --out prepared/r001-lang-v2
+~~~
+
+Preserve existing verified files/caches. Local may reuse unchanged source/model files by copying or linking
+them into the child asset layout only after verifying the exact upstream revision/blob/content identity.
+The existing acquire skips present source files then checks their pinned Git blob and size;
+model acquisition can use the valid HF cache. It writes a **new** child acquisition.json.
+Do not copy an old receipt as proof of child acquisition. Use the same legal model revisions for a repaired
+comparison. If the binder's Llama revision differs from an existing immutable model binding, park the affected
+comparison and make a source-reviewed child model pin; do not switch models silently or edit the old receipt.
+If there is no prior binding, record the newly resolved revision prospectively.
+
+Required source/input acceptance before model dispatch:
+- coverage must retain 1227 CB questions/4908 Hard rows, both native MCQ shards, 16 original BLEnD cultures,
+  500 shared IDs, 30 SAQ language cells, two official prompt IDs and 30000 SAQ units per model.
+- SAQ coverage includes input_contract_id=blend_original_7b9c131_columns_v2 and the complete mapping.
+  Every SAQ unit source records question_column, prompt_column and input_contract_id.
+- For all 14 non-English cultures, English questions come from Translation with English prompt templates;
+  local questions come from Question with translated templates. US/UK retain Question and only one English cell.
+  Inspect actual native texts/IDs across the complete prepared files, including culture references and
+  label-blind question/prompt composition. Headers or script characters alone are insufficient language proof.
+- Record input audit/source hashes and all exceptions. Unresolved malformed/mixed-language/ID/scorer behavior
+  parks the affected claims; no source-label repair, homemade eval cases, silent row omission or test tuning.
+- Requalify official scorer dependencies and live parity at this revision on actual native outputs.
+  A source fix does not produce parity. Perform the exact 14-run sequence and collection above only when
+  actual resources and the native harness permit complete coverage.
+
+Retain raw per-ID predictions, language/prompt score cells, original score artifacts, costs,
+census and failures, with new source/input identities. Never recertify older mislabeled-language
+runs by renaming a language field. If older runs are later found, review them separately as
+historical/source-defect evidence, not as child performance or confirmation.
+
+The old/new whole-label memory audit needs identical prepared inputs and is a separate qualification.
+It cannot compare the differently conditioned SAQ input child as a numerical equivalence test.
+No J01/LOCAL02/PARETO03 solver or candidate G01 is admitted.
+Bounded repair remains at most two attempts within actual cumulative limits;
+source/input/scorer or resource failure preserves the failed attempt and parks its descendants.
+Return a coherent small evidence packet to this same repo/main with exact tested commit,
+raw/per-ID/scorer/parity/census locators and actual host/budget gaps.
 

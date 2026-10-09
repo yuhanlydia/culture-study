@@ -72,3 +72,25 @@ failure; non-finite rejection; cost/peak evidence; original scorer qualification
 Hardware/model/bfloat16 feasibility and actual old/new parity are unmeasured.
 No project import, compile, test, download, inference, scorer or GPU action ran.
 
+
+
+## Native language-column repair, 2026-10-09
+
+Source evidence: all 16 pinned prompt files; header/first 3 or 8 rows of all 16 question files.
+Question is local and Translation is English in the inspected rows of the 14 non-English cultures,
+while prompt CSVs retain English/local column meanings. Complete source body/locked blob matches were
+checked for the prompt/code reads; bounded question excerpts are identified separately.
+Older paper/README/default inference prose conflicts with these actual release bytes.
+
+prepare.py now reads the explicit source-locked culture/language question_columns, checks matching upstream
+commit and complete culture/language keys, binds prompt columns separately, and traces both columns plus
+contract ID in source/input_digest and coverage. Native labels/scorers/IDs and model config are unchanged.
+US/UK retain country-specific Question as an explicit release-input choice; this is not exact upstream-default replication.
+No novel method implemented. No import, compile, software tests, preparation, scorer or model execution.
+
+Local must rebind/reacquire/reprepare in child paths, validate complete native text/ID/language semantics,
+then qualify source/scorer/baselines. Older receipts are retained and are not reusable as child acceptance.
+audit-likelihood requires identical prepared inputs and cannot certify this input change.
+Exact commands, cache/receipt reuse rules and finite acceptance are in
+[LOCAL_AGENT_RUNBOOK.md](../LOCAL_AGENT_RUNBOOK.md#native-language-column-repair).
+

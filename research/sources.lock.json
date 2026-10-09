@@ -333,7 +333,85 @@
       "expected_saq_templates_per_country": 500,
       "source": "https://github.com/nlee0212/BLEnD",
       "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/file/8eb88844dafefa92a26aaec9f3acad93-Paper-Datasets_and_Benchmarks_Track.pdf",
-      "license_status": "Local must retain upstream/data license notices; source inspection does not grant redistribution."
+      "license_status": "Local must retain upstream/data license notices; source inspection does not grant redistribution.",
+      "saq_input_contract": {
+        "contract_id": "blend_original_7b9c131_columns_v2",
+        "upstream_commit": "7b9c131719e7fe5f9bed0f8b855532d613cc9f2b",
+        "question_columns": {
+          "UK": {
+            "English": "Question"
+          },
+          "US": {
+            "English": "Question"
+          },
+          "South_Korea": {
+            "English": "Translation",
+            "Korean": "Question"
+          },
+          "Algeria": {
+            "English": "Translation",
+            "Arabic": "Question"
+          },
+          "China": {
+            "English": "Translation",
+            "Chinese": "Question"
+          },
+          "Indonesia": {
+            "English": "Translation",
+            "Indonesian": "Question"
+          },
+          "Spain": {
+            "English": "Translation",
+            "Spanish": "Question"
+          },
+          "Iran": {
+            "English": "Translation",
+            "Persian": "Question"
+          },
+          "Mexico": {
+            "English": "Translation",
+            "Spanish": "Question"
+          },
+          "Assam": {
+            "English": "Translation",
+            "Assamese": "Question"
+          },
+          "Greece": {
+            "English": "Translation",
+            "Greek": "Question"
+          },
+          "Ethiopia": {
+            "English": "Translation",
+            "Amharic": "Question"
+          },
+          "Northern_Nigeria": {
+            "English": "Translation",
+            "Hausa": "Question"
+          },
+          "Azerbaijan": {
+            "English": "Translation",
+            "Azerbaijani": "Question"
+          },
+          "North_Korea": {
+            "English": "Translation",
+            "Korean": "Question"
+          },
+          "West_Java": {
+            "English": "Translation",
+            "Sundanese": "Question"
+          }
+        },
+        "prompt_columns": {
+          "English": "English",
+          "local": "Translation"
+        },
+        "english_country_substitution": "Preserve the existing literal 'your country' replacement for non-English countries; do not translate/rewrite other text.",
+        "english_native_cultures": "US/UK use country-specific Question text and English prompts, one English cell each. This is an explicit released-file choice, not a claim of exact execution of upstream defaults.",
+        "evidence_ref": "research/sources/NATIVE_VIEW_AUDIT.json",
+        "review_ref": "research/model/NATIVE_EVIDENCE_CONTRACT.md",
+        "reading_scope": "All 16 pinned question files were read only through header and first 3 or 8 source rows; all 16 prompt files were read, with inst-4/pers-3 inspected. Full native preparation and language qualification remain Local.",
+        "status": "source_reviewed_generated_unexecuted"
+      }
     }
   },
   "models": {

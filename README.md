@@ -4,6 +4,8 @@
 
 **研究包入口：[research/README.md](research/README.md)。** 当前交付包括数学主稿、真实基线代码与证据工具、完整原生基线设计和条件性候选比较。全部科学源码／设计仍为 generated_unexecuted，没有测试、模型实验或性能提升结果。
 
+最新输入修订：已读 BLEnD 发布文件的 Question／Translation 内容与论文列说明相反，现已写入固定逐文化语言映射。先读 [原生证据资格](research/model/NATIVE_EVIDENCE_CONTRACT.md) 和 [Local 语言列接受](LOCAL_AGENT_RUNBOOK.md#native-language-column-repair)。源码未执行，旧绑定／prepared／run 不能充当此修订的验收。
+
 ## 数学、实现与实验
 
 | 内容 | 阅读入口 | 当前资格 |
@@ -19,7 +21,7 @@ J01 的四个真假判断对应立方体的 16 个答案顶点；固定边际联
 
 ## Local Codex: start here
 
-在 [组织交付回执](research/organization-delivery-receipt.json) 指定的确切 commit 阅读：
+在 [最新原生证据交付回执](research/native-evidence-delivery-receipt.json) 指定的确切 commit 阅读：
 
 1. [AGENTS.md](AGENTS.md) 与 [LONG_TERM_TASK.md](LONG_TERM_TASK.md)。
 2. [LOCAL_AGENT_RUNBOOK.md](LOCAL_AGENT_RUNBOOK.md)，包括 [固定来源获取](LOCAL_AGENT_RUNBOOK.md#exact-source-binding-and-acquisition)、[多语言 scorer 依赖](LOCAL_AGENT_RUNBOOK.md#multilingual-official-scorer-acquisition)、[新源码接受](LOCAL_AGENT_RUNBOOK.md#likelihood-memory-repair-and-native-source-audit)。

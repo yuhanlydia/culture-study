@@ -13,7 +13,7 @@ For BLEnD US/UK do not duplicate identical English and local runs. MCQ variants 
 ## Inputs, labels and completeness
 CB Easy fields: data_idx, question_idx, prompt_question, prompt_option_a/b/c/d, answer, country. Hard: data_idx, question_idx, prompt_question, prompt_option, boolean answer, country. Require unique row IDs, four rows per Hard group, consistent question/country and identical Easy/Hard group sets. Empty option strings must be preserved, not dropped.
 
-BLEnD question CSVs use ID, Question, Translation; prompt CSVs use id, English, Translation. Load actual text and replace only {q}. The country-specific English question is retained. Do not use translated labels, annotation aliases or answer_idx to construct model inputs. MCQ source columns are MCQID, ID, country, prompt, choices, choice_countries, answer_idx. Choices are parsed with JSON, never eval.
+BLEnD question CSVs use ID, Question, Translation; prompt CSVs use id, English, Translation. In the actual pinned question-file rows for 14 non-English cultures, Question is local text and Translation is English, contrary to the old paper/README prose. Bind columns from sources.lock.json's saq_input_contract, independently of the prompt-file columns. US/UK retain country-specific Question text in their single English cell. Load actual text and replace only {q}; retain the existing literal country substitution. This supersedes the older inferred question-column convention; full native language/prepared acceptance remains pending. Do not use translated labels, annotation aliases or answer_idx to construct model inputs. MCQ source columns are MCQID, ID, country, prompt, choices, choice_countries, answer_idx. Choices are parsed with JSON, never eval.
 
 Full coverage is an input/receipt requirement. Missing, duplicate or failed model outputs invalidate the completed-run receipt; missing outputs are not excluded from a performance denominator. Non-parsable model answers remain wrong and are separately counted. Do not report subset scores as full native results.
 
@@ -28,3 +28,12 @@ BLEnD MCQ: preserve the upstream function and its result parser. Also log strict
 Both inspected releases provide evaluation data, not an established native train/dev allocation suitable for fitting the proposed method. All settings below are fixed prospectively. No test labels for fitting, selecting parameters/prompts, retrieval construction, pseudo-label filtering or culture-neuron discovery. Reading native examples during source audit is recorded; none is described as unseen confirmation.
 
 A second stochastic seed on the same inspected items is not independent item confirmation. Native held-out confirmation and legitimate development resources remain unresolved for a future adaptive method. Do not relabel a test subset as development. This prelude supports baseline qualification and diagnosis, not an ACL efficacy claim.
+
+
+## Native prompt/view qualification child
+The pinned release/source conflict, read scope and source repair are in
+[model/NATIVE_EVIDENCE_CONTRACT.md](model/NATIVE_EVIDENCE_CONTRACT.md) and
+[sources/NATIVE_VIEW_AUDIT.json](sources/NATIVE_VIEW_AUDIT.json).
+Shared culture/template IDs do not certify role/language/support equivalence.
+Official averaging of inst-4/pers-3 scores is evaluation aggregation, not pooled inference.
+Changed source-lock/prepared identities require the runbook's immutable child acquisition/preparation/run paths.

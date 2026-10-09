@@ -71,3 +71,13 @@ audit-likelihood CLI compares two complete old/new native runs without supplying
 a substitute benchmark score. See the Local runbook's child acceptance section.
 Preserve older source digests/runs and the original baseline comparisons.
 
+
+
+## Source-based input child, 2026-10-09
+The 14 complete frozen baseline runs are retained. Actual pinned question-file contents revealed a reversed
+language-column assumption for the 14 non-English BLEnD cultures. This source child fixes preparation
+and preserves IDs/tasks/scorer/model/config; it is not a new method or candidate G01.
+Before any new run, follow [native-language-column-repair](../LOCAL_AGENT_RUNBOOK.md#native-language-column-repair)
+for source-locked child binding/acquisition/prepared/run paths and complete native language/scorer qualification.
+Old input/source-bound outputs stay at their original revision; official prompt averages remain score aggregation.
+

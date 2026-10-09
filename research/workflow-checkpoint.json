@@ -2,13 +2,13 @@
   "workflow_checkpoint": {
     "project_id": "yuhanlydia/culture-study",
     "route_id": "I",
-    "observed_at": "2026-10-09T09:06:30.107Z",
+    "observed_at": "2026-10-09 11:20:35 UTC",
     "execution_role": "web_supervisor",
     "role_source": "User requests background idea/code/design authoring with GitHub delivery",
     "current_goal_ref": "LONG_TERM_TASK.md",
-    "requested_action": "Organize existing J01/local-global mathematics, 1B/7B code and CulturalBench/BLEnD experiment materials; repair baseline instruments and preserve candidate prerequisites.",
+    "requested_action": "Bounded pinned native prompt/language/evidence inquiry and existing baseline input repair; exact main delivery; pause at remaining native-dependent candidate boundary.",
     "web_github_delivery_branch": "main",
-    "delivery_parent_commit": "7d24f0f3da582e46f9a085d6ab986bd5c574c2d7",
+    "delivery_parent_commit": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
     "skill_source_revision": "upstream unexposed; actual entry content sha256:ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
     "loaded_module_refs": [
       "skill://plugins_6ac7bcf379948191829100f2af1799aa/research-autopilot/references/workflow-harness.md",
@@ -124,7 +124,7 @@
       "Selected novel method, required controls/ablations and complete candidate G01",
       "Local implementation/scorer qualification, E04 and claims"
     ],
-    "next_legal_action": "Continue bounded conditional LOCAL02/CUBE01/PARETO03 mathematical/source inquiry from current delivered packet; native selected-method/code/G01 investment requires the retained Local evidence/development/confirmation and candidate prerequisites.",
+    "next_legal_action": "Local native source/input/scorer qualification and complete fixed 1B/7B baseline/simple-alternative/census, then legitimate development/fresh confirmation and existing method prerequisites.",
     "delivery_targets": {
       "github": {
         "repo": "yuhanlydia/culture-study",
@@ -196,7 +196,7 @@
       "scope": "Existing-asset consolidation, continued mathematical authoring and code/design delivery within existing scientific boundaries."
     },
     "web_background_resume_receipt_ref": "research/background-task.json#resume",
-    "next_authoring_action": "Bounded actual native prompt/view equivalence and evidence-query review; then continue candidate math/selection only when applicable prerequisites exist. Native baseline/scorer/census acceptance remains Local.",
+    "next_authoring_action": "Review new qualified Local native evidence under the same lineage; no further timer-only speculative method code.",
     "latest_source_review_ref": "research/CODE_REVIEW.md",
     "latest_math_review_ref": "research/model/MODEL.md",
     "current_run_execution_observation": "Current conversation produced organized mathematical/source/conditional-protocol files and baseline repair; no scientific project code/test/model/scorer execution.",
@@ -371,6 +371,38 @@
       "execution_state": "not_exposed",
       "host": "cloud_scheduled_authoring",
       "no_duplicate_immediate_request": true
+    },
+    "latest_native_evidence_review": {
+      "source_parent_commit": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
+      "artifact_ref": "research/model/NATIVE_EVIDENCE_CONTRACT.md",
+      "source_ref": "research/sources/NATIVE_VIEW_AUDIT.json",
+      "input_contract": "blend_original_7b9c131_columns_v2",
+      "source_repair": [
+        "culture_study/prepare.py",
+        "research/sources.lock.json"
+      ],
+      "status": "authored_pending_exact_main_readback",
+      "source_rows_read": 63,
+      "prompt_files_read": 16,
+      "bounded_saved_inquiry_completed": true,
+      "full_authoring_goal_completed": false,
+      "candidate_solvers_implemented": false,
+      "reviewed_properties": [
+        "Role/language drift log-odds decomposition",
+        "Pairwise moment compatibility is insufficient; positive J01 residual lower bound"
+      ],
+      "skill_entry_sha256": "ec53488011590125a635734d1091a8a66d37c8083e821d24034b46d4c50909f5",
+      "native_results_observed": false,
+      "source_inventory": {
+        "tree_sha": "39d9ca3c2f8d508773e768f342293d407b35b477",
+        "truncated": false,
+        "files": 51,
+        "native_result_paths": []
+      },
+      "machine_method_check": "not_run; actual new-method discovery packets absent and cloud script interface unexposed",
+      "execution": false,
+      "dependency_pause": "planned_after_exact_source_readback",
+      "next_local_entry": "LOCAL_AGENT_RUNBOOK.md#native-language-column-repair"
     }
   }
 }
