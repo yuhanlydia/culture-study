@@ -8,7 +8,7 @@
   "default_timezone": "Europe/London",
   "schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY;INTERVAL=6\nEND:VEVENT",
   "is_enabled": true,
-  "observed_at": "2026-10-09T08:12:42.066Z",
+  "observed_at": "2026-10-09T08:21:38.193Z",
   "last_run_time": "2026-10-08T23:52:41.891649+00:00",
   "next_run_time": null,
   "immediate_run": {
@@ -34,9 +34,9 @@
   },
   "creation_schedule": "BEGIN:VEVENT\nDTSTART:20261008T230554Z\nRRULE:FREQ=HOURLY\nEND:VEVENT",
   "latest_requirement": {
-    "source": "User message 2026-10-08T23:18:05Z",
-    "text": "数学 idea、方法代码、完整实验设计按照数学优化问题组织，面向 ACL 生成优雅的数学模型",
-    "ref": "research/MATHEMATICAL_MODEL_BRIEF.md"
+    "source": "User mathematical feedback 2026-10-09",
+    "text": "复核立方体空间、多文化局部最优与整体最接近，比较合适数学模型",
+    "ref": "research/MULTICULTURAL_REVIEW_BRIEF.md"
   },
   "prompt_update": {
     "success": true,
@@ -120,11 +120,11 @@
     "requested_full_authoring_complete": false
   },
   "latest_math_followup": {
-    "observed_at": "2026-10-09T08:12:42.066Z",
+    "observed_at": "2026-10-09T08:21:38.193Z",
     "source": "User mathematical feedback, 2026-10-09",
     "task_id": "6ac821d2c66081918fd21ebd0d168fea",
     "provider_success": true,
-    "provider_updated_at": "2026-10-09T08:11:25.510722+00:00",
+    "provider_updated_at": "2026-10-09T08:21:04.069713+00:00",
     "prompt_readback": true,
     "enabled_readback": true,
     "scope": "Resume independent conditional multicultural mathematics/source analysis; existing code/native prerequisites remain",
@@ -133,8 +133,28 @@
     "source_ref": "research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json",
     "scientific_execution": false,
     "immediate_run": {
-      "status": "not_yet_requested"
+      "status_as_of_checkpoint": "not_requested; immediate request follows completed source integration",
+      "execution_observed": false,
+      "delivery_observed": false
     },
-    "note": "Historical pauses/resumes retained. Mathematical feedback opens independent read-only inquiry, not empirical gate approval."
+    "note": "Historical task pauses/resumes and requests retained. This source mathematical milestone is delivered; future task invocation must have its own actual receipt. No native execution or gate approval.",
+    "source_delivery": {
+      "commit": "fa44c3621a743316d90c34470e1c3d185c2f57cf",
+      "exact_content_readback": true,
+      "paths": [
+        "research/math/MULTICULTURAL_LOCAL_GLOBAL_REVIEW.md",
+        "research/math/MULTICULTURAL_SOURCE_SNAPSHOT.json",
+        "research/MULTICULTURAL_REVIEW_BRIEF.md",
+        "README.md",
+        "AGENTS.md",
+        "research/PROGRESS.md",
+        "research/workflow-checkpoint.json",
+        "research/background-task.json",
+        "rounds/r001/WEB_HANDOFF.md",
+        "research/CLOSEST_WORK.md"
+      ],
+      "integration_closed": true,
+      "receipt_ref": "research/math/MULTICULTURAL_DELIVERY_RECEIPT.json"
+    }
   }
 }
