@@ -166,3 +166,12 @@ admitted=0/20、selected=0/15；新的source输入资格和全量native language
 完成此包的 exact main readback 后，暂停同一有限任务并保留 Local 最早下一动作；
 不能无限重复概念整理或把下一次后台调用当成科研前提。
 
+
+
+## Native evidence delivery and prerequisite pause — 2026-10-09
+
+Source commit [b303b9b79525bd9fabd12c6cf5c06407513fd969](https://github.com/yuhanlydia/culture-study/commit/b303b9b79525bd9fabd12c6cf5c06407513fd969) was published to literal `main` by a normal expected-head update from `4eb29eef4f5469daeeb5f827cb02930a362a8316`. All 21 scoped source/document paths were fetched at that exact commit: UTF-8 contents and Git blob identities matched. The exact per-file record is in [native-evidence-delivery-receipt.json](native-evidence-delivery-receipt.json).
+
+The pinned native language-column conflict is corrected in generated-unexecuted source, with immutable `r001-lang-v2` acquisition/prepared/run paths. The bounded evidence inquiry now records role/language drift in aggregation and an explicit globally incompatible pairwise-moment counterexample with a positive conditional J01 residual bound. These are source/author-derived mathematical findings, not model results, candidate admission or novelty approval.
+
+The same task was actually disabled and read back at provider update `2026-10-09T11:25:13.383618+00:00`; its prompt and saved schedule were preserved. This completes the saved bounded independent inquiry, **not** the full novel-method/code/candidate-G01 goal. No project tests, inference, training or scientific scoring ran. Next: [Local native-language acceptance](../LOCAL_AGENT_RUNBOOK.md#native-language-column-repair), followed by qualified native per-ID 1B/7B baseline/simple-alternative evidence and lawful development/fresh confirmation. Remaining method admission gates and Local resources are unresolved; resume the same lineage only with new relevant evidence.

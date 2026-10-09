@@ -4,8 +4,8 @@
   "project": "yuhanlydia/culture-study",
   "branch": "main",
   "source_parent_commit": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
-  "source_commit": null,
-  "status": "prepared_pending_exact_main_readback",
+  "source_commit": "b303b9b79525bd9fabd12c6cf5c06407513fd969",
+  "status": "delivered_exact_content_readback",
   "paths": [
     "README.md",
     "research/README.md",
@@ -37,9 +37,214 @@
   "full_requested_authoring_complete": false,
   "pause": {
     "same_task_id": "6ac821d2c66081918fd21ebd0d168fea",
-    "status": "planned_after_source_readback"
+    "is_enabled": false,
+    "provider_success": true,
+    "disabled_readback": true,
+    "provider_updated_at": "2026-10-09T11:25:13.383618+00:00",
+    "observed_at": "2026-10-09 11:29:16 UTC",
+    "schedule_unchanged": true,
+    "prompt_unchanged": true,
+    "reason": "Bounded pinned native prompt/view/evidence inquiry is complete. Novel candidate authoring remains blocked on absent qualified Local native per-ID 1B/7B baseline/simple-alternative evidence, scorer/input/cost qualification, lawful non-test development/fresh confirmation, and method admission gates; Web execution is excluded.",
+    "scientific_completion": false,
+    "requested_full_authoring_complete": false,
+    "next_local_entry": "LOCAL_AGENT_RUNBOOK.md#native-language-column-repair"
   },
   "next_local_entry": "LOCAL_AGENT_RUNBOOK.md#native-language-column-repair",
   "prior_organization_receipt": "research/organization-delivery-receipt.json",
-  "private_skill_bytes_published": false
+  "private_skill_bytes_published": false,
+  "source_tree_sha": "bd6bcc9f2ff5a45cf764b5afbb7518cff2ee16eb",
+  "readback_observed_at": "2026-10-09 11:29:16 UTC",
+  "exact_content_readback": true,
+  "readback_files": [
+    {
+      "path": "README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "2c02ce2cd05470d77d122d0f11b79f991d2a3a94",
+      "sha256": "3eeb540dcc1e2137869d6891e202f5c0042789a230f9d3e82c255694ef0d9d68",
+      "bytes": 4833
+    },
+    {
+      "path": "research/README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "9e220d6393e6635397b2d631b97ceccdb64dd4cd",
+      "sha256": "79650d8adafbe205ed3c456b2f93c4eb49bcffedb4d7d4537e226a20be54ba24",
+      "bytes": 2606
+    },
+    {
+      "path": "AGENTS.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "83b26b77a968c2f3fbeddbb22c922495e5dff151",
+      "sha256": "26b3b3204681791b2b060b8429abec36324c5a85b2cf363b123e55b5ebd5f3d4",
+      "bytes": 6407
+    },
+    {
+      "path": "LONG_TERM_TASK.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "dc018cb2ecb6001904086a1e9dacf07c6539d678",
+      "sha256": "cbca4c06ba27ad90566ff402987aaceab73a491dedad61e613f3013cfcdaff5e",
+      "bytes": 8223
+    },
+    {
+      "path": "research/model/MODEL.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "fdc4636627a84b7ebe7e31ef5273b5c880416b0a",
+      "sha256": "bbaf694ea810def3721bdcbdb853210347fbbb8470da586161e41a5f7f2c4dae",
+      "bytes": 15081
+    },
+    {
+      "path": "research/implementation/README.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "3b5a0e59b4a2024faec2a0ebd3da3ab72d6c44f2",
+      "sha256": "18780964d3571fdae3a8d8e4ce4089e572efd60a80842d6524f2e5495e0954d7",
+      "bytes": 7209
+    },
+    {
+      "path": "research/NATIVE_CONTRACTS.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "d33f93e62c6b6c956c5085b3d66add4084d94430",
+      "sha256": "0b5533de222d4704f3480bea166af97a72d83fdfacc0fcd5984f1ef4cfa2ddc3",
+      "bytes": 5011
+    },
+    {
+      "path": "research/CODE_REVIEW.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "1ab85953d09ec0ba7f51d0a96b2a470088f30dba",
+      "sha256": "e6d03f59f6e27cefedb6f25d013049165bd7a89ce44753ab8ae27737825a131d",
+      "bytes": 9117
+    },
+    {
+      "path": "research/experiments/ACL_PROTOCOL.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "5a678dd9c51b7c53b727431484b55ab6bb016fd2",
+      "sha256": "3fc9c9d51154c473c7eef8dc3245e9694ed4fa806152dfb5c72ffb4ae8fba5e6",
+      "bytes": 12139
+    },
+    {
+      "path": "research/EXPERIMENT_DESIGN.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "cd6bfe49de33594243440f7d768bda4515e6b099",
+      "sha256": "a95e81c20307337adb133a88fd822ef9c3d4d3a5bd7e0b335bd3cc7dc13e744f",
+      "bytes": 9590
+    },
+    {
+      "path": "LOCAL_AGENT_RUNBOOK.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "159d7015a7b97ab78964e4df9a9885f10f4ffae6",
+      "sha256": "78bf3ede4bc2e4d025dabf51c9596a3c6ae35175ddad540b89a04a4226bcfd92",
+      "bytes": 25656
+    },
+    {
+      "path": "rounds/r001/WEB_HANDOFF.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "1fbee50ceefe8f678d09c3de21475dd3a568769f",
+      "sha256": "6fdc0d64ad9cc5d9599d863d491e8ca98dc10165f2c241c05bb6c10509761b1b",
+      "bytes": 11127
+    },
+    {
+      "path": "research/PROGRESS.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "9d7581f6fbfc656b5fff76fcf2045894e59e2209",
+      "sha256": "af227ba73e10531496be00dee2c96a0eb61077dee9c2c7822065610a9d759e0b",
+      "bytes": 21851
+    },
+    {
+      "path": "research/workflow-checkpoint.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "dc2f289815180c1931d77353e8f2aebb4cd9410b",
+      "sha256": "715cfcc4ae8a0f8c1472b238df58d0022acbe484ba5326db37836c2a8d2913f9",
+      "bytes": 20008
+    },
+    {
+      "path": "research/background-task.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "bb13a4b92d429eecbbc593ba1ff6c029fdca468f",
+      "sha256": "a5294a26028a550ce2ee54d42f34ba98e8fddb47f411dffacf43440751ca7737",
+      "bytes": 9962
+    },
+    {
+      "path": "research/skill-source.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "231df5407ed1ed23956a198de647b975e3a12cc3",
+      "sha256": "9d9438b55cadd3f24cdbd4cd371259dcf88695dfa6cf4fbd1f70bef74a80a371",
+      "bytes": 14644
+    },
+    {
+      "path": "culture_study/prepare.py",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "15f601a39c545cd93c53fe101f83f63874f860dd",
+      "sha256": "c96e6cc33bcf170935a51cf5f5199bae34b12a65f41d4a8c5923b29f114beaaa",
+      "bytes": 12778
+    },
+    {
+      "path": "research/sources.lock.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "3b90057325ff6e4186d3f6303dbcc6ddbaf9d972",
+      "sha256": "94b6f9e56aadc33a2a15b816937ba2046cfd5ac4440dc65596345fff8a4f07bc",
+      "bytes": 18466
+    },
+    {
+      "path": "research/model/NATIVE_EVIDENCE_CONTRACT.md",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "da72ea0962f15655b52034a1b4c9c06e5fd1a1fd",
+      "sha256": "65f4883b781998f2f2dc5327acfa4ec04a913e92f641782d7c9aeb49b2da6991",
+      "bytes": 12465
+    },
+    {
+      "path": "research/sources/NATIVE_VIEW_AUDIT.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "df6c112d56562fe3de4f4b4328c13904462f88fe",
+      "sha256": "b8139f5216e0f04d24493d58dc6968dd4ca184b05b43914dec6291a07fdbe7e1",
+      "bytes": 34230
+    },
+    {
+      "path": "research/native-evidence-delivery-receipt.json",
+      "identical": true,
+      "git_blob_match": true,
+      "git_blob_sha": "1a1478fbe690897dcf61d893e935dc4d08acbecc",
+      "sha256": "84158fa37edd112ba5b1834dddca663290eddb708cf2b0d3feb4ffc03bb3da2e",
+      "bytes": 1716
+    }
+  ],
+  "publication": {
+    "expected_parent": "4eb29eef4f5469daeeb5f827cb02930a362a8316",
+    "updated_branch": "main",
+    "force": false,
+    "main_ref_readback": "b303b9b79525bd9fabd12c6cf5c06407513fd969",
+    "success": true
+  },
+  "review_scope": {
+    "source_files_and_conditional_derivations": true,
+    "utility_hash_json_navigation_checks": true,
+    "project_tests": false,
+    "method_verification_machine_check": false,
+    "native_scorer_or_model_execution": false,
+    "empirical_claims": false
+  },
+  "unresolved_prerequisites": [
+    "Qualified immutable native-language input/scorer/cost and per-ID 1B/7B baseline/simple-alternative evidence",
+    "Legitimate non-test development and independent fresh confirmation",
+    "Frozen Parent/value, Natural Gate 0, substantive distinct mathematical pool/ranking, collision and IPCG",
+    "Selected novel method solver/code/controls and complete candidate G01"
+  ],
+  "receipt_semantics": "This receipt records the immutable source commit above, including its then-pending receipt. The subsequent metadata-only child stores completed readback/pause facts and does not claim its own future commit SHA."
 }
